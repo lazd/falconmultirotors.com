@@ -139,7 +139,6 @@ Faded content zone
 .button.cta {
   font-size: 25px;
   padding: 15px 25px;
-  margin: 10px 0;
 }
 
 .logo {
@@ -309,20 +308,24 @@ A picture + details section
   text-align: center;
 }
 
-.circlephoto {
-  display: inline-block;
-  position: relative;
-  margin: 25px;
-}
-
 .section--columns {
   text-align: center;
 }
 
 .section-column {
   display: inline-block;
+  vertical-align: top;
   margin: 0 30px;
   text-align: left;
+}
+
+/* Circle photo
+Awesome circle that animates when you hover */
+
+.circlephoto {
+  display: inline-block;
+  position: relative;
+  margin: 25px;
 }
 
 .circlephoto:after {
@@ -348,17 +351,26 @@ A picture + details section
   width: 300px;
 }
 
+.circlephoto-button {
+  display: block;
+  position: relative;
+  z-index: 2;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .circlephoto-caption {
   position: absolute;
   z-index: 2;
-  bottom: 25px;
   margin: 0;
   color: white;
   text-align: center;
   transition: all 0.25s;
-  transform: translate(50%, 50%);
-  left: 0;
-  top: 0;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: 100%;
 }
 
 .circlephoto:focus:after,
