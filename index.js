@@ -184,6 +184,14 @@ var initPhotoSwipeFromDOM = function(el) {
         // Pass data to PhotoSwipe and initialize it
         gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
         gallery.init();
+
+        gallery.listen('afterChange', function() {
+          var $slick = $(galleryElement).closest('[slick]');
+          if ($slick.length) {
+            var index = gallery.getCurrentIndex() - 1;
+            $slick.slick('slickGoTo', index, true);
+          }
+        });
     };
 
     // loop through all gallery elements and bind events
@@ -225,6 +233,13 @@ $(function() {
     })
   });
 
+  $('[slick]').slick({
+    // centerMode: true,
+    speed: 100,
+    infinite: true,
+    variableWidth: true,
+  }).addClass('slick');
+
   $(window).on('hashchange', function(event) {
     if (window.location.hash === '') {
       // First tab
@@ -242,6 +257,6 @@ $(window).on('load', function() {
     $(el).masonry({
       // options
       itemSelector: 'figure'
-    }).addClass('masonry')
+    }).addClass('masonry');
   });
 });

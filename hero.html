@@ -3,11 +3,15 @@
 <head>
   <title>Falcon Racing Drones</title>
   <meta charset="utf-8">
+  <!-- Ensure correct presentation on iOS -->
+  <meta name="viewport" content="width=device-width, initial-scale=0.70, user-scalable=0">
 
   <!-- Core -->
-  <link href='https://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Play:400,700" >
   <link rel="stylesheet" href="photoswipe/photoswipe.css"> 
   <link rel="stylesheet" href="photoswipe/default-skin/default-skin.css"> 
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
   <link rel="stylesheet" href="index.css"> 
 
   <!-- Analytics -->
@@ -32,6 +36,9 @@
   <!-- Masonry -->
   <script src="masonry/masonry.pkgd.min.js"></script>
 
+  <!-- Slick -->
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
   <!-- App -->
   <script src="index.js"></script>
 </head>
@@ -46,14 +53,163 @@
 
   <div class="content">
 
+    <section class="section section--text">
+      <div class="section-content">
+        <div class="section-photo">
+          <img src="prototype.png" alt="Falcon 185 3D model">
+        </div>
+        <p>The idea started simple. We wanted to design an X-quad that’s lighter, shorter, easier to build, and more durable than anything on the market.</p>
+        <p>But we wanted a built-in HD camera mount, a PDB that works with Littlebees, support for different cameras and VTXs, easily available spare parts, durability and motor protection, an easily servicable build, and, uh, battery strap slots.</p>
+        <p>We wanted all of this in the lightest possible package, and it had to look good.</p>
+      </div>
+    </section>
+
+    <section class="section section--text section--center">
+      <div class="section-content">
+        <p>We started with an X, then lost sleep over every cut in the carbon fiber.</p>
+        <p>We created 3D mockups. We cut and tested dozens of prototypes. We thought about every corner-case.</p>
+        <h2>The result is Falcon.</h2>
+      </div>
+    </section>
+
     <section class="section section--columns">
 
       <div class="section-column">
-        <div class="circlephoto">
+        <a href="javascript: falcon185gallery.click()" class="circlephoto">
           <img class="circlephoto-image" src="falcon_transparent.png" alt="Falcon 185">
           <h2 class="circlephoto-caption">Falcon 185</h2>
-          <a href="https://multirotorsuperstore.com" class="button cta circlephoto-button">Buy frame for $79</a>
+        </a>
+        
+        <div slick photoswipe itemscope itemtype="http://schema.org/ImageGallery">
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a id="falcon185gallery" href="falcon185/a01.jpg" itemprop="contentUrl" data-size="3172x1735">
+              <img src="falcon185/a01_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/a02.jpg" itemprop="contentUrl" data-size="3199x2034">
+              <img src="falcon185/a02_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/a03.jpg" itemprop="contentUrl" data-size="2807x1899">
+              <img src="falcon185/a03_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/a04.jpg" itemprop="contentUrl" data-size="2363x2416">
+              <img src="falcon185/a04_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/a05.jpg" itemprop="contentUrl" data-size="3139x2345">
+              <img src="falcon185/a05_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/a06.jpg" itemprop="contentUrl" data-size="2971x2102">
+              <img src="falcon185/a06_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/a07.jpg" itemprop="contentUrl" data-size="3232x2264">
+              <img src="falcon185/a07_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/a08.jpg" itemprop="contentUrl" data-size="2794x2448">
+              <img src="falcon185/a08_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/b01.jpg" itemprop="contentUrl" data-size="3156x1918">
+              <img src="falcon185/b01_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/b02.jpg" itemprop="contentUrl" data-size="3151x1949">
+              <img src="falcon185/b02_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/b03.jpg" itemprop="contentUrl" data-size="3166x2034">
+              <img src="falcon185/b03_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/b04.jpg" itemprop="contentUrl" data-size="2445x2437">
+              <img src="falcon185/b04_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/b05.jpg" itemprop="contentUrl" data-size="3264x2448">
+              <img src="falcon185/b05_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/b06.jpg" itemprop="contentUrl" data-size="3192x2033">
+              <img src="falcon185/b06_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/b07.jpg" itemprop="contentUrl" data-size="3264x2247">
+              <img src="falcon185/b07_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
         </div>
+
+        <h3>Vitals</h3>
+        <table>
+          <tbody>
+            <tr>
+              <td>Props</td>
+              <td>5"</td>
+            </tr>
+            <tr>
+              <td>Motors</td>
+              <td>22XX</td>
+            </tr>
+            <tr>
+              <td>Weight</td>
+              <td>80g bare, 400g all up w/4S</td>
+            </tr>
+            <tr>
+              <td>Speciality</td>
+              <td>Larger &amp; fast courses, HD recording</td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="https://multirotorsuperstore.com" class="button button--cta button--centered">Buy frame for $79</a>
+
         <h3>Recommended Components</h3>
         <table>
           <thead>
@@ -73,7 +229,7 @@
             </tr>
             <tr>
               <td>Motors</td>
-              <td>Cobra 2204/2300kV</td>
+              <td>Cobra 2204 2300kV</td>
             </tr>
             <tr>
               <td>ESCs</td>
@@ -85,7 +241,7 @@
             </tr>
             <tr>
               <td>RX</td>
-              <td>FrSky X4R-SB</td>
+              <td>FrSky XSR</td>
             </tr>
             <tr>
               <td>VTX</td>
@@ -97,16 +253,75 @@
             </tr>
             <tr>
               <td>FPV Cam</td>
-              <td>HS1177</td>
-            </tr>
-            <tr>
-              <td class="empty center" colspan="3"><a href="https://multirotorsuperstore.com" class="button cta product-buybutton">Buy kit for $375</a></td>
+              <td>HS1177M</td>
             </tr>
           </tbody>
         </table>
+        <a href="https://multirotorsuperstore.com" class="button button--cta button--centered">Buy kit for $375</a>
+      </div>
 
-        <h3>Photos</h3>
-        <div masonry photoswipe itemscope itemtype="http://schema.org/ImageGallery">
+      <div class="section-column">
+        <a href="javascript: falcon160gallery.click()" class="circlephoto">
+          <img class="circlephoto-image" src="falcon_transparent.png" alt="Falcon 160">
+          <h2 class="circlephoto-caption">Falcon 160</h2>
+        </a>
+
+        <div slick photoswipe itemscope itemtype="http://schema.org/ImageGallery">
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a id="falcon160gallery" href="falcon185/a01.jpg" itemprop="contentUrl" data-size="3172x1735">
+              <img src="falcon185/a01_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/a02.jpg" itemprop="contentUrl" data-size="3199x2034">
+              <img src="falcon185/a02_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/a03.jpg" itemprop="contentUrl" data-size="2807x1899">
+              <img src="falcon185/a03_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/a04.jpg" itemprop="contentUrl" data-size="2363x2416">
+              <img src="falcon185/a04_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/a05.jpg" itemprop="contentUrl" data-size="3139x2345">
+              <img src="falcon185/a05_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/a06.jpg" itemprop="contentUrl" data-size="2971x2102">
+              <img src="falcon185/a06_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/a07.jpg" itemprop="contentUrl" data-size="3232x2264">
+              <img src="falcon185/a07_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/a08.jpg" itemprop="contentUrl" data-size="2794x2448">
+              <img src="falcon185/a08_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
 
           <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
             <a href="falcon185/b01.jpg" itemprop="contentUrl" data-size="3156x1918">
@@ -123,8 +338,8 @@
           </figure>
 
           <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="falcon185/b05.jpg" itemprop="contentUrl" data-size="3264x2448">
-              <img src="falcon185/b05_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            <a href="falcon185/b03.jpg" itemprop="contentUrl" data-size="3166x2034">
+              <img src="falcon185/b03_thumb.jpg" itemprop="thumbnail" alt="Image description">
             </a>
             <figcaption itemprop="caption description">Falcon 185</figcaption>
           </figure>
@@ -137,22 +352,8 @@
           </figure>
 
           <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="falcon185/a08.jpg" itemprop="contentUrl" data-size="2794x2448">
-              <img src="falcon185/a08_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 185</figcaption>
-          </figure>
-
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="falcon185/b03.jpg" itemprop="contentUrl" data-size="3166x2034">
-              <img src="falcon185/b03_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 185</figcaption>
-          </figure>
-
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="falcon185/b07.jpg" itemprop="contentUrl" data-size="3264x2247">
-              <img src="falcon185/b07_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            <a href="falcon185/b05.jpg" itemprop="contentUrl" data-size="3264x2448">
+              <img src="falcon185/b05_thumb.jpg" itemprop="thumbnail" alt="Image description">
             </a>
             <figcaption itemprop="caption description">Falcon 185</figcaption>
           </figure>
@@ -163,15 +364,38 @@
             </a>
             <figcaption itemprop="caption description">Falcon 185</figcaption>
           </figure>
-        </div>
-      </div>
 
-      <div class="section-column">
-        <div class="circlephoto">
-          <img class="circlephoto-image" src="falcon_transparent.png" alt="Falcon 160">
-          <h2 class="circlephoto-caption">Falcon 160</h2>
-          <a href="https://multirotorsuperstore.com" class="button cta circlephoto-button">Buy frame for $69</a>
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/b07.jpg" itemprop="contentUrl" data-size="3264x2247">
+              <img src="falcon185/b07_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
         </div>
+
+        <h3>Vitals</h3>
+        <table>
+          <tbody>
+            <tr>
+              <td>Props</td>
+              <td>4"</td>
+            </tr>
+            <tr>
+              <td>Motors</td>
+              <td>18XX or 22XX</td>
+            </tr>
+            <tr>
+              <td>Weight</td>
+              <td>60g dry, 360g all up w/4S</td>
+            </tr>
+            <tr>
+              <td>Speciality</td>
+              <td>Small &amp; tight courses, freestyle</td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="https://multirotorsuperstore.com" class="button button--cta button--centered">Buy frame for $69</a>
+
         <h3>Recommended Components</h3>
         <table>
           <thead>
@@ -203,7 +427,7 @@
             </tr>
             <tr>
               <td>RX</td>
-              <td>FrSky X4R-SB</td>
+              <td>FrSky XSR</td>
             </tr>
             <tr>
               <td>VTX</td>
@@ -217,19 +441,147 @@
               <td>FPV Cam</td>
               <td>HS1177</td>
             </tr>
-            <tr>
-              <td class="empty center" colspan="3"><a href="https://multirotorsuperstore.com" class="button cta product-buybutton">Buy kit for $350</a></td>
-            </tr>
           </tbody>
         </table>
+        <a href="https://multirotorsuperstore.com" class="button button--cta button--centered">Buy kit for $350</a>
       </div>
 
       <div class="section-column">
-        <div class="circlephoto">
+        <a href="javascript: falcon130gallery.click()" class="circlephoto">
           <img class="circlephoto-image" src="falcon_transparent.png" alt="Falcon 130">
           <h2 class="circlephoto-caption">Falcon 130</h2>
-          <a href="https://multirotorsuperstore.com" class="button cta circlephoto-button">Buy frame for $29</a>
+        </a>
+
+        <div slick photoswipe itemscope itemtype="http://schema.org/ImageGallery">
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a id="falcon130gallery" href="falcon185/a01.jpg" itemprop="contentUrl" data-size="3172x1735">
+              <img src="falcon185/a01_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/a02.jpg" itemprop="contentUrl" data-size="3199x2034">
+              <img src="falcon185/a02_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/a03.jpg" itemprop="contentUrl" data-size="2807x1899">
+              <img src="falcon185/a03_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/a04.jpg" itemprop="contentUrl" data-size="2363x2416">
+              <img src="falcon185/a04_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/a05.jpg" itemprop="contentUrl" data-size="3139x2345">
+              <img src="falcon185/a05_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/a06.jpg" itemprop="contentUrl" data-size="2971x2102">
+              <img src="falcon185/a06_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/a07.jpg" itemprop="contentUrl" data-size="3232x2264">
+              <img src="falcon185/a07_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/a08.jpg" itemprop="contentUrl" data-size="2794x2448">
+              <img src="falcon185/a08_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/b01.jpg" itemprop="contentUrl" data-size="3156x1918">
+              <img src="falcon185/b01_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/b02.jpg" itemprop="contentUrl" data-size="3151x1949">
+              <img src="falcon185/b02_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/b03.jpg" itemprop="contentUrl" data-size="3166x2034">
+              <img src="falcon185/b03_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/b04.jpg" itemprop="contentUrl" data-size="2445x2437">
+              <img src="falcon185/b04_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/b05.jpg" itemprop="contentUrl" data-size="3264x2448">
+              <img src="falcon185/b05_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/b06.jpg" itemprop="contentUrl" data-size="3192x2033">
+              <img src="falcon185/b06_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="falcon185/b07.jpg" itemprop="contentUrl" data-size="3264x2247">
+              <img src="falcon185/b07_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 185</figcaption>
+          </figure>
         </div>
+
+        <h3>Vitals</h3>
+        <table>
+          <tbody>
+            <tr>
+              <td>Props</td>
+              <td>3" or 3.5"</td>
+            </tr>
+            <tr>
+              <td>Motors</td>
+              <td>13XX or 14XX</td>
+            </tr>
+            <tr>
+              <td>Weight</td>
+              <td>24g dry, 250g all up w/4S</td>
+            </tr>
+            <tr>
+              <td>Speciality</td>
+              <td>Insanely tight courses, outlaw class, proximity</td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="https://multirotorsuperstore.com" class="button button--cta button--centered">Buy frame for $29</a>
+
         <h3>Recommended Components</h3>
         <table>
           <thead>
@@ -261,7 +613,7 @@
             </tr>
             <tr>
               <td>RX</td>
-              <td>FrSky X4R-SB</td>
+              <td>FrSky XSR</td>
             </tr>
             <tr>
               <td>VTX</td>
@@ -275,361 +627,11 @@
               <td>FPV Cam</td>
               <td>Micro 600TVL</td>
             </tr>
-            <tr>
-              <td class="empty center" colspan="3"><a href="https://multirotorsuperstore.com" class="button cta product-buybutton">Buy kit for $200</a></td>
-            </tr>
           </tbody>
         </table>
+        <a href="https://multirotorsuperstore.com" class="button button--cta button--centered">Buy kit for $200</a>
       </div>
     </section>
-
-    <section class="section rounded center">
-      <div class="section-content">
-        <p>The idea was simple: we wanted to design an X quad frame that’s lighter, shorter, easier to build, and more durable than anything on the market.</p>
-      </div>
-    </section>
-
-  <!-- 
-    <section class="section rounded">
-      <div masonry photoswipe itemscope itemtype="http://schema.org/ImageGallery">
-      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a id="falcon185gallery" href="falcon185/a01.jpg" itemprop="contentUrl" data-size="3172x1735">
-          <img src="falcon185/a01_thumb.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-        <figcaption itemprop="caption description">Falcon 185</figcaption>
-      </figure>
-
-      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="falcon185/a02.jpg" itemprop="contentUrl" data-size="3199x2034">
-          <img src="falcon185/a02_thumb.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-        <figcaption itemprop="caption description">Falcon 185</figcaption>
-      </figure>
-
-      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="falcon185/a03.jpg" itemprop="contentUrl" data-size="2807x1899">
-          <img src="falcon185/a03_thumb.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-        <figcaption itemprop="caption description">Falcon 185</figcaption>
-      </figure>
-
-      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="falcon185/a04.jpg" itemprop="contentUrl" data-size="2363x2416">
-          <img src="falcon185/a04_thumb.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-        <figcaption itemprop="caption description">Falcon 185</figcaption>
-      </figure>
-
-      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="falcon185/a05.jpg" itemprop="contentUrl" data-size="3139x2345">
-          <img src="falcon185/a05_thumb.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-        <figcaption itemprop="caption description">Falcon 185</figcaption>
-      </figure>
-
-      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="falcon185/a06.jpg" itemprop="contentUrl" data-size="2971x2102">
-          <img src="falcon185/a06_thumb.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-        <figcaption itemprop="caption description">Falcon 185</figcaption>
-      </figure>
-
-      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="falcon185/a07.jpg" itemprop="contentUrl" data-size="3232x2264">
-          <img src="falcon185/a07_thumb.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-        <figcaption itemprop="caption description">Falcon 185</figcaption>
-      </figure>
-
-      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="falcon185/a08.jpg" itemprop="contentUrl" data-size="2794x2448">
-          <img src="falcon185/a08_thumb.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-        <figcaption itemprop="caption description">Falcon 185</figcaption>
-      </figure>
-
-      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="falcon185/b01.jpg" itemprop="contentUrl" data-size="3156x1918">
-          <img src="falcon185/b01_thumb.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-        <figcaption itemprop="caption description">Falcon 185</figcaption>
-      </figure>
-
-      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="falcon185/b02.jpg" itemprop="contentUrl" data-size="3151x1949">
-          <img src="falcon185/b02_thumb.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-        <figcaption itemprop="caption description">Falcon 185</figcaption>
-      </figure>
-
-      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="falcon185/b03.jpg" itemprop="contentUrl" data-size="3166x2034">
-          <img src="falcon185/b03_thumb.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-        <figcaption itemprop="caption description">Falcon 185</figcaption>
-      </figure>
-
-      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="falcon185/b04.jpg" itemprop="contentUrl" data-size="2445x2437">
-          <img src="falcon185/b04_thumb.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-        <figcaption itemprop="caption description">Falcon 185</figcaption>
-      </figure>
-
-      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="falcon185/b05.jpg" itemprop="contentUrl" data-size="3264x2448">
-          <img src="falcon185/b05_thumb.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-        <figcaption itemprop="caption description">Falcon 185</figcaption>
-      </figure>
-
-      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="falcon185/b06.jpg" itemprop="contentUrl" data-size="3192x2033">
-          <img src="falcon185/b06_thumb.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-        <figcaption itemprop="caption description">Falcon 185</figcaption>
-      </figure>
-
-      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="falcon185/b07.jpg" itemprop="contentUrl" data-size="3264x2247">
-          <img src="falcon185/b07_thumb.jpg" itemprop="thumbnail" alt="Image description">
-        </a>
-        <figcaption itemprop="caption description">Falcon 185</figcaption>
-      </figure>
-    </div>
-    </section>
-   -->
-  <!-- 
-    <section class="section" id="falcon185">
-      <div class="product">
-        <div class="product-image">
-          <a href="javascript:falcon185gallery.click()"><img src="falcon185/a01.jpg" alt="Falcon 185"></a>
-          <p>Falcon lands <span class="red">March 15th</span> at <a href="https://www.multirotorsuperstore.com">MultirotorSuperstore.com</a></p>
-          <a href="https://multirotorsuperstore.com" class="button cta product-buybutton">Buy now at $79 from MRSS</a>
-        </div>
-      </div>
-
-      <h2>Falcon 185</h2>
-
-      <div class="flexcolumns">
-        <div class="flexcolumn">
-          <h3>Photos</h3>
-          <div masonry photoswipe itemscope itemtype="http://schema.org/ImageGallery">
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a id="falcon185gallery" href="falcon185/a01.jpg" itemprop="contentUrl" data-size="3172x1735">
-                <img src="falcon185/a01_thumb.jpg" itemprop="thumbnail" alt="Image description">
-              </a>
-              <figcaption itemprop="caption description">Falcon 185</figcaption>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a href="falcon185/a02.jpg" itemprop="contentUrl" data-size="3199x2034">
-                <img src="falcon185/a02_thumb.jpg" itemprop="thumbnail" alt="Image description">
-              </a>
-              <figcaption itemprop="caption description">Falcon 185</figcaption>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a href="falcon185/a03.jpg" itemprop="contentUrl" data-size="2807x1899">
-                <img src="falcon185/a03_thumb.jpg" itemprop="thumbnail" alt="Image description">
-              </a>
-              <figcaption itemprop="caption description">Falcon 185</figcaption>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a href="falcon185/a04.jpg" itemprop="contentUrl" data-size="2363x2416">
-                <img src="falcon185/a04_thumb.jpg" itemprop="thumbnail" alt="Image description">
-              </a>
-              <figcaption itemprop="caption description">Falcon 185</figcaption>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a href="falcon185/a05.jpg" itemprop="contentUrl" data-size="3139x2345">
-                <img src="falcon185/a05_thumb.jpg" itemprop="thumbnail" alt="Image description">
-              </a>
-              <figcaption itemprop="caption description">Falcon 185</figcaption>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a href="falcon185/a06.jpg" itemprop="contentUrl" data-size="2971x2102">
-                <img src="falcon185/a06_thumb.jpg" itemprop="thumbnail" alt="Image description">
-              </a>
-              <figcaption itemprop="caption description">Falcon 185</figcaption>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a href="falcon185/a07.jpg" itemprop="contentUrl" data-size="3232x2264">
-                <img src="falcon185/a07_thumb.jpg" itemprop="thumbnail" alt="Image description">
-              </a>
-              <figcaption itemprop="caption description">Falcon 185</figcaption>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a href="falcon185/a08.jpg" itemprop="contentUrl" data-size="2794x2448">
-                <img src="falcon185/a08_thumb.jpg" itemprop="thumbnail" alt="Image description">
-              </a>
-              <figcaption itemprop="caption description">Falcon 185</figcaption>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a href="falcon185/b01.jpg" itemprop="contentUrl" data-size="3156x1918">
-                <img src="falcon185/b01_thumb.jpg" itemprop="thumbnail" alt="Image description">
-              </a>
-              <figcaption itemprop="caption description">Falcon 185</figcaption>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a href="falcon185/b02.jpg" itemprop="contentUrl" data-size="3151x1949">
-                <img src="falcon185/b02_thumb.jpg" itemprop="thumbnail" alt="Image description">
-              </a>
-              <figcaption itemprop="caption description">Falcon 185</figcaption>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a href="falcon185/b03.jpg" itemprop="contentUrl" data-size="3166x2034">
-                <img src="falcon185/b03_thumb.jpg" itemprop="thumbnail" alt="Image description">
-              </a>
-              <figcaption itemprop="caption description">Falcon 185</figcaption>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a href="falcon185/b04.jpg" itemprop="contentUrl" data-size="2445x2437">
-                <img src="falcon185/b04_thumb.jpg" itemprop="thumbnail" alt="Image description">
-              </a>
-              <figcaption itemprop="caption description">Falcon 185</figcaption>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a href="falcon185/b05.jpg" itemprop="contentUrl" data-size="3264x2448">
-                <img src="falcon185/b05_thumb.jpg" itemprop="thumbnail" alt="Image description">
-              </a>
-              <figcaption itemprop="caption description">Falcon 185</figcaption>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a href="falcon185/b06.jpg" itemprop="contentUrl" data-size="3192x2033">
-                <img src="falcon185/b06_thumb.jpg" itemprop="thumbnail" alt="Image description">
-              </a>
-              <figcaption itemprop="caption description">Falcon 185</figcaption>
-            </figure>
-
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a href="falcon185/b07.jpg" itemprop="contentUrl" data-size="3264x2247">
-                <img src="falcon185/b07_thumb.jpg" itemprop="thumbnail" alt="Image description">
-              </a>
-              <figcaption itemprop="caption description">Falcon 185</figcaption>
-            </figure>
-          </div>
-        </div>
-
-        <div class="flexcolumn">
-          <h3>Reference Build</h3>
-          <div class="configurator">
-            <table>
-              <thead>
-                <tr>
-                  <th></th>
-                  <th>Name</th>
-                  <th>Quantity</th>
-                  <th>Weight</th>
-                  <th>Price</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Frame</td>
-                  <td>Falcon 185</td>
-                  <td class="center">1</td>
-                  <td class="center">70g</td>
-                  <td>$79.00</td>
-                </tr>
-                <tr>
-                  <td>Motors</td>
-                  <td>Cobra 2204/2300kV</td>
-                  <td class="center">4</td>
-                  <td class="center">24g</td>
-                  <td>$20.99</td>
-                </tr>
-                <tr>
-                  <td>ESCs</td>
-                  <td>Littlebee 20A</td>
-                  <td class="center">4</td>
-                  <td class="center">4g</td>
-                  <td>$15.99</td>
-                </tr>
-                <tr>
-                  <td>Props</td>
-                  <td>HQProp 5040x3</td>
-                  <td class="center">2</td>
-                  <td class="center">3g</td>
-                  <td>$3.50</td>
-                </tr>
-                <tr>
-                  <td>FC</td>
-                  <td>Lumenier LUX</td>
-                  <td class="center">1</td>
-                  <td class="center">6g</td>
-                  <td>$39.99</td>
-                </tr>
-                <tr>
-                  <td>RX</td>
-                  <td>FrSky X4R-SB</td>
-                  <td class="center">1</td>
-                  <td class="center">12g</td>
-                  <td>$26.99</td>
-                </tr>
-                <tr>
-                  <td>VTX</td>
-                  <td>FX799T</td>
-                  <td class="center">1</td>
-                  <td class="center">7.5g</td>
-                  <td>$34.99</td>
-                </tr>
-                <tr>
-                  <td>Antenna</td>
-                  <td>VAS Airscrew Race Spec</td>
-                  <td class="center">1</td>
-                  <td class="center">6g</td>
-                  <td>$24.99</td>
-                </tr>
-                <tr>
-                  <td>FPV Cam</td>
-                  <td>HS1177</td>
-                  <td class="center">1</td>
-                  <td class="center">12g</td>
-                  <td>$44.99</td>
-                </tr>
-                <tr>
-                  <td>Battery</td>
-                  <td>Tattu 4S 1300mAh 45c</td>
-                  <td class="center">1</td>
-                  <td class="center">154g</td>
-                  <td>$24.99</td>
-                </tr>
-                <tr>
-                  <td class="empty right" colspan="2"><a href="https://multirotorsuperstore.com" class="button cta product-buybutton">Buy now from MRSS</a></td>
-                  <td class="right highlight">Total</td>
-                  <td class="center color">298.5g</td>
-                  <td class="color">$427.36</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-      </div>
-
-      <h3>Videos</h3>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/TXXYs5LsRJ8" frameborder="0" allowfullscreen></iframe>
-    </section>
-    -->
-    <!-- / falcon 185 -->
-
-    <!--
-    <footer>
-      <a class="now" href="mailto:lazdnet@gmail.com?subject=Falcon Pre-order">Can't wait?</a>
-    </footer>
-    -->
 
     <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="pswp__bg"></div>
