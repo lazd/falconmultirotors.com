@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="landing-background">
 <head>
   <title>Falcon Racing Drones</title>
   <meta charset="utf-8">
@@ -26,31 +26,37 @@
 
     setTimeout(function() {
       document.body.className += ' animate';
-    }, 500);
+    }, 1);
   </script>
 
   <style>
-    .hero {
+    .fade {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
       transition: background-color 2s;
       background-color: rgba(0, 0, 0, 1);
     }
 
-    .loaded.animate .hero {
+    .loaded.animate .fade {
       background-color: rgba(0, 0, 0, 0.10);
     }
   </style> 
 </head>
 <body>
-  <section class="hero">
-    <header>
-      <h1>Introducing Falcon.</h1>
-      <p>Minimalist X-quad done right.</p>
-    </header>
-
-    <footer>
+  <div class="fade">
+    <section class="hero">
+      <div class="hero-caption">
+        <h1>Introducing Falcon.</h1>
+        <h2>Minimalist X-quad done right.</h2>
+      </div>
+    </section>
+    <footer class="footer center">
       <h2>Falcon lands <span class="red">March 15th</span> at <a href="https://www.multirotorsuperstore.com">MultirotorSuperstore.com</a></h2>
       <h4>Meanwhile, check out photos of the <a href="http://rotorbuilds.com/build/364">130</a>, <a href="http://rotorbuilds.com/build/392">160</a>, and <a href="http://rotorbuilds.com/build/365">185</a> and video of the <a href="https://www.youtube.com/watch?v=TXXYs5LsRJ8">Falcon 185 crushing it in the warehouse</a></h4>
     </footer>
-  </section>
+  </div>
 </body>
 </html>

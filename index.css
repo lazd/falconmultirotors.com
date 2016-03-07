@@ -1,14 +1,29 @@
-html, body {
+html {
   height: 100%;
+  background-color: rgb(26, 8, 8);
+}
+
+html.landing-background {
+  background-image: url('cover.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+html.hero-background {
+  background-image: url('cover.jpg');
+  background-repeat: no-repeat;
+  background-position: center -100px;
+  background-size: contain;
 }
 
 body {
+  min-height: 100%;
   margin: 0;
-  background: rgb(26, 8, 8) url('cover.jpg')  no-repeat center center fixed;
-  background-size: contain;
   color: rgb(218, 218, 218);
   font-size: 18px;
   font-family: 'Play';
+  height: auto;
 }
 
 a {
@@ -23,7 +38,7 @@ a:hover {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 400;
   margin: 10px 0;
 }
@@ -44,11 +59,63 @@ h3 {
   border-bottom: 1px solid rgba(226, 219, 219, 0.5);
 }
 
-header {
-  background: rgba(0, 0, 0, 0.5);
+/* Header */
 
-  border-bottom: 1px solid rgba(200, 100, 100, 0.5);
+.header {
+  background: url('carbonfiber-fade.png');
+  border-bottom: 1px solid rgba(200, 50, 50, 0.5);
 }
+
+.header.center {
+  text-align: center;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.hero-caption {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+
+  transform: translate(-50%, -50%);
+
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  text-align: center;
+  margin: 0;
+}
+
+/*
+Content
+Faded content zone
+*/
+
+.content {
+  background-color: rgba(0, 0, 0, 0.60);
+  overflow: hidden; /* stop margin collapse */
+  border-top: 1px solid rgba(200, 50, 50, 0.5);
+}
+
+/* Footer */
+.footer {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  left: 0;
+  padding: 0 10px;
+}
+.footer.center {
+  text-align: center;
+}
+
+/* Button */
 
 .button {
   display: inline-block;
@@ -56,7 +123,7 @@ header {
   padding: 5px 10px;
   border-radius: 3px;
   border: none;
-  background-color: rgb(230, 33, 23);
+  background-color: rgba(216, 12, 0, 0.85);
   color: black;
   font-family: 'Play';
   font-weight: bold;
@@ -66,7 +133,7 @@ header {
 
 .button:hover {
   color: black;
-  background-color: rgba(255, 0, 0, 0.90);
+  background-color: rgb(255, 0, 0);
 }
 
 .button.cta {
@@ -87,28 +154,6 @@ header {
   font-size: 40px;
   color: rgb(230, 230, 230);
   font-weight: 400;
-}
-
-.hero {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-
-  background: rgba(0, 0, 0, 0.5);
-
-  overflow: auto;
-
-  text-align: center;
-}
-
-footer {
-  position: absolute;
-  bottom: 5px;
-  right: 0;
-  left: 0;
-  padding: 0 10px;
 }
 
 .red {
@@ -217,6 +262,8 @@ footer {
   float: left;
   margin: 0 5px 5px 0;
   width: 150px;
+  border-radius: 4px;
+  overflow: hidden;
 }
 [photoswipe] figure a {
   display: block;
@@ -236,6 +283,102 @@ footer {
 
 [masonry] { visibility: hidden; }
 [masonry].masonry { visibility: visible; }
+
+/*
+Section
+A picture + details section
+*/
+.section {
+  display: block;
+  margin: 30px 25px;
+}
+
+.section.rounded {
+  padding: 30px;
+  
+  background: rgba(0, 0, 0, 0.75);
+
+  border: 1px solid rgba(200, 50, 50, 0.5);
+  border-radius: 50px;
+
+  /* Allow floats */
+  overflow: hidden
+}
+
+.section.center {
+  text-align: center;
+}
+
+.circlephoto {
+  display: inline-block;
+  position: relative;
+  margin: 25px;
+}
+
+.section--columns {
+  text-align: center;
+}
+
+.section-column {
+  display: inline-block;
+  margin: 0 30px;
+  text-align: left;
+}
+
+.circlephoto:after {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  content: '';
+  background: rgba(29, 2, 2, 0.70);
+  border-radius: 100%;
+  border: 2px solid rgb(103, 24, 20);
+  box-shadow: 0px 0px 30px -5px rgba(255,0,0,0.5);
+  transition: all 0.5s;
+}
+
+.circlephoto-image {
+  display: block;
+  position: relative;
+  z-index: 2;
+  width: 300px;
+}
+
+.circlephoto-caption {
+  position: absolute;
+  z-index: 2;
+  bottom: 25px;
+  margin: 0;
+  color: white;
+  text-align: center;
+  transition: all 0.25s;
+  transform: translate(50%, 50%);
+  left: 0;
+  top: 0;
+}
+
+.circlephoto:focus:after,
+.circlephoto:hover:after {
+  width: 350px;
+  height: 350px;
+  background: rgba(130, 14, 14, 0.70);
+  border-width: 3px;
+  box-shadow: 0px 0px 50px -5px rgba(255,0,0,1);
+}
+
+.circlephoto:focus .circlephoto-caption,
+.circlephoto:hover .circlephoto-caption {
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.section-content {
+  overflow: hidden;
+  padding-left: 20px;
+}
 
 /* Product detail */
 .product {}
@@ -282,6 +425,7 @@ li {
 td, th {
   margin: 0;
   padding: 10px 15px;
+  text-align: left;
 }
 
 tbody tr:nth-child(even) td {
@@ -361,7 +505,7 @@ th.empty {
 }
 
 @media screen and (max-aspect-ratio: 4/3) {
-  header {
+  .header {
     text-align: center;
   }
 
@@ -403,4 +547,6 @@ th.empty {
   .ui-tabs-panel {
     border-left: none;
   }
+}
+
 }
