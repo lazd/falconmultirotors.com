@@ -24,6 +24,8 @@ a:hover {
 
 h1 {
   font-size: 40px;
+  font-weight: 400;
+  margin: 10px 0;
 }
 
 h2 {
@@ -83,19 +85,30 @@ header {
   display: inline-block;
   margin: 0;
   font-size: 40px;
-  color: rgb(187, 21, 27);
+  color: rgb(230, 230, 230);
   font-weight: 400;
 }
 
-section.hero {
-  width: 100%;
-  height: 100%;
+.hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  overflow: auto;
+
+  text-align: center;
 }
 
 footer {
   position: absolute;
   bottom: 5px;
-  right: 5px;
+  right: 0;
+  left: 0;
+  padding: 0 10px;
 }
 
 .red {
@@ -324,6 +337,27 @@ th.empty {
 .flexcolumn {
   width: 50%;
   display: table-cell;
+}
+
+/* Circles */
+.circles {
+  text-align: center;
+}
+
+.circle {
+  height: 400px;
+  width: 400px;
+  margin: 40px;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 20%;
+  background: black;
+  font-size: 31px;
+  color: white;
+}
+
+.circle img {
+  width: 400px;
 }
 
 @media screen and (max-aspect-ratio: 4/3) {
