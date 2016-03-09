@@ -55,18 +55,26 @@ h2 + h3 {
 h3 {
   padding-bottom: 4px;
   margin-bottom: 10px;
+  margin-top: 30px;
   border-bottom: 1px solid rgba(226, 219, 219, 0.5);
 }
 
 /* Header */
 
 .header {
-  background: url('carbonfiber-fade.png');
+  background: rgba(0, 0, 0, 0.35);
   border-bottom: 1px solid rgba(200, 50, 50, 0.5);
 }
 
 .header.center {
   text-align: center;
+}
+
+/* Footer */
+.footer {
+  text-align: right;
+  padding: 40px 30px 20px 30px;
+  background: rgba(0, 0, 0, 0.35);
 }
 
 /* Hero */
@@ -100,18 +108,6 @@ Faded content zone
 .content {
   background-color: rgba(0, 0, 0, 0.70);
   border-top: 1px solid rgba(200, 50, 50, 0.5);
-}
-
-/* Footer */
-.footer {
-  position: absolute;
-  bottom: 5px;
-  right: 0;
-  left: 0;
-  padding: 0 10px;
-}
-.footer.center {
-  text-align: center;
 }
 
 /* Button */
@@ -149,19 +145,20 @@ Faded content zone
   padding: 15px 25px;
 }
 
-/* Logo */
-.logo {
-  height: 60px;
-  margin: 10px;
-  vertical-align: -30px;
+.button-price {
+  font-size: 1.25em;
 }
 
-.logo-text {
-  display: inline-block;
-  margin: 0;
-  font-size: 40px;
-  color: rgb(230, 230, 230);
-  font-weight: 400;
+/* Logo */
+.logo {
+  height: 65px;
+  width: 65px;
+  margin: 10px;
+  border-radius: 100%;
+  background: rgb(0, 0, 0);
+  padding: 9px;
+  border: 2px solid rgba(255, 0, 0, 0.5);
+  margin-bottom: -46px;
 }
 
 /* Masonry gallery */
@@ -214,8 +211,16 @@ A picture + details section
   border-bottom: 1px solid rgba(200, 50, 50, 0.5);
 }
 
+.section:after {
+  /* Clear fix */
+  content: '';
+  display: table;
+  clear: both;
+}
+
 .section--text {
   padding: 30px;
+  font-size: 20px;
 }
 
 .section--center {
@@ -246,6 +251,14 @@ A picture + details section
 .section-content {
   overflow: hidden;
   padding-left: 20px;
+}
+
+.section--right {
+  text-align: right;
+}
+.section--right .section-photo {
+  float: right;
+  margin: 0 0 10px 10px;
 }
 
 /* Circle photo
@@ -410,5 +423,13 @@ th.empty {
     display: block;
     float: none;
     text-align: center
+  }
+
+  .section--right .section-photo {
+    float: none;
+  }
+
+  .section--right {
+    text-align: left
   }
 }
