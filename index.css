@@ -73,7 +73,7 @@ h3 {
 /* Footer */
 .footer {
   text-align: right;
-  padding: 40px 30px 20px 30px;
+  padding: 30px 30px 30px 30px;
   background: rgba(0, 0, 0, 0.35);
 }
 
@@ -234,7 +234,7 @@ A picture + details section
 .section-column {
   display: inline-block;
   vertical-align: top;
-  margin: 50px;
+  margin: 50px 36px;
   width: 350px;
   text-align: left;
 }
@@ -284,7 +284,7 @@ Awesome circle that animates when you hover */
   border-radius: 100%;
   border: 2px solid rgb(103, 24, 20);
   box-shadow: 0px 0px 30px -5px rgba(255,0,0,0.5);
-  transition: all 0.5s;
+  transition: all 0.25s;
 }
 
 .circlephoto-image {
@@ -323,8 +323,8 @@ Awesome circle that animates when you hover */
 
 .circlephoto:focus:after,
 .circlephoto:hover:after {
-  width: 350px;
-  height: 350px;
+  width: 325px;
+  height: 325px;
   background: rgba(130, 14, 14, 0.70);
   border-width: 3px;
   box-shadow: 0px 0px 50px -5px rgba(255,0,0,1);
@@ -408,14 +408,16 @@ th.empty {
 .slick figure {
   height: 100px;
   border-radius: 6px;
-  overflow: hidden;
   margin: 10px;
+}
+.slick figure a:focus {
+  outline: none;
 }
 .slick figure img {
   height: 100%;
 }
 .slick figcaption {
-  display: none;
+  visibility: hidden;
 }
 
 @media screen and (max-aspect-ratio: 4/3) {
