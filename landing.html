@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="landing-background">
+<head>
+  <title>Falcon Racing Drones</title>
+  <meta charset="utf-8">
+
+  <!-- Core -->
+  <link href='https://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="index.css"> 
+
+  <!-- Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-74430530-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <script>
+    window.addEventListener('load', function() {
+      document.body.className += ' loaded';
+    });
+
+    setTimeout(function() {
+      document.body.className += ' animate';
+    }, 1);
+  </script>
+
+  <style>
+    .fade {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transition: background-color 2s;
+      background-color: rgba(0, 0, 0, 1);
+    }
+
+    .loaded.animate .fade {
+      background-color: rgba(0, 0, 0, 0.10);
+    }
+    
+    .red {
+      color: red;
+    }
+  </style> 
+</head>
+<body>
+  <div class="fade">
+    <section class="hero">
+      <div class="hero-caption">
+        <h1>Introducing Falcon.</h1>
+        <h2>Minimalist X-quad done right.</h2>
+      </div>
+    </section>
+    <footer class="footer footer--hero">
+      <h2>Falcon lands <span class="red">March 22nd</span> at <a href="https://www.multirotorsuperstore.com">MultirotorSuperstore.com</a></h2>
+      <h4>Meanwhile, check out photos of the <a href="http://rotorbuilds.com/build/364">130</a>, <a href="http://rotorbuilds.com/build/392">160</a>, and <a href="http://rotorbuilds.com/build/365">185</a> and video of the <a href="https://www.youtube.com/watch?v=TXXYs5LsRJ8">Falcon 185 crushing it in the warehouse</a></h4>
+    </footer>
+  </div>
+</body>
+</html>

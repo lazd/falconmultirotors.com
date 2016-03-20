@@ -138,7 +138,6 @@ var initPhotoSwipeFromDOM = function(el) {
 
         // define options (if needed)
         options = {
-
             // define gallery index (for URL)
             galleryUID: galleryElement.getAttribute('data-pswp-uid'),
 
@@ -197,7 +196,7 @@ var initPhotoSwipeFromDOM = function(el) {
     // loop through all gallery elements and bind events
     var galleryElements = typeof el === 'string' ? document.querySelectorAll( el ) : [el];
 
-    for(var i = 0, l = galleryElements.length; i < l; i++) {
+    for(var i = 0; i < galleryElements.length; i++) {
         galleryElements[i].setAttribute('data-pswp-uid', i+1);
         galleryElements[i].onclick = onThumbnailsClick;
     }
