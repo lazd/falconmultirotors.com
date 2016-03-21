@@ -469,6 +469,57 @@ th.empty {
   font-size: 1px;
   visibility: hidden;
 }
+.slick-prev:focus:before, .slick-next:focus:before {
+  color: rgb(36, 96, 193);
+}
+
+.center {
+  text-align: center;
+}
+
+/** Accordion */
+.ui-accordion {
+  margin: 12px 0;
+}
+.ui-accordion-header {
+  position: relative;
+  margin: 0;
+  padding: 4px 8px 4px 12px;
+
+  border-width: 0;
+
+  background-color: rgb(50, 50, 50);
+
+  color: rgb(230, 230, 230);
+
+  cursor: pointer;
+}
+.ui-accordion-header:before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: rgb(100, 100, 100);
+}
+.ui-accordion-header.ui-state-focus {
+  outline: none;
+}
+.ui-accordion-header.ui-state-focus:before {
+  background: rgb(36, 96, 193);
+}
+.ui-accordion-header.ui-accordion-header-active:before {
+  background: rgba(216, 12, 0, 0.85);
+}
+.ui-accordion-header ~ .ui-accordion-header {
+  border-top-width: 1px;
+  margin-top: 12px;
+}
+.ui-accordion-content {
+  padding: 6px;
+  background-color: rgb(20, 20, 20);
+}
 
 @media screen and (max-aspect-ratio: 4/3) {
   .section-photo {
@@ -487,12 +538,6 @@ th.empty {
 
   .section--right {
     text-align: left
-  }
-}
-
-@media screen and (orientation: portrait) {
-  .falcon-components {
-    display: none;
   }
 }
 

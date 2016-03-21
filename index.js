@@ -232,6 +232,11 @@ $(function() {
     })
   });
 
+  $('[jqueryui="accordion"]').accordion({
+    collapsible: true,
+    active: false
+  });
+
   $('[slick]').slick({
     // centerMode: true,
     speed: 100,
