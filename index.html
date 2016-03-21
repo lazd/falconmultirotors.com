@@ -23,6 +23,23 @@
 
     ga('create', 'UA-74430530-1', 'auto');
     ga('send', 'pageview');
+
+    (function() {
+      window.addEventListener('load', function() {
+        var pastTheFold = false;
+        var elementBelowTheFold = document.getElementById('elementBelowTheFold');
+        function checkPastFold() {
+          if (pastTheFold) return;
+
+          if (document.body.scrollTop + window.innerHeight/2 > elementBelowTheFold.offsetTop) {
+            ga('send', 'event', 'Interaction', 'Scrolled past fold');
+            pastTheFold = true;
+          }
+        }
+
+        window.addEventListener('scroll', checkPastFold);
+      })
+    }());
   </script>
 
   <!-- jQuery -->
@@ -70,7 +87,7 @@
           <h2 class="circlephoto-caption">Falcon 185</h2>
         </a>
         
-        <div slick photoswipe itemscope itemtype="http://schema.org/ImageGallery">
+        <div slick photoswipe itemscope itemtype="http://schema.org/ImageGallery" onclick="ga('send', 'event', 'Falcon 185', 'Photos viewed');">
           <!-- Bare photos -->
           <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
             <a href="images/falcon185/185-low-profile-front-view.jpg" itemprop="contentUrl" data-size="1632x1050">
@@ -237,56 +254,58 @@
             </tr>
           </tbody>
         </table>
-        <a href="https://www.multirotorsuperstore.com/falcon-185-frame.html" class="button button--cta button--centered" target="_blank">Buy Falcon 185 frame<br><span class="button-price">$79</span></a>
+        <a href="https://www.multirotorsuperstore.com/falcon-185-frame.html" class="button button--cta button--centered" target="_blank" onclick="ga('send', 'event', 'Falcon 185', 'Buy clicked');">Buy Falcon 185 frame<br><span class="button-price">$79</span></a>
 
-        <h3>Recommended Components</h3>
-        <table>
-          <thead>
-            <tr>
-              <th></th>
-              <th>Name</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Frame</td>
-              <td><a href="https://www.multirotorsuperstore.com/falcon-185-frame.html" target="_blank">Falcon 185</a></td>
-            </tr>
-            <tr>
-              <td>Props</td>
-              <td>DAL T5045</td>
-            </tr>
-            <tr>
-              <td>Motors</td>
-              <td>Cobra 2204 2300kV</td>
-            </tr>
-            <tr>
-              <td>ESCs</td>
-              <td>Littlebee 20A</td>
-            </tr>
-            <tr>
-              <td>FC</td>
-              <td>Lumenier LUX</td>
-            </tr>
-            <tr>
-              <td>RX</td>
-              <td>FrSky XSR</td>
-            </tr>
-            <tr>
-              <td>VTX</td>
-              <td>Hawkeye 200mW</td>
-            </tr>
-            <tr>
-              <td>Antenna</td>
-              <td>VAS Airscrew Race Spec</td>
-            </tr>
-            <tr>
-              <td>FPV Cam</td>
-              <td>HS1177 or HS1177M</td>
-            </tr>
-          </tbody>
-        </table>
-        <!-- <a href="https://multirotorsuperstore.com" class="button button--cta button--centered">Buy Falcon 185 ARTF <span class="button-price">$375</span></a> -->
+        <div class="falcon-components">
+          <h3>Recommended Components</h3>
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Frame</td>
+                <td><a href="https://www.multirotorsuperstore.com/falcon-185-frame.html" target="_blank">Falcon 185</a></td>
+              </tr>
+              <tr>
+                <td>Props</td>
+                <td>DAL T5045</td>
+              </tr>
+              <tr>
+                <td>Motors</td>
+                <td>Cobra 2204 2300kV</td>
+              </tr>
+              <tr>
+                <td>ESCs</td>
+                <td>Littlebee 20A</td>
+              </tr>
+              <tr>
+                <td>FC</td>
+                <td>Lumenier LUX</td>
+              </tr>
+              <tr>
+                <td>RX</td>
+                <td>FrSky XSR</td>
+              </tr>
+              <tr>
+                <td>VTX</td>
+                <td>Hawkeye 200mW</td>
+              </tr>
+              <tr>
+                <td>Antenna</td>
+                <td>VAS Airscrew Race Spec</td>
+              </tr>
+              <tr>
+                <td>FPV Cam</td>
+                <td>HS1177 or HS1177M</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- <a href="https://multirotorsuperstore.com" class="button button--cta button--centered">Buy Falcon 185 ARTF <span class="button-price">$375</span></a> -->
+        </div>
       </div>
 
       <div class="section-column">
@@ -295,7 +314,7 @@
           <h2 class="circlephoto-caption">Falcon 160</h2>
         </a>
 
-        <div slick photoswipe itemscope itemtype="http://schema.org/ImageGallery">
+        <div slick photoswipe itemscope itemtype="http://schema.org/ImageGallery" onclick="ga('send', 'event', 'Falcon 160', 'Photos viewed');">
           <!-- Bare photos -->
           <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
             <a href="images/falcon160/160-tall-tower-front-view.jpg" itemprop="contentUrl" data-size="1595x1051">
@@ -428,60 +447,62 @@
             </tr>
             <tr>
               <td>Speciality</td>
-              <td>Small &amp; tight courses, freestyle</td>
+              <td>Medium &amp; tight courses, freestyle</td>
             </tr>
           </tbody>
         </table>
-        <a href="https://www.multirotorsuperstore.com/falcon-160-frame.html" class="button button--cta button--centered" target="_blank">Buy Falcon 160 frame<br><span class="button-price">$69</span></a>
+        <a href="https://www.multirotorsuperstore.com/falcon-160-frame.html" class="button button--cta button--centered" target="_blank" onclick="ga('send', 'event', 'Falcon 160', 'Buy clicked');">Buy Falcon 160 frame<br><span class="button-price">$69</span></a>
 
-        <h3>Recommended Components</h3>
-        <table>
-          <thead>
-            <tr>
-              <th></th>
-              <th>Name</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Frame</td>
-              <td><a href="https://www.multirotorsuperstore.com/falcon-160-frame.html">Falcon 160</a></td>
-            </tr>
-            <tr>
-              <td>Props</td>
-              <td>DAL T4045BN</td>
-            </tr>
-            <tr>
-              <td>Motors</td>
-              <td>Cobra 1806 2800kv</td>
-            </tr>
-            <tr>
-              <td>ESCs</td>
-              <td>Littlebee 20A</td>
-            </tr>
-            <tr>
-              <td>FC</td>
-              <td>Lumenier LUX</td>
-            </tr>
-            <tr>
-              <td>RX</td>
-              <td>FrSky XSR</td>
-            </tr>
-            <tr>
-              <td>VTX</td>
-              <td>FX799T</td>
-            </tr>
-            <tr>
-              <td>Antenna</td>
-              <td>VAS Airscrew Race Spec</td>
-            </tr>
-            <tr>
-              <td>FPV Cam</td>
-              <td>HS1177 or HS1177M</td>
-            </tr>
-          </tbody>
-        </table>
-        <!-- <a href="https://multirotorsuperstore.com" class="button button--cta button--centered">Buy Falcon 160 ARTF <span class="button-price">$350</span></a> -->
+        <div class="falcon-components">
+          <h3>Recommended Components</h3>
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Frame</td>
+                <td><a href="https://www.multirotorsuperstore.com/falcon-160-frame.html">Falcon 160</a></td>
+              </tr>
+              <tr>
+                <td>Props</td>
+                <td>DAL T4045BN</td>
+              </tr>
+              <tr>
+                <td>Motors</td>
+                <td>Cobra 1806 2800kv</td>
+              </tr>
+              <tr>
+                <td>ESCs</td>
+                <td>Littlebee 20A</td>
+              </tr>
+              <tr>
+                <td>FC</td>
+                <td>Lumenier LUX</td>
+              </tr>
+              <tr>
+                <td>RX</td>
+                <td>FrSky XSR</td>
+              </tr>
+              <tr>
+                <td>VTX</td>
+                <td>FX799T</td>
+              </tr>
+              <tr>
+                <td>Antenna</td>
+                <td>VAS Airscrew Race Spec</td>
+              </tr>
+              <tr>
+                <td>FPV Cam</td>
+                <td>HS1177 or HS1177M</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- <a href="https://multirotorsuperstore.com" class="button button--cta button--centered">Buy Falcon 160 ARTF <span class="button-price">$350</span></a> -->
+        </div>
       </div>
 
       <div class="section-column">
@@ -490,7 +511,7 @@
           <h2 class="circlephoto-caption">Falcon 130</h2>
         </a>
 
-        <div slick photoswipe itemscope itemtype="http://schema.org/ImageGallery">
+        <div slick photoswipe itemscope itemtype="http://schema.org/ImageGallery" onclick="ga('send', 'event', 'Falcon 130', 'Photos viewed');">
           <!-- Bare photos -->
           <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
             <a href="images/falcon130/130-large-top-plate-front-view.jpg" itemprop="contentUrl" data-size="1632x1052">
@@ -586,64 +607,67 @@
             </tr>
             <tr>
               <td>Speciality</td>
-              <td>Insanely tight courses, outlaw class, proximity</td>
+              <td>Small &amp tight courses, indoor, proximity</td>
             </tr>
           </tbody>
         </table>
-        <a href="https://www.multirotorsuperstore.com/falcon-130-frame.html" class="button button--cta button--centered" target="_blank">Buy Falcon 130 frame<br><span class="button-price">$29</span></a>
+        <a href="https://www.multirotorsuperstore.com/falcon-130-frame.html" class="button button--cta button--centered" target="_blank" onclick="ga('send', 'event', 'Falcon 130', 'Buy clicked');">Buy Falcon 130 frame<br><span class="button-price">$29</span></a>
 
-        <h3>Recommended Components</h3>
-        <table>
-          <thead>
-            <tr>
-              <th></th>
-              <th>Name</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Frame</td>
-              <td><a href="https://www.multirotorsuperstore.com/falcon-130-frame.html" target="_blank">Falcon 130</a></td>
-            </tr>
-            <tr>
-              <td>Props</td>
-              <td>HQProp 3030x3</td>
-            </tr>
-            <tr>
-              <td>Motors</td>
-              <td>DYS BX1306 3100kv</td>
-            </tr>
-            <tr>
-              <td>ESCs</td>
-              <td>Littlebee 20A</td>
-            </tr>
-            <tr>
-              <td>FC</td>
-              <td>Lumenier LUX</td>
-            </tr>
-            <tr>
-              <td>RX</td>
-              <td>FrSky XSR</td>
-            </tr>
-            <tr>
-              <td>VTX</td>
-              <td>Hawkeye 200mW</td>
-            </tr>
-            <tr>
-              <td>Antenna</td>
-              <td>5.8GHz Cloverleaf</td>
-            </tr>
-            <tr>
-              <td>FPV Cam</td>
-              <td>Micro 600TVL</td>
-            </tr>
-          </tbody>
-        </table>
-        <!-- <a href="https://multirotorsuperstore.com" class="button button--cta button--centered">Buy Falcon 130 ARTF <span class="button-price">$200</span></a> -->
+        <div class="falcon-components">
+            <h3>Recommended Components</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Name</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Frame</td>
+                  <td><a href="https://www.multirotorsuperstore.com/falcon-130-frame.html" target="_blank">Falcon 130</a></td>
+                </tr>
+                <tr>
+                  <td>Props</td>
+                  <td>HQProp 3030x3</td>
+                </tr>
+                <tr>
+                  <td>Motors</td>
+                  <td>DYS BX1306 3100kv</td>
+                </tr>
+                <tr>
+                  <td>ESCs</td>
+                  <td>Littlebee 20A</td>
+                </tr>
+                <tr>
+                  <td>FC</td>
+                  <td>Lumenier LUX</td>
+                </tr>
+                <tr>
+                  <td>RX</td>
+                  <td>FrSky XSR</td>
+                </tr>
+                <tr>
+                  <td>VTX</td>
+                  <td>Hawkeye 200mW</td>
+                </tr>
+                <tr>
+                  <td>Antenna</td>
+                  <td>5.8GHz Cloverleaf</td>
+                </tr>
+                <tr>
+                  <td>FPV Cam</td>
+                  <td>Micro 600TVL</td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- <a href="https://multirotorsuperstore.com" class="button button--cta button--centered">Buy Falcon 130 ARTF <span class="button-price">$200</span></a> -->
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section section--text">
+    <section class="section section--text" id="elementBelowTheFold">
       <div class="section-photo section-photo--round">
         <img src="images/prototype.png" alt="Falcon 185 3D model">
       </div>
@@ -662,7 +686,7 @@
       <div class="section-content">
         <h2>Designed with maintenance in mind.</h2>
         <p>When something goes wrong in the field, Falcon doesn't require a teardown to fix it. Removing 4 screws gives access to your flight controller, VTX, and camera.</p>
-        <p>We chose the hardware for Falcon very carefully. Where other frames use a locknut as a spacer, Falcon uses a 4mm threadless aluminum spacer that makes it easy to quickly take the build apart and access the top of the PDB and the bottom of the flight controller.</p>
+        <p>We chose the hardware for Falcon very carefully. Where other frames use a locknut as a spacer, Falcon uses a 4mm threadless aluminum spacer that makes it easy to quickly take the build apart and access the bottom of the PDB.</p>
         <p>Changing out a broken battery strap is as simple as backing off the 18mm screws from the main stack (without removing them), then sliding the strap through Falcon's battery strap slots.</p>
       </div>
     </section>
@@ -672,17 +696,57 @@
         <img src="images/falcon185/185-low-profile-quarter-view.jpg" alt="Falcon 185 low-profile build">
       </div>
       <div class="section-content">
-        <h2>3 ways to build it.</h2>
-        <p>The Falcon 160 and 185 can be built 3 different ways, each designed to support a different camera and features.</p>
+        <h2>Plenty of hardware.</h2>
+        <p>The Falcon 160 and 185 come with hardware that lets you build them 3 different ways, each designed to support a different camera and features.</p>
         <ul>
-          <li>17mm camera build - designed around the HS1177M, this build has a fixed camera angle that matches the HD camera angle.</li>
-          <li>25mm camera build - designed around the HS1177, this build has a variable camera angle and an optional HD camera mount.</li>
-          <li>Micro build - designed tiny CMOS cameras, this build has a fixed camera angle and an no option for mounting a HD camera.</li>
+          <li>
+          </li>
         </ul>
       </div>
     </section>
 
     <section class="section section--text section--right">
+      <div class="section-photo section-photo--round">
+        <img src="images/falcon185/185-low-profile-quarter-view.jpg" alt="Falcon 185 low-profile build">
+      </div>
+      <div class="section-content">
+          <h2>Low-profile 17mm camera build</h2>
+          <h3>Falcon 185, 160</h3>
+          <p>Designed around the HS1177M 17mm camera, this build has a fixed camera angle that matches the HD camera angle and the lowest possible height.</p>
+          <p>This build is as short as Falcon can get and still mount a HD camera at an angle.</p>
+          <p>The camera angle can be set from 0° to 48° using the included spacers.</p>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--text">
+      <div class="section-photo section-photo--round">
+        <img src="images/falcon160/160-tall-tower-quarter-view.jpg" alt="Falcon 185 low-profile build">
+      </div>
+      <div class="section-content">
+          <h2>Tall-tower 25mm camera build</h2>
+          <h3>Falcon 185, 160</h3>
+          <p>Designed around the HS1177 25mm camera, this build has a variable camera angle and an optional HD camera mount.</p>
+          <p>This build makes it easy to adjust for FPV camera angle for different courses.</p>
+          <p>The camera angle can be set from 0° to 48° using the included spacers.</p>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--text section--right">
+      <div class="section-photo section-photo--round section--right">
+        <img src="images/falcon130/130-large-top-plate-quarter-view.jpg" alt="Falcon 130 micro build with large top plate">
+      </div>
+      <div class="section-content">
+          <h2>Micro CMOS camera build</h2>
+          <h3>Falcon 185, 160, 130</h3>
+          <p>Designed around tiny CMOS cameras, this build has a fixed camera angle and an no option for mounting a HD camera.
+          <p>This build can be done with top plate and a full-sized VTX, or with the HD camera plate and a small VTX module (such as the <a href="http://us.banggood.com/Wholesale-Warehouse-FPV-5_8G-200mW-32CH-Wireless-Audio-Video-AV-Transmitter-Module-FX758-2-wp-Usa-980317.html?p=3F201911077692015010" target="_blank">FX758-2</a>).</p>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--text">
       <div class="section-photo section-photo--round">
         <img src="images/falconcut.jpg" alt="An Armattan-cut Falcon 185s">
       </div>
@@ -693,7 +757,7 @@
       </div>
     </section>
 
-    <section class="section section--text">
+    <section class="section section--text section--right">
       <div class="section-photo section-photo--round">
         <img src="images/flynocloverleaf.jpg" alt="Flyno Cloverleaf PDB">
       </div>
@@ -701,12 +765,16 @@
         <h2>A PDB with a purpose.</h2>
         <p>Falcon needed a PDB that was designed specifically for X quads. We needed a no compromise, light weight, high amperage PDB with 5V pads in the right location for popular FCs and ESC pads that don't require you to criss-cross wires or flip your ESC upside down.</p>
 
-        <p>Nothing like that existed, so we worked with Flynoceros to design the reversible Cloverleaf Pro PDB -- one side is perfect for KISS and Rotorgeeks ESCs, and the other perfect for everything else. With 4oz copper, support for dual Pololu voltage regulators, zip tie slots for your XT60 pigtail, and pads in all the right places, there's nothing else like it, and it ships wiht Falcon 160 and 185.</p>
+        <p>Nothing like that existed, so we worked with Flynoceros to design the reversible Cloverleaf Pro PDB -- one side is perfect for KISS and Rotorgeeks ESCs, and the other perfect for everything else. With 4oz copper, support for dual Pololu voltage regulators, zip tie slots for your XT60 pigtail, and pads in all the right places, there's nothing else like it, and it ships with Falcon 160 and 185.</p>
       </div>
     </section>
 
+    <section class="section section--text">
+        <a href="https://www.multirotorsuperstore.com/frames/frames-by-mfg/falcon-multirotors.html" class="button button--cta button--cta-centered" target="_blank" onclick="ga('send', 'event', 'Falcon Frames', 'Buy clicked');">Buy Falcon, starting at $29</a>
+    </section>
+
     <footer class="footer">
-      Copyright <script>document.write((new Date()).getFullYear())</script> Falcon Multirotors | <a href="mailto:lazdnet@gmail.com?subject=Falcon">Contact us</a>
+      &copy; <script>document.write((new Date()).getFullYear())</script> Falcon Multirotors | <a href="mailto:lazdnet@gmail.com?subject=Falcon">Contact us</a>
     </footer>
 
     <!-- Photoswipe -->

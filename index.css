@@ -156,6 +156,14 @@ Faded content zone
   padding: 15px 25px;
 }
 
+.button--cta-centered {
+  display: block;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
 .button-price {
   font-size: 1.25em;
 }
@@ -219,6 +227,8 @@ A picture + details section
 .section {
   display: block;
   padding: 15px 0;
+  /*max-width: 1280px;*/
+  margin: auto;
   border-bottom: 1px solid rgba(200, 50, 50, 0.5);
 }
 
@@ -232,6 +242,12 @@ A picture + details section
 .section--text {
   padding: 30px;
   font-size: 20px;
+}
+
+.section--text h3 {
+  border-bottom: 0;
+  margin-top: -25px;
+  opacity: 0.7;
 }
 
 .section--center {
@@ -471,5 +487,25 @@ th.empty {
 
   .section--right {
     text-align: left
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .falcon-components {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .section-column {
+    margin: 50px 40px;
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .section-column {
+    margin: 50px 80px;
+    width: 450px;
   }
 }
