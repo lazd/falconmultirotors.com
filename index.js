@@ -244,6 +244,16 @@ $(function() {
     variableWidth: true,
   }).addClass('slick');
 
+  $(document.body).on('click', '[trackclick]', function() {
+    var trackClick = this.getAttribute('trackclick')
+      .replace('$hostname', this.hostname)
+      .replace('$innerText', this.innerText)
+    var parts = trackClick.split(',');
+
+    // console.log('send', 'event', parts[0], parts[1], parts[2], parts[3]);
+    ga('send', 'event', parts[0], parts[1], parts[2], parts[3]);
+  });
+
   $(window).on('hashchange', function(event) {
     if (window.location.hash === '') {
       // First tab
