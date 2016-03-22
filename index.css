@@ -543,14 +543,14 @@ th.empty {
 
 @media screen and (min-width: 1600px) {
   .section-column {
-    margin: 50px 40px;
-    width: 450px;
+    margin: 50px 35px;
+    width: 460px;
   }
 }
 
 @media screen and (min-width: 1900px) {
   .section-column {
-    margin: 50px 80px;
-    width: 450px;
+    margin: 50px 75px;
+    width: 470px;
   }
 }
