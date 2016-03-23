@@ -158,7 +158,7 @@ Faded content zone
 }
 
 .button--cta {
-  font-size: 1.5rem;
+  font-size: 1.375rem;
   padding: 1rem 1.5rem;
 }
 
@@ -312,7 +312,7 @@ Awesome circle that animates when you hover */
 .circlephoto {
   display: block;
   position: relative;
-  margin: 0 auto;
+  margin: 0 auto 1rem auto;
 }
 
 .circlephoto:after {
