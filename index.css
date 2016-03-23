@@ -59,6 +59,10 @@ h3 {
   border-bottom: 1px solid rgba(226, 219, 219, 0.5);
 }
 
+h4 {
+  margin: 0;
+}
+
 /* Header */
 
 .header {
@@ -91,7 +95,7 @@ h3 {
 /* Hero */
 .hero {
   position: relative;
-  height: 300px;
+  height: 234px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -244,7 +248,7 @@ A picture + details section
   font-size: 20px;
 }
 
-.section--text h3 {
+.section--text h2 ~ h3 {
   border-bottom: 0;
   margin-top: -25px;
   opacity: 0.7;
@@ -261,18 +265,18 @@ A picture + details section
 .section-column {
   display: inline-block;
   vertical-align: top;
-  margin: 50px 36px;
-  width: 350px;
   text-align: left;
 }
 
-.section-photo {
+.section-aside {
+  display: block;
   float: left;
-  margin: 0 10px 10px 0;
+  margin: 0 20px 10px 0;
 }
 
+.section-aside .slick,
 .section-photo img {
-  width: 300px;
+  width: 300px
 }
 
 .section-photo--round {
@@ -282,6 +286,8 @@ A picture + details section
   overflow: hidden;
   width: 300px;
   height: 300px;
+  display: block;
+  margin: auto;
 }
 
 .section-photo--round img {
@@ -296,17 +302,8 @@ A picture + details section
   padding-left: 20px;
 }
 
-.section--right {
-  text-align: right;
-}
-.section--right .section-content {
-  text-align: right;
-  padding-left: 0;
-  padding-right: 20px;
-}
-.section--right .section-photo {
-  float: right;
-  margin: 0 0 10px 10px;
+.section--alternate {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Circle photo
@@ -315,7 +312,6 @@ Awesome circle that animates when you hover */
   display: block;
   position: relative;
   margin: 0 auto;
-  width: 300px;
 }
 
 .circlephoto:after {
@@ -325,8 +321,6 @@ Awesome circle that animates when you hover */
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
-  width: 300px;
-  height: 300px;
   content: '';
   background: rgba(29, 2, 2, 0.70);
   border-radius: 100%;
@@ -339,8 +333,6 @@ Awesome circle that animates when you hover */
   display: block;
   position: relative;
   z-index: 2;
-  width: 300px;
-  height: 300px;
 }
 
 .circlephoto-button {
@@ -372,8 +364,6 @@ Awesome circle that animates when you hover */
 
 .circlephoto:focus:after,
 .circlephoto:hover:after {
-  width: 325px;
-  height: 325px;
   background: rgba(130, 14, 14, 0.70);
   border-width: 3px;
   box-shadow: 0px 0px 50px -5px rgba(255,0,0,1);
@@ -452,18 +442,26 @@ th.empty {
 
 /* Slick */
 .slick {
-  margin: 20px 0;
+  margin: 20px 10px;
 }
 .slick figure {
   height: 100px;
-  border-radius: 6px;
-  margin: 10px;
+  border-radius: 100%;
+  margin: 10px 11px;
+  overflow: hidden;
+  width: 100px;
+  position: relative;
+  transform: translate3d(0,0,0);
 }
 .slick figure a:focus {
   outline: none;
 }
 .slick figure img {
   height: 100%;
+  position: absolute;
+  left:  50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
 }
 .slick figcaption {
   font-size: 1px;
@@ -471,6 +469,10 @@ th.empty {
 }
 .slick-prev:focus:before, .slick-next:focus:before {
   color: rgb(36, 96, 193);
+}
+.slick-prev:before, .slick-next:before {
+  color: rgb(152, 3, 3);
+  line-height: 26px;
 }
 
 .center {
@@ -480,6 +482,7 @@ th.empty {
 /** Accordion */
 .ui-accordion {
   margin: 12px 0;
+  text-align: left;
 }
 .ui-accordion-header {
   position: relative;
@@ -506,6 +509,9 @@ th.empty {
 .ui-accordion-header.ui-state-focus {
   outline: none;
 }
+.ui-accordion-header.ui-state-hover {
+  background-color: rgb(60, 60, 60);
+}
 .ui-accordion-header.ui-state-focus:before {
   background: rgb(36, 96, 193);
 }
@@ -521,36 +527,202 @@ th.empty {
   background-color: rgb(20, 20, 20);
 }
 
+/** Text styles */
+.highlight {
+  color: red;
+}
+
+/** Stack */
+.stack {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  list-style: none;
+  text-align: center;
+  border-radius: 3px;
+  background: rgb(31, 31, 31);
+}
+.stack li {
+  position: relative;
+  display: inline-block;
+  font-size: 12px;
+  padding: 0 10px;
+  margin: 0;
+  text-align: center;
+}
+.stack li:not(:last-child):after {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  margin-top: -10px;
+  content: '▶';
+}
+.stack img {
+  display: inline-block;
+  margin: 5px 10px;
+  height: 50px;
+  width: attr(width px, '50px');
+}
+.stack-label {
+  display: block;
+}
+
 @media screen and (max-aspect-ratio: 4/3) {
-  .section-photo {
+  .section-aside {
     display: block;
     float: none;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
+}
 
-  .section--right .section-photo {
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
+.section-column {
+  margin: 50px 30px;
+  width: 364px;
+}
+
+.circlephoto,
+.circlephoto:after,
+.circlephoto-image {
+  width: 325px;
+  height: 325px;
+}
+.circlephoto:focus:after,
+.circlephoto:hover:after {
+  width: 350px;
+  height: 350px;
+}
+
+.section-aside .slick {
+  width: 344px;
+  margin: auto;
+}
+
+/* Nexus 6P */
+@media screen and (min-width: 520px) {
+  .section-column {
+    margin: 50px 10px;
+    width: 488px;
   }
 
-  .section--right {
-    text-align: left
+  .circlephoto,
+  .circlephoto:after,
+  .circlephoto-image {
+    width: 325px;
+    height: 325px;
+  }
+  .circlephoto:focus:after,
+  .circlephoto:hover:after {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .section-column {
+    margin: 50px 30px;
+    width: 245px;
+  }
+
+  .circlephoto,
+  .circlephoto:after,
+  .circlephoto-image {
+    width: 250px;
+    height: 250px;
+  }
+  .circlephoto:focus:after,
+  .circlephoto:hover:after {
+    width: 275px;
+    height: 275px;
+  }
+
+  .section--small {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+  .section--small .section-photo--round {
+    width: 220px;
+    height: 220px;
+  }
+  .section--small .section-aside .slick,
+  .section--small .section-photo img {
+    width: 223px;
+  }
+
+  .section--small .section-aside {
+    float: right;
+  }
+
+  .section--small .section-content {
+    padding-right: 40px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section-column {
+    margin: 50px 25px;
+    width: 364px;
+  }
+
+  .circlephoto,
+  .circlephoto:after,
+  .circlephoto-image {
+    width: 300px;
+    height: 300px;
+  }
+  .circlephoto:focus:after,
+  .circlephoto:hover:after {
+    width: 325px;
+    height: 325px;
   }
 }
 
 @media screen and (min-width: 1600px) {
   .section-column {
-    margin: 50px 35px;
-    width: 460px;
+    margin: 50px 18px;
+    width: 488px;
+  }
+
+  .circlephoto,
+  .circlephoto:after,
+  .circlephoto-image {
+    width: 325px;
+    height: 325px;
+  }
+  .circlephoto:focus:after,
+  .circlephoto:hover:after {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .section-column {
+    margin: 50px 30px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .section-column {
+    margin: 50px 30px;
+  }
+
+  .circlephoto,
+  .circlephoto:after,
+  .circlephoto-image {
+    width: 350px;
+    height: 350px;
+  }
+  .circlephoto:focus:after,
+  .circlephoto:hover:after {
+    width: 375px;
+    height: 375px;
   }
 }
 
 @media screen and (min-width: 1900px) {
   .section-column {
-    margin: 50px 75px;
-    width: 470px;
+    margin: 50px 50px;
   }
 }

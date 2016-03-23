@@ -237,12 +237,28 @@ $(function() {
     active: false
   });
 
-  $('[slick]').slick({
+  var slickDefaults = {
     // centerMode: true,
     speed: 100,
     infinite: true,
-    variableWidth: true,
-  }).addClass('slick');
+    variableWidth: true
+  };
+  $('[slick]').each(function(index, el) {
+    var options = el.getAttribute('jqueryuioptions');
+    try {
+      options = JSON.parse(options);
+      for (var prop in slickDefaults) {
+        if (typeof options[prop] === 'undefined') {
+          options[prop] = slickDefaults[prop];
+        }
+      }
+    }
+    catch(err) {
+      options = slickDefaults;
+    }
+    options = options || slickDefaults
+    $(el).slick(options).addClass('slick');
+  });
 
   $(document.body).on('click', '[trackclick]', function() {
     var trackClick = this.getAttribute('trackclick')

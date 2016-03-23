@@ -250,7 +250,7 @@
             </tr>
             <tr>
               <td>Speciality</td>
-              <td>Large &amp; fast courses, HD recording</td>
+              <td>Large &amp; fast courses, 250 class racing, HD recording</td>
             </tr>
           </tbody>
         </table>
@@ -749,22 +749,213 @@
       </div>
     </section>
 
-    <section class="section section--text" id="elementBelowTheFold">
-      <div class="section-photo section-photo--round">
+    <section class="section section--text section--alternate" id="elementBelowTheFold">
+      <aside class="section-aside section-photo section-photo--round">
         <img src="images/prototype.png" alt="Falcon 185 3D model">
-      </div>
+      </aside>
       <div class="section-content">
         <h2>No compromise design.</h2>
         <p>The idea started simple. We wanted to design an X-quad that’s lighter, shorter, easier to build, and more durable than anything on the market.</p>
-        <p>But we wanted a built-in HD camera mount, a PDB that works with Littlebees, support for different cameras and VTXs, durability and motor protection, an easily servicable build.</p>
-        <p>We wanted all of this in the lightest possible package, and it had to look good.</p>
+        <p>But we wanted a built-in HD camera mount that worked with Runcam, GoPro Session, and even full-sized GoPros. We wanted a x-quad specific PDB that works with Littlebees OR KISS, support for different cameras and VTXs, multiple options for antenna mounting, places to put zip ties and velcro straps, and an easily servicable build.</p>
+        <h2>How did we do it? Simple, include hardware for <span class="highlight">3 different build styles.</span></h2>
       </div>
     </section>
 
-    <section class="section section--text section--right">
-      <div class="section-photo section-photo--round">
-        <img src="images/screwdriver.jpg" alt="Screwdriver and hardware">
+    <section class="section section--text section--small">
+      <aside class="section-aside">
+        <a href="javascript: lowProfileGallery.click();" class="section-photo section-photo--round">
+          <img src="images/falcon185/185-low-profile-quarter-view.jpg" alt="Falcon 185 low-profile build">
+        </a>
+
+        <div slick photoswipe itemscope itemtype="http://schema.org/ImageGallery" trackclick="Low-profile build,Photos viewed">
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="images/falcon160/160-low-profile-quarter-view.jpg" itemprop="contentUrl" data-size="1532x1067">
+              <img id="lowProfileGallery" src="images/falcon160/160-low-profile-quarter-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 160 - low-profile build</figcaption>
+          </figure>
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="images/falcon160/160-low-profile-front-view.jpg" itemprop="contentUrl" data-size="1526x953">
+              <img src="images/falcon160/160-low-profile-front-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 160 - low-profile build</figcaption>
+          </figure>
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="images/falcon160/160-low-profile-top-view.jpg" itemprop="contentUrl" data-size="1224x1224">
+              <img src="images/falcon160/160-low-profile-top-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 160 - low-profile build</figcaption>
+          </figure>
+        </div>
+      </aside>
+
+      <div class="section-content">
+        <h2>Low-profile 17mm camera build</h2>
+        <h3>Falcon 185, 160</h3>
+        <p>Designed around the <a trackclick="HS1177M,Product clicked,$hostname" href="https://www.multirotorsuperstore.com/hs1177m-sony-super-had-ccd-600-tvl-ir-block.html" target="_blank">HS1177M 17mm camera</a>, this build has a fixed camera angle that matches the HD camera angle.</p>
+        <p>This build stays short so you don't clothesline yourself on airgates while still letting you mount up your HD camera of choice if necessary.</p>
+        <p>Instead of the angled CF plate that comes with Falcon, you can use foam and a velcro strap, <a href="http://creativedex.com/collections/rc-stuff/products/30-degree-gopro-mount" target="_blank" trackclick="3D printed GoPro mount,Product clicked,$hostname">3D printed GoPro mounts</a>, or even a <a href="http://www.thingiverse.com/thing:1242579" target="_blank" trackclick="3D printed top plate + GoPro mount,Product clicked,$hostname">3D printed top plate + GoPro mount.</a></p>
+        <p>The angle of the HD/FPV camera can be set from 0° to 48° using the included spacers.</p>
+
+        <div jqueryui="accordion" class="falcon-components">
+          <h3 trackclick="Low-profile build,Diagram clicked">Assembly diagram</h3>
+          <div>
+            <h4>Main stack</h4>
+            <ul class="stack">
+              <li><img src="images/bits/screw.png"><span class="stack-label">18mm screws</span></li>
+              <li><img src="images/parts/main-plate_thumb.png"><span class="stack-label">Main plate</span></li>
+              <li><img src="images/bits/insulative-spacer.png"><span class="stack-label">0.5mm spacers</span></li>
+              <li><img src="images/bits/electronics.png"><span class="stack-label">PDB</span></li>
+              <li><img width="25" src="images/bits/standoff.png"><span class="stack-label">4mm spacers</span></li>
+              <li><img src="images/bits/electronics.png"><span class="stack-label">Flight controller</span></li>
+              <li><img width="50" src="images/bits/standoff.png"><span class="stack-label">15mm standoffs</span></li>
+              <li><img src="images/parts/top-plate_thumb.png"><span class="stack-label">Top plate</span></li>
+              <li><img src="images/bits/screw-left.png"><span class="stack-label">8mm screws</span></li>
+            </ul>
+            <h4>Camera pod</h4>
+            <ul class="stack">
+              <li><img src="images/bits/screw.png"><span class="stack-label">8mm screws</span></li>
+              <li><img src="images/parts/top-plate_thumb.png"><span class="stack-label">Top plate</span></li>
+              <li><img width="100" src="images/bits/standoff.png"><span class="stack-label">15mm and 30mm standoffs</span></li>
+              <li><img src="images/parts/hd-camera-plate_thumb.png"><span class="stack-label">HD camera plate</span></li>
+              <li><img src="images/bits/screw-left.png"><span class="stack-label">12mm screws</span></li>
+            </ul>
+          </div>
+        </div>
+
       </div>
+    </section>
+
+    <section class="section section--text section--small section--alternate">
+      <aside class="section-aside">
+        <a href="javascript: tallTowerGallery.click();" class="section-photo section-photo--round">
+          <img src="images/falcon160/160-tall-tower-quarter-view.jpg" alt="Falcon 185 low-profile build">
+        </a>
+
+        <div slick photoswipe itemscope itemtype="http://schema.org/ImageGallery" trackclick="Tall-tower build,Photos viewed">
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="images/falcon160/160-tall-tower-front-view.jpg" itemprop="contentUrl" data-size="1595x1051">
+              <img id="tallTowerGallery" src="images/falcon160/160-tall-tower-front-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 160 - tall-tower build</figcaption>
+          </figure>
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="images/falcon160/160-tall-tower-quarter-view.jpg" itemprop="contentUrl" data-size="1595x1095">
+              <img src="images/falcon160/160-tall-tower-quarter-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 160 - tall-tower build</figcaption>
+          </figure>
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="images/falcon160/160-tall-tower-top-view.jpg" itemprop="contentUrl" data-size="1224x1224">
+              <img src="images/falcon160/160-tall-tower-top-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
+            </a>
+            <figcaption itemprop="caption description">Falcon 160 - tall-tower build</figcaption>
+          </figure>
+        </div>
+      </aside>
+      <div class="section-content">
+        <h2>Tall-tower 25mm camera build</h2>
+        <h3>Falcon 185, 160</h3>
+        <p>Designed around the <a trackclick="HS1177,Product clicked,$hostname" href="https://www.multirotorsuperstore.com/mini-sony-super-had-ccd-600tvl-ir-block.html" target="_blank">HS1177 25mm camera</a>, this build has a variable camera angle and an optional fixed angle HD camera mount.</p>
+        <p>This build makes it easy to adjust for FPV camera angle for different courses and can optionally mount a HD camera as well.</p>
+        <p>The camera angle can be set from 0° to 48° using the included spacers.</p>
+
+        <div jqueryui="accordion" class="falcon-components">
+          <h3 trackclick="Tall-tower build,Diagram clicked">Assembly diagram</h3>
+          <div>
+            <h4>Main stack</h4>
+            <ul class="stack">
+              <li><img src="images/bits/screw.png"><span class="stack-label">18mm screws</span></li>
+              <li><img src="images/parts/main-plate_thumb.png"><span class="stack-label">Main plate</span></li>
+              <li><img src="images/bits/insulative-spacer.png"><span class="stack-label">0.5mm spacers</span></li>
+              <li><img src="images/bits/electronics.png"><span class="stack-label">PDB</span></li>
+              <li><img width="25" src="images/bits/standoff.png"><span class="stack-label">4mm spacers</span></li>
+              <li><img src="images/bits/electronics.png"><span class="stack-label">Flight controller</span></li>
+              <li><img width="50" src="images/bits/standoff.png"><span class="stack-label">37mm standoffs</span></li>
+              <li><img src="images/parts/top-plate_thumb.png"><span class="stack-label">Top plate</span></li>
+              <li><img src="images/bits/screw-left.png"><span class="stack-label">8mm screws</span></li>
+            </ul>
+
+            <h4>Optional HD camera mount</h4>
+            <ul class="stack">
+              <li><img src="images/bits/screw.png"><span class="stack-label">8mm screws</span></li>
+              <li><img src="images/parts/top-plate_thumb.png"><span class="stack-label">Top plate</span></li>
+              <li><img width="100" src="images/bits/standoff.png"><span class="stack-label">15mm and 30mm standoffs</span></li>
+              <li><img src="images/parts/hd-camera-plate_thumb.png"><span class="stack-label">HD camera plate</span></li>
+              <li><img src="images/bits/screw-left.png"><span class="stack-label">12mm screws</span></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section section--text section--small">
+      <aside class="section-aside">
+        <a href="javascript: microBuildGallery.click();" class="section-photo section-photo--round">
+          <img src="images/falcon130/130-large-top-plate-quarter-view.jpg" alt="Falcon 130 micro build with large top plate">
+        </a>
+
+        <div slick photoswipe itemscope itemtype="http://schema.org/ImageGallery" trackclick="Micro build,Photos viewed">
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="images/falcon130/130-large-top-plate-front-view.jpg" itemprop="contentUrl" data-size="1632x1052">
+                <img id="microBuildGallery" src="images/falcon130/130-large-top-plate-front-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
+              </a>
+              <figcaption itemprop="caption description">Falcon 130 - full-size top plate build</figcaption>
+            </figure>
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="images/falcon130/130-large-top-plate-quarter-view.jpg" itemprop="contentUrl" data-size="1598x1074">
+                <img src="images/falcon130/130-large-top-plate-quarter-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
+              </a>
+              <figcaption itemprop="caption description">Falcon 130 - full-size top plate build</figcaption>
+            </figure>
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="images/falcon130/130-large-top-plate-top-view.jpg" itemprop="contentUrl" data-size="1224x1224">
+                <img src="images/falcon130/130-large-top-plate-top-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
+              </a>
+              <figcaption itemprop="caption description">Falcon 130 - full-size top plate build</figcaption>
+            </figure>
+        </div>
+      </aside>
+
+      <div class="section-content">
+        <h2>Micro CMOS camera build</h2>
+        <h3>Falcon 185, 160, 130</h3>
+        <p>Designed around the <a trackclick="Micro 600TVL,Product clicked,$hostname" href="https://www.multirotorsuperstore.com/micro-600tvl-110-degree-camera.html" target="_blank">Micro 600TVL CMOS camera</a>, this build has a fixed camera angle and an no option for mounting a HD camera.
+        <p>This build can be done with top plate and a full-sized VTX, or with the HD camera plate and a small VTX module (such as the <a href="http://us.banggood.com/Wholesale-Warehouse-FPV-5_8G-200mW-32CH-Wireless-Audio-Video-AV-Transmitter-Module-FX758-2-wp-Usa-980317.html?p=3F201911077692015010" target="_blank">FX758-2</a>).</p>
+
+        <div jqueryui="accordion" class="falcon-components">
+          <h3 trackclick="Micro build,Diagram clicked">Assembly diagram</h3>
+          <div>
+            <h4>With full top plate</h4>
+            <ul class="stack">
+              <li><img src="images/bits/screw.png"><span class="stack-label">18mm screws</span></li>
+              <li><img src="images/parts/main-plate_thumb.png"><span class="stack-label">Main plate</span></li>
+              <li><img width="25" src="images/bits/standoff.png"><span class="stack-label">4mm spacers</span></li>
+              <li><img src="images/bits/electronics.png"><span class="stack-label">Flight controller</span></li>
+              <li><img width="50" src="images/bits/standoff.png"><span class="stack-label">15mm standoffs</span></li>
+              <li><img src="images/parts/top-plate_thumb.png"><span class="stack-label">Top plate</span></li>
+              <li><img src="images/bits/screw-left.png"><span class="stack-label">6mm screws</span></li>
+            </ul>
+            <h4>With minimal top plate</h4>
+            <ul class="stack">
+              <li><img src="images/bits/screw.png"><span class="stack-label">18mm screws</span></li>
+              <li><img src="images/parts/main-plate_thumb.png"><span class="stack-label">Main plate</span></li>
+              <li><img width="25" src="images/bits/standoff.png"><span class="stack-label">4mm spacers</span></li>
+              <li><img src="images/bits/electronics.png"><span class="stack-label">Flight controller</span></li>
+              <li><img width="50" src="images/bits/standoff.png"><span class="stack-label">15mm standoffs</span></li>
+              <li><img src="images/parts/hd-camera-plate_thumb.png"><span class="stack-label">HD camera plate</span></li>
+              <li><img src="images/bits/screw-left.png"><span class="stack-label">6mm screws</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--text section--alternate">
+      <aside class="section-aside section-photo section-photo--round">
+        <img src="images/screwdriver.jpg" alt="Screwdriver and hardware">
+      </aside>
       <div class="section-content">
         <h2>Designed with maintenance in mind.</h2>
         <p>When something goes wrong in the field, Falcon doesn't require a teardown to fix it. Removing 4 screws gives access to your flight controller, VTX, and camera.</p>
@@ -774,50 +965,9 @@
     </section>
 
     <section class="section section--text">
-      <div class="section-photo section-photo--round">
-        <img src="images/falcon185/185-low-profile-quarter-view.jpg" alt="Falcon 185 low-profile build">
-      </div>
-      <div class="section-content">
-          <h2>Low-profile 17mm camera build</h2>
-          <h3>Falcon 185, 160</h3>
-          <p>Designed around the HS1177M 17mm camera, this build has a fixed camera angle that matches the HD camera angle and the lowest possible height.</p>
-          <p>This build is as short as Falcon can get and still mount a HD camera at an angle.</p>
-          <p>The camera angle can be set from 0° to 48° using the included spacers.</p>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section section--text section--right">
-      <div class="section-photo section-photo--round">
-        <img src="images/falcon160/160-tall-tower-quarter-view.jpg" alt="Falcon 185 low-profile build">
-      </div>
-      <div class="section-content">
-          <h2>Tall-tower 25mm camera build</h2>
-          <h3>Falcon 185, 160</h3>
-          <p>Designed around the HS1177 25mm camera, this build has a variable camera angle and an optional HD camera mount.</p>
-          <p>This build makes it easy to adjust for FPV camera angle for different courses.</p>
-          <p>The camera angle can be set from 0° to 48° using the included spacers.</p>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section section--text">
-      <div class="section-photo section-photo--round section--right">
-        <img src="images/falcon130/130-large-top-plate-quarter-view.jpg" alt="Falcon 130 micro build with large top plate">
-      </div>
-      <div class="section-content">
-          <h2>Micro CMOS camera build</h2>
-          <h3>Falcon 185, 160, 130</h3>
-          <p>Designed around tiny CMOS cameras, this build has a fixed camera angle and an no option for mounting a HD camera.
-          <p>This build can be done with top plate and a full-sized VTX, or with the HD camera plate and a small VTX module (such as the <a href="http://us.banggood.com/Wholesale-Warehouse-FPV-5_8G-200mW-32CH-Wireless-Audio-Video-AV-Transmitter-Module-FX758-2-wp-Usa-980317.html?p=3F201911077692015010" target="_blank">FX758-2</a>).</p>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section section--text section--right">
-      <div class="section-photo section-photo--round">
+      <aside class="section-aside section-photo section-photo--round">
         <img src="images/falconcut.jpg" alt="An Armattan-cut Falcon 185s">
-      </div>
+      </aside>
       <div class="section-content">
         <h2>Cut from the best carbon fiber in the industry.</h2>
         <p>We didn't skimp here. Falcon is cut by Armattan's team of skilled CNC operators from the same high quality Armattan carbon fiber you've come to expect. Every cut is clean and smooth. Tolerances are spot on.</p>
@@ -825,15 +975,17 @@
       </div>
     </section>
 
-    <section class="section section--text">
-      <div class="section-photo section-photo--round">
+    <section class="section section--text section--alternate">
+      <aside class="section-aside section-photo section-photo--round">
         <img src="images/flynocloverleaf.jpg" alt="Flyno Cloverleaf PDB">
-      </div>
+      </aside>
       <div class="section-content">
         <h2>A PDB with a purpose.</h2>
         <p>Falcon needed a PDB that was designed specifically for X quads. We needed a no compromise, light weight, high amperage PDB with 5V pads in the right location for popular FCs and ESC pads that don't require you to criss-cross wires or flip your ESC upside down.</p>
 
         <p>Nothing like that existed, so we worked with Flynoceros to design the reversible Cloverleaf Pro PDB -- one side is perfect for KISS and Rotorgeeks ESCs, and the other perfect for everything else. With 4oz copper, support for dual Pololu voltage regulators, zip tie slots for your XT60 pigtail, and pads in all the right places, there's nothing else like it, and it ships with Falcon 160 and 185.</p>
+
+        <p>The Flyno PDB is 1mm thick and weighs only 5g, making it the thinnest PDB on the market.</p>
       </div>
     </section>
 
