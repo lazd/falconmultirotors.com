@@ -1,6 +1,8 @@
 html {
   height: 100%;
   background-color: rgb(26, 8, 8);
+  width: 100%;
+  font-size: 16px;
 }
 
 html.landing-background {
@@ -21,7 +23,6 @@ body {
   min-height: 100%;
   margin: 0;
   color: rgb(218, 218, 218);
-  font-size: 18px;
   font-family: 'Play';
   height: auto;
 }
@@ -38,13 +39,13 @@ a:hover {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 2.5rem;
   font-weight: 400;
-  margin: 10px 0;
+  margin: 0.5rem 0;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 1.75rem;
 }
 
 h2,
@@ -53,9 +54,9 @@ h2 + h3 {
 }
 
 h3 {
-  padding-bottom: 4px;
-  margin-bottom: 10px;
-  margin-top: 30px;
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
   border-bottom: 1px solid rgba(226, 219, 219, 0.5);
 }
 
@@ -77,14 +78,14 @@ h4 {
 /* Footer */
 .footer {
   text-align: right;
-  padding: 30px 30px 30px 30px;
+  padding: 1.25rem;
   background: rgba(0, 0, 0, 0.35);
 }
 
 .footer--hero {
   position: absolute;
   margin: 0;
-  padding: 20px 20px 0 20px;
+  padding: 1.5rem 0 1.5rem;
   bottom: 0;
   left: 0;
   right: 0;
@@ -94,8 +95,9 @@ h4 {
 
 /* Hero */
 .hero {
+  box-sizing: border-box;
   position: relative;
-  height: 234px;
+  height: 13rem;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -106,13 +108,13 @@ h4 {
   left: 50%;
   top: 50%;
   width: 100%;
-
+  padding: 0.5rem;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
-
-  text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 1);
   text-align: center;
   margin: 0;
+  box-sizing: border-box;
 }
 
 /*
@@ -130,9 +132,9 @@ Faded content zone
 .button {
   display: inline-block;
   box-sizing: border-box;
-  margin: 10px;
-  padding: 5px 10px;
-  border-radius: 3px;
+  margin: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
   border: none;
   background-color: rgba(216, 12, 0, 0.85);
   color: black;
@@ -156,13 +158,13 @@ Faded content zone
 }
 
 .button--cta {
-  font-size: 25px;
-  padding: 15px 25px;
+  font-size: 1.5rem;
+  padding: 1rem 1.5rem;
 }
 
 .button--cta-centered {
   display: block;
-  width: 400px;
+  max-width: 24rem;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -174,21 +176,21 @@ Faded content zone
 
 /* Logo */
 .logo {
-  height: 80px;
-  width: 80px;
-  margin: 10px;
+  height: 5rem;
+  width: 5rem;
+  margin: 0.5rem;
   border-radius: 100%;
   background: rgb(0, 0, 0);
-  padding: 9px;
+  padding: 0.5rem;
   border: 2px solid rgba(255, 0, 0, 0.5);
-  margin-bottom: -54px;
+  margin-bottom: -3.375rem;
 }
 
 /* Masonry gallery */
 .masonry {
   width: 100%;
   float: left;
-  margin: 10px 10px 20px 10px;
+  margin: 0.5rem 1.5rem 0.5rem;
 }
 .masonry img {
   width: 100%;
@@ -202,9 +204,9 @@ Faded content zone
 .masonry figure {
   display: block;
   float: left;
-  margin: 0 5px 5px 0;
+  margin: 0 0.25rem 0;
   width: 150px;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   overflow: hidden;
 }
 .masonry figure a {
@@ -230,8 +232,8 @@ A picture + details section
 */
 .section {
   display: block;
-  padding: 15px 0;
-  /*max-width: 1280px;*/
+  padding: 1rem 0;
+  /* max-width: 1280px; */
   margin: auto;
   border-bottom: 1px solid rgba(200, 50, 50, 0.5);
 }
@@ -244,8 +246,8 @@ A picture + details section
 }
 
 .section--text {
-  padding: 30px;
-  font-size: 20px;
+  padding: 1rem;
+  font-size: 1rem;
 }
 
 .section--text h2 ~ h3 {
@@ -270,13 +272,12 @@ A picture + details section
 
 .section-aside {
   display: block;
-  float: left;
-  margin: 0 20px 10px 0;
+  margin: auto;
 }
 
 .section-aside .slick,
 .section-photo img {
-  width: 300px
+  margin: 1rem auto;
 }
 
 .section-photo--round {
@@ -284,10 +285,11 @@ A picture + details section
   background: white;
   border-radius: 100%;
   overflow: hidden;
-  width: 300px;
-  height: 300px;
+  width: 13rem;
+  height: 13rem;
   display: block;
   margin: auto;
+  margin-bottom: 1rem;
 }
 
 .section-photo--round img {
@@ -299,7 +301,6 @@ A picture + details section
 
 .section-content {
   overflow: hidden;
-  padding-left: 20px;
 }
 
 .section--alternate {
@@ -325,7 +326,7 @@ Awesome circle that animates when you hover */
   background: rgba(29, 2, 2, 0.70);
   border-radius: 100%;
   border: 2px solid rgb(103, 24, 20);
-  box-shadow: 0px 0px 30px -5px rgba(255,0,0,0.5);
+  box-shadow: 0px 0px 2rem -5px rgba(255,0,0,0.5);
   transition: all 0.25s;
 }
 
@@ -365,24 +366,24 @@ Awesome circle that animates when you hover */
 .circlephoto:focus:after,
 .circlephoto:hover:after {
   background: rgba(130, 14, 14, 0.70);
-  border-width: 3px;
-  box-shadow: 0px 0px 50px -5px rgba(255,0,0,1);
+  border-width: 0.25rem;
+  box-shadow: 0px 0px 3.125rem -5px rgba(255,0,0,1);
 }
 
 .circlephoto:focus .circlephoto-caption,
 .circlephoto:hover .circlephoto-caption {
-  text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
 }
 
 /* List */
 ul {
   margin: 0;
-  padding: 0 20px;
+  padding: 0 1.5rem;
   overflow: hidden;
 }
 
 li {
-  margin-left: 15px;
+  margin-left: 1rem;
 }
 
 /* Table */
@@ -392,7 +393,7 @@ table {
 
 td, th {
   margin: 0;
-  padding: 10px 15px;
+  padding: 0.5rem 1rem;
   text-align: left;
 }
 
@@ -441,15 +442,9 @@ th.empty {
 }
 
 /* Slick */
-.slick {
-  margin: 20px 10px;
-}
 .slick figure {
-  height: 100px;
   border-radius: 100%;
-  margin: 10px 11px;
   overflow: hidden;
-  width: 100px;
   position: relative;
   transform: translate3d(0,0,0);
 }
@@ -472,7 +467,7 @@ th.empty {
 }
 .slick-prev:before, .slick-next:before {
   color: rgb(152, 3, 3);
-  line-height: 26px;
+  line-height: 1.75rem;
 }
 
 .center {
@@ -500,7 +495,7 @@ th.empty {
 .ui-accordion-header:before {
   content: '';
   position: absolute;
-  width: 4px;
+  width: 0.25rem;
   left: 0;
   top: 0;
   bottom: 0;
@@ -524,7 +519,7 @@ th.empty {
 }
 .ui-accordion-content {
   padding: 6px;
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(40, 40, 40);
 }
 
 /** Text styles */
@@ -535,119 +530,192 @@ th.empty {
 /** Stack */
 .stack {
   display: inline-block;
-  padding: 10px;
-  margin: 10px;
+  padding: 0.5rem;
+  margin: 0.5rem;
   list-style: none;
   text-align: center;
-  border-radius: 3px;
+  border-radius: 0.25rem;
   background: rgb(31, 31, 31);
 }
 .stack li {
   position: relative;
   display: inline-block;
-  font-size: 12px;
-  padding: 0 10px;
+  font-size: 0.875rem;
+  padding: 0 0.5rem;
   margin: 0;
   text-align: center;
 }
 .stack li:not(:last-child):after {
   position: absolute;
   top: 50%;
-  right: 5px;
-  margin-top: -10px;
+  right: 0.25rem;
+  margin-top: -0.625rem;
   content: '▶';
 }
 .stack img {
   display: inline-block;
-  margin: 5px 10px;
-  height: 50px;
-  width: attr(width px, '50px');
+  margin: 0.25rem 0.5rem;
+  height: 3.125rem;
+  width: attr(width rem, '3rem');
 }
 .stack-label {
   display: block;
 }
 
-@media screen and (max-aspect-ratio: 4/3) {
+/** Default sizes */
+.section-photo img {
+  width: 100%;
+  margin: auto;
+}
+
+.section-column {
+  margin: 1.5rem;
+  width: 17rem;
+}
+
+/** Slick */
+.slick {
+  margin: 2rem auto;
+  width: 14.5rem;
+}
+
+.section-column .slick {
+  margin: 0 auto;
+}
+
+.slick figure {
+  height: 4.5rem;
+  margin: 0.25rem;
+  width: 4.5rem;
+}
+
+/** Circlephoto */
+.circlephoto,
+.circlephoto:after,
+.circlephoto-image {
+  width: 14rem;
+  height: 14rem;
+}
+.circlephoto:focus:after,
+.circlephoto:hover:after {
+  width: 11rem;
+  height: 11rem;
+}
+
+/* Portrait */
+@media screen and (max-aspect-ratio: 3.99/3) {
   .section-aside {
     display: block;
     float: none;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1rem;
   }
 }
 
-.section-column {
-  margin: 50px 30px;
-  width: 364px;
+/* iPhone 6 */
+@media screen and (min-width: 375px) {
+  .slick {
+    width: 17.5rem;
+  }
+  .slick figure {
+    height: 5.5rem;
+    margin: 0.25rem;
+    width: 5.5rem;
+  }
+
+  .section-column {
+    width: 20rem;
+  }
+
+  .circlephoto,
+  .circlephoto:after,
+  .circlephoto-image {
+    width: 18rem;
+    height: 18rem;
+  }
+  .circlephoto:focus:after,
+  .circlephoto:hover:after {
+    width: 20rem;
+    height: 20rem;
+  }
+  .slick {
+    width: 17.5rem;
+  }
 }
 
-.circlephoto,
-.circlephoto:after,
-.circlephoto-image {
-  width: 325px;
-  height: 325px;
-}
-.circlephoto:focus:after,
-.circlephoto:hover:after {
-  width: 350px;
-  height: 350px;
-}
+/* iPhone 6 / Nexus 5x */
+@media screen and (min-width: 410px) {
+  body {
+    font-size: 18px;
+  }
 
-.section-aside .slick {
-  width: 344px;
-  margin: auto;
+  .section-column {
+    width: 22.5rem;
+    margin: 1.25rem;
+  }
 }
 
 /* Nexus 6P */
 @media screen and (min-width: 520px) {
   .section-column {
-    margin: 50px 10px;
-    width: 488px;
+    margin: 3.125rem 0.5rem;
+    width: 30.5rem;
   }
 
   .circlephoto,
   .circlephoto:after,
   .circlephoto-image {
-    width: 325px;
-    height: 325px;
+    width: 20.25rem;
+    height: 20.25rem;
   }
   .circlephoto:focus:after,
   .circlephoto:hover:after {
-    width: 350px;
-    height: 350px;
+    width: 22rem;
+    height: 22rem;
   }
 }
 
 @media screen and (min-width: 640px) {
   .section-column {
-    margin: 50px 30px;
-    width: 245px;
+    margin: 3.125rem 2rem;
+    width: 35rem;
+  }
+
+  .section--text {
+    padding: 2rem;
+  }
+
+  .section-aside {
+    float: left;
+    margin: 0 1.5rem 0.5rem 0;
   }
 
   .circlephoto,
   .circlephoto:after,
   .circlephoto-image {
-    width: 250px;
-    height: 250px;
+    width: 25rem;
+    height: 25rem;
   }
   .circlephoto:focus:after,
   .circlephoto:hover:after {
-    width: 275px;
-    height: 275px;
+    width: 30rem;
+    height: 30rem;
   }
 
   .section--small {
-    padding-left: 7%;
-    padding-right: 7%;
+    padding-left: 3rem;
+    padding-right: 2rem;
   }
   .section--small .section-photo--round {
-    width: 220px;
-    height: 220px;
+    float: none;
+    width: 14rem;
+    height: 14rem;
+    margin: 0 auto 1rem auto;
   }
-  .section--small .section-aside .slick,
-  .section--small .section-photo img {
-    width: 223px;
+  .section--small .section-aside .slick {
+    width: 17.5rem;
   }
 
   .section--small .section-aside {
@@ -655,74 +723,148 @@ th.empty {
   }
 
   .section--small .section-content {
-    padding-right: 40px;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-column {
+    margin: 3rem 2rem;
+    width: 18rem;
+  }
+
+  .circlephoto,
+  .circlephoto:after,
+  .circlephoto-image {
+    width: 14rem;
+    height: 14rem;
+  }
+  .circlephoto:focus:after,
+  .circlephoto:hover:after {
+    width: 16rem;
+    height: 16rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section-column {
+    margin: 3rem 1rem;
+    width: 19rem;
+  }
+
+  .circlephoto,
+  .circlephoto:after,
+  .circlephoto-image {
+    width: 18rem;
+    height: 18rem;
+  }
+  .circlephoto:focus:after,
+  .circlephoto:hover:after {
+    width: 20rem;
+    height: 20rem;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .section-column {
-    margin: 50px 25px;
-    width: 364px;
+    margin: 3rem 2rem;
+    width: 20rem;
   }
 
   .circlephoto,
   .circlephoto:after,
   .circlephoto-image {
-    width: 300px;
-    height: 300px;
+    width: 18.75;
+    height: 18.75;
   }
   .circlephoto:focus:after,
   .circlephoto:hover:after {
-    width: 325px;
-    height: 325px;
+    width: 20.25rem;
+    height: 20.25rem;
+  }
+  .slick {
+    width: 19rem;
+  }
+  .slick figure {
+    width: 6rem;
+    height: 6rem;
+  }
+  .section--small .section-photo--round {
+    width: 14rem;
+    height: 14rem;
+  }
+  .section--small .section-aside .slick {
+    width: 19rem;
   }
 }
 
 @media screen and (min-width: 1600px) {
   .section-column {
-    margin: 50px 18px;
-    width: 488px;
+    margin: 3.125rem 18px;
+    width: 30.5rem;
+  }
+
+  .slick {
+    width: 25.5rem;
   }
 
   .circlephoto,
   .circlephoto:after,
   .circlephoto-image {
-    width: 325px;
-    height: 325px;
+    width: 25rem;
+    height: 25rem;
   }
   .circlephoto:focus:after,
   .circlephoto:hover:after {
-    width: 350px;
-    height: 350px;
+    width: 22rem;
+    height: 22rem;
+  }
+
+  .section-photo--round {
+    width: 15rem;
+    height: 15rem;
   }
 }
 
 @media screen and (min-width: 1700px) {
   .section-column {
-    margin: 50px 30px;
+    margin: 3.125rem 2rem;
   }
 }
 
 @media screen and (min-width: 1800px) {
   .section-column {
-    margin: 50px 30px;
+    margin: 3.125rem 2rem;
   }
 
   .circlephoto,
   .circlephoto:after,
   .circlephoto-image {
-    width: 350px;
-    height: 350px;
+    width: 22rem;
+    height: 22rem;
   }
   .circlephoto:focus:after,
   .circlephoto:hover:after {
-    width: 375px;
-    height: 375px;
+    width: 23.5rem;
+    height: 23.5rem;
+  }
+
+  .slick {
+    width: 26rem;
+  }
+
+  .slick figure {
+    margin: 0.5rem;
+    width: 8rem;
+    height: 8rem;
+  }
+  .section--small .section-aside .slick {
+    width: 17.5rem;
   }
 }
 
 @media screen and (min-width: 1900px) {
   .section-column {
-    margin: 50px 50px;
+    margin: 3.125rem 3.125rem;
   }
 }
