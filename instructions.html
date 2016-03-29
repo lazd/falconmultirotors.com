@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html class="landing-background">
+<head>
+  <title>Falcon 160/185 Assembly Instructions</title>
+  <meta charset="utf-8">
+
+  <!-- Core -->
+  <link href='https://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="index.css"> 
+
+  <!-- Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-74430530-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+  <script>
+    $(function() {
+      $('.step').each(function(index, el) {
+        el.insertAdjacentHTML('afterbegin', (index + 1) + '. ');
+      });
+    });
+  </script>
+</head>
+<body>
+  <div>
+    <section class="hero">
+      <div class="hero-caption">
+        <h1>Falcon 160/185 Assembly Instructions.</h1>
+      </div>
+    </section>
+
+
+    <div class="content">
+      <section class="section section--text">
+        <h2 class="step">Choose the right side of the PDB for your ESC polarity</h2>
+        <p>When looking at the top of a Littlebee with the power wires away from you, you'll see the VIN is on the <strong>left</strong>.</p>
+        <p>When looking at the top of a KISS ESC with the power wires away from you, you'll see the VIN is on the <strong>right</strong></p>
+        <p>The Flyno Cloverleaf PDB has two sides -- one of them has the VIN on the left, and one has the VIN on the right. <strong>Choose and mark the right side of the PDB before you begin.</strong>
+      </section>
+
+      <section class="section section--text">
+        <h2 class="step">Measure and cut pigtail wires</h2>
+        <p>A good length for pigtail wires is <strong>35mm</strong>.</p>
+        <p>Strip a 7mm section of wire off each side of your pigtail wires and twist the strands.</p>
+      </section>
+
+      <section class="section section--text">
+        <h2 class="step">Solder pigtail wires to the XT60 connector</h2>
+        <p>We recommend using 14 AWG wire for your pigtail.</p>
+        <p>Your soldering iron should be set to 750°F.</p>
+        <p>First, tin the poles on the XT60 connector. Apply some solder to your iron, insert it into the pole, and add a small amount of solder; just enough to make the inside of the pole silver.</p>
+        <p>Next, insert the wire into the pole, apply the tip of the iron to both the pole and the wire, and add a generous amount of solder. You should end up with a nice fillet, but it shouldn't overflow out of the pole.</p>
+      </section>
+
+      <section class="section section--text">
+        <h2 class="step">Zip tie pigtail to the PDB</h2>
+        <p>First, double check the side of the PDB you'll be using given your ESC polarity.</p>
+        <p>Next, find a small zip tie with a head that is less than 5mm in diameter.</p>
+        <p>Double check polarity (red lines up with VIN, black lines up with GND), then insert the wires into the VIN and GND holes on the PDB.</p>
+        <p>With the head of the ziptie under the PDB, insert it and loop it around, holding the pigtail into place.</p>
+      </section>
+
+      <section class="section section--text">
+        <h2 class="step">Solder pigtail to the PDB</h2>
+        <p>Your soldering iron should be set to 750°F.</p>
+        <p>With the pigtail in place, apply heat to the wire and the pad and add a generous amount of solder, enough to get a nice fillet. Make sure you've applied solder to all sides of the joint and that there are no voids.</p>
+        <p>Use your flush cutters to cut the resulting solder joint close to the PDB.</p>
+      </section>
+
+      <section class="section section--text">
+        <h2 class="step">Solder VBAT wire to the PDB</h2>
+        <p>Your soldering iron should be set to 720°F.</p>
+        <p>Solder a <strong>2cm</strong> set of wires to the small VIN/GN pads to power your flight controller and/or provide battery voltage for telemetry purposes.</p>
+      </section>
+
+      <section class="section section--text">
+        <h2 class="step">Optional: Solder 5V wires to the PDB</h2>
+        <p>If your FC has an onboard 5V regulator (Dodo, Lux, etc) skip this step.</p>
+        <p>Solder a <strong>2cm</strong> set of wires to the V(1) pads on the PDC.</p>
+      </section>
+
+      <section class="section section--text">
+        <h2 class="step">Solder VTX power wires to the PDB</h2>
+        <p>First, choose whether you're powering your VTX from a voltage regulator or directly from VIN.</p>
+        <p>Measure the distance you think you'll need to reach your VTX, add 1cm, and cut the wires.</p>
+        <p>Solder the wires to the correct pads (either VIN or V(2)).</p>
+      </section>
+
+      <section class="section section--text">
+        <h2 class="step">Optional: Solder Pololu voltage regulators to the PDB</h2>
+        <p>If your build uses voltage regulators, solder them to the PDB.</p>
+        <p>This guide assumes you'll install your 5V regulator to V(1) and your 12V regulator to V(2).</p>
+        <p>Pay attention to the pinouts, make sure VIN and VOUT line up.</p>
+        <p>Do not use the plastic portion of the pin header, simply solder the pins directly.</p>
+        <p>The voltage regulator should be flush to the PDB (not lifted off a few mm).</p>
+      </section>
+
+      <section class="section section--text">
+        <h2 class="step">Optional: Solder any other wires you'll need on your PDB</h2>
+        <p>Solder wires for your lap timing system, LEDs, etc at this time.</p>
+      </section>
+
+      <section class="section section--text">
+        <h2 class="step">Install your battery strap</h2>
+        <p>Taking care to orient the zip tie cutouts to the front/back of the frame, insert your battery strap and make sure you have the right side pointing out.</p>
+        <p>Your battery strap should weave through the frame, with a portion of it on the top of the frame.</p>
+      </section>
+
+      <section class="section section--text">
+        <h2 class="step">Install the PDB</h2>
+        <p>Holding the frame sideways, insert the 18mm screws into the frame.</p>
+        <p>Use some tape to hold the screws into the frame from underneath so they don't fall out.</p>
+        <p>Slide the 0.5mm insulating spacers onto the screws.</p>
+        <p>Slide the PDB onto the screws, taking care to orient the pigtail to the rear of the frame.</p>
+      </section>
+
+      <section class="section section--text">
+        <h2 class="step">Wire up the FC</h2>
+        <p>Solder the VBAT wires to the FC.</p>
+        <p>If necessary, solder the 5V wires to the FC.</p>
+        <p>Ensure the lenghts of your wires allow you to pick up and tilt your FC in the direction of the ESC headers such that you can access the bottom of it. Short wires are clean, but they make your build unmaintainable.</p>
+      </section>
+
+      <section class="section section--text">
+        <h2 class="step">Solder motors to ESCs</h2>
+        <p>If possible without exposing the coil wires, cut your motor wires to <strong>2cm</strong></p>
+        <p>Solder them straight to your ESCs.</p>
+      </section>
+
+      <section class="section section--text">
+        <h2 class="step">Mount your motor + ESC combo</h2>
+        <p>Get your Blue Loctite out and mount your motors to the arms.</p>
+        <p>For Cobra 2204/2300kV motors and an 4mm bottom plate, 6mm screws work.</p>
+        <p>Be sure to apply Loctite before mounting the motor, and take care to align the center of the shaft to the center of the cutout.</p>
+        <p>Now that your ESCs are on the arms, you may want to secure them with electrical tape to keep them in place while you build.</p>
+      </section>
+
+      <section class="section section--text">
+        <h2 class="step">Measure and cut your ESC power wires</h2>
+        <p>Eyeball the length of your ESC power wires. They should reach the end of the pad on the PDB.</p>
+        <p>Cut the wires and strip a <strong>5mm</strong> section.</p>
+      </section>
+
+      <section class="section section--text">
+        <h2 class="step">Slide heatshink onto your ESCs</h2>
+        <p>Cut 4 <strong>3cm</strong> lengths of 9.5mm diameter (3/8") heatshrink.</p>
+        <p>Slide them onto the ESCs.</p>
+      </section>
+
+      <section class="section section--text">
+        <h2 class="step">Solder your ESC power wires</h2>
+        <p>Set your soldering iron set to 730°F.</p>
+        <p>Tin the ESC power wires generously. Don't leave a glob of solder, but leave a fair amount.</p>
+        <p>Tin the ESC pads, applying only enough solder to cover the entire pad and create a very small mound.</p>
+        <p>Tin your iron, grab the ESC power wire with your tweezers, apply it to the pad, then apply the iron on top of the ESC power wire and push it into the pad. Remove the iron, keeping the wire in place with your tweezers, and let the joint cool.</p>
+      </section>
+
+      <section class="section section--text">
+        <h2 class="step">Measure and cut your ESC signal wires</h2>
+        <p>Pick your flight controller up and tilt it in the direction of the ESC headers.</p>
+        <p>Measure them so they reach this headers with the FC tilted, add 5mm, then cut them.</p>
+        <p>Strip a 5mm section of wire.</p>
+      </section>
+
+      <section class="section section--text">
+        <h2 class="step">Solder your ESC signal wires</h2>
+        <p>Set your soldering iron set to 720°F.</p>
+        <p>Taking care to connect the correct ESC to the correct header, solder your signal wires.</p>
+        <ul>
+          <li>Back right: 1</li>
+          <li>Front right: 2</li>
+          <li>Back left: 3</li>
+          <li>Front left: 4</li>
+        </ul>
+      </section>
+
+      <section class="section section--text">
+        <h2 class="step">Test and configure your ESCs</h2>
+        <p>Using BLHeli Suite, configure and test your ESCs.</p>
+        <p>Motors 1 and 4 should spin clockwise, motors 2 and 3 should spin counter-clockwise.</p>
+        <p>Please refer to other guides for ESC programming instructions.</p>
+      </section>
+
+      <section class="section section--text">
+        <h2 class="step">Wire up your RX</h2>
+        <p>Measure and connect your depinned RX to your FC.</p>
+        <p>Use VHB double-sided tape to secure the RX to the FC.</p>
+        <p>Please refer to other guides for wiring instructions.</p>
+      </section>
+
+      <section class="section section--text">
+        <h2 class="step">Install the FC</h2>
+        <p>Add the 5mm unthreaded spacers between the PDB and FC, then screw the 15mm or 37mm threaded spacers onto the stack.</p>
+        <p>Your FC is now installed!</p>
+      </section>
+
+      <section class="section section--text">
+        <h2 class="step">Test and configure your RX</h2>
+        <p>Using Cleanflight configurator, test and configure your RX.</p>
+        <p>Please refer to other guides for RX setup.</p>
+      </section>
+
+      <section class="section section--text">
+        <h2 class="step">Install the HD camera plate onto the top plate</h2>
+        <p>Before adding the top plate to the stack, attach the HD camera plate to it.</p>
+        <p>Use 15mm standoffs in the rear and 20, 25, 30, or 37mm standoffs in the front (depending on your desired camera tilt angle).</p>
+        <p>Use 8mm screws on the bottom and 12mm screws on the top.</p>
+        <p>Apply loctite to the bottom 8mm screws (optional for the top 12mm screws).</p>
+      </section>
+
+      <section class="section section--text">
+        <h2 class="step">Install your VTX to the top plate</h2>
+        <p>In the low-profile build, you may secure your VTX to the top plate with a zip tie.</p>
+      </section>
+
+      <section class="section section--text">
+        <h2 class="step">Mount the SMA pigtail</h2>
+        <p>Mount the SMA pigtail to the top plate.</p>
+      </section>
+
+      <section class="section section--text">
+        <h2 class="step">Configure your FPV camera</h2>
+        <p>If you have a camera OSD configuration cable, configure your camera.</p>
+        <p><a href="https://gist.github.com/lazd/b93d03d791ac719fb548" target="_blank">These settings are recommended.</a></p>
+      </section>
+
+      <section class="section section--text">
+        <h2 class="step">Wire your FPV camera</h2>
+        <p>If your VTX provides 5V power, wire that to your FPV camera.</p>
+        <p>Be sure to connect the video signal wire as well.</p>
+      </section>
+
+      <section class="section section--text">
+        <h2 class="step">Install the top plate</h2>
+        <p>Screw your top plate into place with the 8mm screws.</p>
+      </section>
+
+      <section class="section section--text">
+        <h2 class="step">Connect camera and VTX</h2>
+        <p>Connect the camera and VTX.</p>
+      </section>
+
+      <section class="section section--text">
+        <h2 class="step">Zip tie and heatshrink the RX antennas</h2>
+        <p>Using either the two slots in the rear of the top plate or the slot and SMA mounts on the left and right sides of the top plate, zip tie and heatshrink your RX antennas into plate.</p>
+      </section>
+
+      <section class="section section--text">
+        <h2 class="step">Secure the ESCs</h2>
+        <p>Using VHB double-sided tape, secure the ESCs to the arms.</p>
+        <p>You may also choose to use milities, zip ties, or electrical tape to keep them in place.</p>
+      </section>
+
+      <section class="section section--text">
+        <h2 class="step">Go fly!</h2>
+        <p>Assuming you've configured your FC and ESCs correctly, go maiden your freshly built Falcon!</p>
+      </section>
+
+    </div>
+  </div>
+</body>
+</html>
