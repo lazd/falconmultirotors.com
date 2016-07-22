@@ -76,11 +76,17 @@ Top header
 }
 
 .header-logo {
-  display: block;
-  height: 52px;
-  width: 52px;
-  padding: 6px;
+  height: 108px;
+  width: 108px;
+  padding: 5px;
   margin: auto;
+  display: block;
+  background: rgb(51, 51, 51);
+  border-radius: 100%;
+  border: 3px solid white;
+  box-sizing: border-box;
+  position: relative;
+  top: 8px;
 }
 
 .header-button {
@@ -110,7 +116,8 @@ Top header
 
 .header,
 .footer {
-  background: rgba(0,0,0,0.8);
+  font-family: 'Lato';
+  background: rgb(51, 51, 51);
 }
 
 /* Tab list */
@@ -122,10 +129,11 @@ Top header
   float: left;
   height: 100%;
   padding: 0 15px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(117, 117, 117, 0.2);
   line-height: 61px;
-  color: rgb(23, 23, 23);
+  color: rgb(123, 123, 123);
   border-right: 1px solid black;
+  font-weight: 200;
 }
 
 .tablist-tab:hover {
@@ -134,9 +142,10 @@ Top header
 }
 
 .tablist-tab.is-selected {
-  background: rgba(255, 255, 255, 0.95);
-  color: rgb(80, 80, 80);
+  background: rgba(86, 86, 86, 0.95);
+  color: rgb(154, 154, 154);
   cursor: default;
+  font-weight: 400;
 }
 
 /* Hero */
@@ -922,7 +931,7 @@ th.empty {
 
 @media screen and (min-width: 1024px) {
   .slick--hero {
-    height: 440px;
+    height: 430px;
   }
 
   .section-column {
@@ -945,7 +954,7 @@ th.empty {
 
 @media screen and (min-width: 1280px) {
   .slick--hero {
-    height: 680px;
+    height: 490px;
   }
 
   .section-column {
@@ -982,7 +991,7 @@ th.empty {
 
 @media screen and (min-width: 1600px) {
   .slick--hero {
-    height: 740px;
+    height: 650px;
   }
 
   .section-column {
