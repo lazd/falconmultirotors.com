@@ -1,0 +1,486 @@
+html.html--dark {
+  color: white;
+  font-family: 'Play';
+}
+html.herobackground {
+  background-color: rgb(26, 8, 8);
+  background-image: url('images/cover.jpg');
+  background-repeat: no-repeat;
+  background-position: center 4rem;
+  background-size: contain;
+}
+
+/** Stack */
+.stack {
+  display: inline-block;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  list-style: none;
+  text-align: center;
+  border-radius: 0.25rem;
+  background: rgb(31, 31, 31);
+}
+.stack li {
+  position: relative;
+  display: inline-block;
+  font-size: 0.875rem;
+  padding: 0 0.5rem;
+  margin: 0;
+  text-align: center;
+}
+.stack li:not(:last-child):after {
+  position: absolute;
+  top: 50%;
+  right: 0.25rem;
+  margin-top: -0.625rem;
+  content: '▶';
+}
+.stack img {
+  display: inline-block;
+  margin: 0.25rem 0.5rem;
+  height: 3.125rem;
+  width: attr(width rem, '3rem');
+}
+.stack-label {
+  display: block;
+}
+
+/** Text styles */
+.highlight {
+  color: red;
+}
+
+.center {
+  text-align: center;
+}
+
+/** Section */
+.section {
+  max-width: none; 
+}
+
+.section-content {
+  margin-top: 30px;
+}
+
+/* List */
+ul {
+  margin: 0;
+  padding: 0 1.5rem;
+  overflow: hidden;
+}
+
+li {
+  margin-left: 1rem;
+}
+
+/* Table */
+table {
+  width: 100%;
+}
+
+td, th {
+  margin: 0;
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
+
+thead tr th {
+  background: rgba(255, 255, 255, 0.32);
+}
+
+tbody tr:nth-child(even) td {
+  background: rgba(150, 150, 150, 0.40);
+}
+
+tbody tr:nth-child(even) td:first-child {
+  background: rgba(150, 150, 150, 0.60);
+}
+
+tbody tr:nth-child(odd) td {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+tbody tr:nth-child(odd) td:first-child {
+  background: rgba(255, 255, 255, 0.23);
+}
+
+td.highlight {
+  background: rgba(255, 255, 255, 0.32) !important;
+}
+
+td.color {
+  background: rgba(239, 115, 115, 0.20) !important;
+}
+
+th:first-child {
+  background: rgba(0, 0, 0, 0);
+}
+
+td:first-child {
+  text-align: right;
+}
+
+td.center,
+th.center {
+  text-align: center;
+}
+
+td.right,
+th.right {
+  text-align: right;
+}
+
+td.empty,
+th.empty {
+  background-color: transparent !important;
+}
+
+/* Circle photo
+Awesome circle that animates when you hover */
+.circlephoto {
+  display: block;
+  position: relative;
+  margin: 0 auto 1rem auto;
+}
+
+.circlephoto:after {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  content: '';
+  background: rgba(29, 2, 2, 0.70);
+  border-radius: 100%;
+  border: 2px solid rgb(103, 24, 20);
+  box-shadow: 0px 0px 2rem -0.3125rem rgba(255,0,0,0.5);
+  transition: all 0.25s;
+}
+
+.circlephoto-image {
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.circlephoto-button {
+  display: block;
+  position: relative;
+  z-index: 2;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.circlephoto-caption {
+  position: absolute;
+  z-index: 2;
+  margin: 0;
+  color: white;
+  text-align: center;
+  transition: all 0.25s;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: 100%;
+}
+
+.circlephoto:focus {
+  outline: none;
+}
+
+.circlephoto:focus:after,
+.circlephoto:hover:after {
+  background: rgba(130, 14, 14, 0.70);
+  border-width: 0.25rem;
+  box-shadow: 0px 0px 3.125rem -0.3125rem rgba(255,0,0,1);
+}
+
+.circlephoto:focus .circlephoto-caption,
+.circlephoto:hover .circlephoto-caption {
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+
+/** Circlephoto */
+.circlephoto,
+.circlephoto:after,
+.circlephoto-image {
+  width: 14rem;
+  height: 14rem;
+}
+.circlephoto:focus:after,
+.circlephoto:hover:after {
+  width: 11rem;
+  height: 11rem;
+}
+
+/* Portrait */
+@media screen and (max-aspect-ratio: 3.99/3) {
+  .section-aside {
+    display: block;
+    float: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+  }
+}
+
+/* iPhone 6 */
+@media screen and (min-width: 375px) {
+  .slick {
+    width: 17.5rem;
+  }
+  .slick figure {
+    height: 5.5rem;
+    margin: 0.25rem;
+    width: 5.5rem;
+  }
+
+  .section-column {
+    width: 20rem;
+  }
+
+  .circlephoto,
+  .circlephoto:after,
+  .circlephoto-image {
+    width: 18rem;
+    height: 18rem;
+  }
+  .circlephoto:focus:after,
+  .circlephoto:hover:after {
+    width: 20rem;
+    height: 20rem;
+  }
+  .slick {
+    width: 17.5rem;
+  }
+}
+
+/* iPhone 6 / Nexus 5x */
+@media screen and (min-width: 410px) {
+  body {
+    font-size: 18px;
+  }
+
+  .section-column {
+    width: 22.5rem;
+    margin: 1.25rem;
+  }
+}
+
+/* Nexus 6P */
+@media screen and (min-width: 520px) {
+  .section-column {
+    margin: 3.125rem 0.5rem;
+    width: 30.5rem;
+  }
+
+  .circlephoto,
+  .circlephoto:after,
+  .circlephoto-image {
+    width: 20.25rem;
+    height: 20.25rem;
+  }
+  .circlephoto:focus:after,
+  .circlephoto:hover:after {
+    width: 22rem;
+    height: 22rem;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .section-column {
+    margin: 3.125rem 2rem;
+    width: 35rem;
+  }
+
+  .section--text {
+    padding: 2rem;
+  }
+
+  .section-aside {
+    float: left;
+    margin: 0 1.5rem 0.5rem 0;
+  }
+
+  .circlephoto,
+  .circlephoto:after,
+  .circlephoto-image {
+    width: 25rem;
+    height: 25rem;
+  }
+  .circlephoto:focus:after,
+  .circlephoto:hover:after {
+    width: 30rem;
+    height: 30rem;
+  }
+
+  .section--small {
+    padding-left: 3rem;
+    padding-right: 2rem;
+  }
+  .section--small .section-photo--round {
+    float: none;
+    width: 14rem;
+    height: 14rem;
+    margin: 0 auto 1rem auto;
+  }
+  .section--small .section-aside .slick {
+    width: 17.5rem;
+  }
+
+  .section--small .section-aside {
+    float: right;
+  }
+
+  .section--small .section-content {
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-column {
+    margin: 3rem 2rem;
+    width: 18rem;
+  }
+
+  .circlephoto,
+  .circlephoto:after,
+  .circlephoto-image {
+    width: 14rem;
+    height: 14rem;
+  }
+  .circlephoto:focus:after,
+  .circlephoto:hover:after {
+    width: 16rem;
+    height: 16rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section-column {
+    margin: 3rem 1rem;
+    width: 19rem;
+  }
+
+  .circlephoto,
+  .circlephoto:after,
+  .circlephoto-image {
+    width: 18rem;
+    height: 18rem;
+  }
+  .circlephoto:focus:after,
+  .circlephoto:hover:after {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section-column {
+    margin: 3rem 2rem;
+    width: 20rem;
+  }
+
+  .circlephoto,
+  .circlephoto:after,
+  .circlephoto-image {
+    width: 18.75;
+    height: 18.75;
+  }
+  .circlephoto:focus:after,
+  .circlephoto:hover:after {
+    width: 20.25rem;
+    height: 20.25rem;
+  }
+  .slick {
+    width: 19rem;
+  }
+  .slick figure {
+    width: 6rem;
+    height: 6rem;
+  }
+  .section--small .section-photo--round {
+    width: 14rem;
+    height: 14rem;
+  }
+  .section--small .section-aside .slick {
+    width: 19rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .section-column {
+    margin: 3.125rem 1.125rem;
+    width: 30.5rem;
+  }
+
+  .slick {
+    width: 25.5rem;
+  }
+
+  .circlephoto,
+  .circlephoto:after,
+  .circlephoto-image {
+    width: 25rem;
+    height: 25rem;
+  }
+  .circlephoto:focus:after,
+  .circlephoto:hover:after {
+    width: 22rem;
+    height: 22rem;
+  }
+
+  .section-photo--round {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .section-column {
+    margin: 3.125rem 2rem;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .section-column {
+    margin: 3.125rem 2rem;
+  }
+
+  .circlephoto,
+  .circlephoto:after,
+  .circlephoto-image {
+    width: 22rem;
+    height: 22rem;
+  }
+  .circlephoto:focus:after,
+  .circlephoto:hover:after {
+    width: 23.5rem;
+    height: 23.5rem;
+  }
+
+  .slick {
+    width: 26rem;
+  }
+
+  .slick figure {
+    margin: 0.5rem;
+    width: 8rem;
+    height: 8rem;
+  }
+  .section--small .section-aside .slick {
+    width: 17.5rem;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .section-column {
+    margin: 3.125rem 3.125rem;
+  }
+}

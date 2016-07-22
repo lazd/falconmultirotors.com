@@ -1,0 +1,49 @@
+/**
+Accordion
+*/
+.ui-accordion {
+  margin: 0.75rem 0;
+  text-align: left;
+}
+.ui-accordion-header {
+  position: relative;
+  margin: 0;
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+
+  border-width: 0;
+
+  background-color: rgb(50, 50, 50);
+
+  color: rgb(230, 230, 230);
+
+  cursor: pointer;
+}
+.ui-accordion-header:before {
+  content: '';
+  position: absolute;
+  width: 0.25rem;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: rgb(100, 100, 100);
+}
+.ui-accordion-header.ui-state-focus {
+  outline: none;
+}
+.ui-accordion-header.ui-state-hover {
+  background-color: rgb(60, 60, 60);
+}
+.ui-accordion-header.ui-state-focus:before {
+  background: rgb(36, 96, 193);
+}
+.ui-accordion-header.ui-accordion-header-active:before {
+  background: rgba(216, 12, 0, 0.85);
+}
+.ui-accordion-header ~ .ui-accordion-header {
+  border-top-width: 1px;
+  margin-top: 0.75rem;
+}
+.ui-accordion-content {
+  padding: 0.5rem;
+  background-color: rgb(40, 40, 40);
+}
