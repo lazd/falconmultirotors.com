@@ -1,30 +1,26 @@
 html {
   height: 100%;
-  background-color: rgb(26, 8, 8);
+  background-color: rgb(255, 255, 255);
   width: 100%;
   font-size: 16px;
+  font-family: 'Lato', sans-serif;
 }
 
-html.landing-background {
-  background-image: url('images/cover.jpg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
+html.html--dark {
+  color: white;
+  font-family: 'Play';
 }
-
-html.hero-background {
+html.herobackground {
+  background-color: rgb(26, 8, 8);
   background-image: url('images/cover.jpg');
   background-repeat: no-repeat;
-  background-position: center 6.25rem;
+  background-position: center 4rem;
   background-size: contain;
 }
 
 body {
-  min-height: 100%;
+  height: 100%;
   margin: 0;
-  color: rgb(218, 218, 218);
-  font-family: 'Play';
-  height: auto;
 }
 
 a {
@@ -64,89 +60,154 @@ h4 {
   margin: 0;
 }
 
-/* Header */
-
-.header {
-  background: rgba(0, 0, 0, 0.35);
-  border-bottom: 1px solid rgba(200, 50, 50, 0.5);
+/* Thanks, Chris! https://css-tricks.com/examples/hrs/ */
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
 }
 
-.header.center {
-  text-align: center;
+/*
+Top header
+*/
+.header {
+  position: relative;
+  height: 64px;
+}
+
+.header-logo {
+  display: block;
+  height: 52px;
+  width: 52px;
+  padding: 6px;
+  margin: auto;
+}
+
+.header-button {
+  float: right;
+}
+
+.header-section--left,
+.header-section--right {
+  top: 0;
+  position: absolute;
+  height: 100%;
+}
+
+.header-section--left {
+  left: 0;
+}
+.header-section--right {
+  right: 0;
 }
 
 /* Footer */
 .footer {
+  color: white;
   text-align: right;
   padding: 1.25rem;
-  background: rgba(0, 0, 0, 0.35);
 }
 
-.footer--hero {
-  position: absolute;
-  margin: 0;
-  padding: 1.5rem 0 1.5rem;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.header,
+.footer {
+  background: rgba(0,0,0,0.8);
+}
 
-  text-align: center;
+/* Tab list */
+.tablist {
+  height: 64px;
+}
+.tablist-tab {
+  display: block;
+  float: left;
+  height: 100%;
+  padding: 0 15px;
+  background: rgba(255, 255, 255, 0.2);
+  line-height: 61px;
+  color: rgb(23, 23, 23);
+  border-right: 1px solid black;
+}
+
+.tablist-tab:hover {
+  background: rgba(255, 255, 255, 0.36);
+  color: rgba(0, 0, 0, 0.97);
+}
+
+.tablist-tab.is-selected {
+  background: rgba(255, 255, 255, 0.95);
+  color: rgb(80, 80, 80);
+  cursor: default;
 }
 
 /* Hero */
 .hero {
-  box-sizing: border-box;
   position: relative;
-  height: 13rem;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
-.hero-caption {
-  position: absolute;
-  left: 50%;
-  top: 50%;
   width: 100%;
-  padding: 0.5rem;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 1);
-  text-align: center;
-  margin: 0;
+  /* height: calc(100% - 64px); */
+  padding: 24px 0 0 0;
   box-sizing: border-box;
 }
+.hero-text {
+  margin: 0 0 0.125em 0;
+  font-size: 128px;
+  font-weight: 200;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
 
-/*
-Content
-Faded content zone
-*/
+.hero-subtext,
+.hero-bottomtext {
+  margin: 0;
+  font-size: 42px;
+  font-weight: 300;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
 
-.content {
-  background-color: rgba(0, 0, 0, 0.70);
-  border-top: 1px solid rgba(200, 50, 50, 0.5);
+.hero-bottomtext {
+  font-size: 34px;
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.hero-buy {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.hero-image {
+  width: 800px;
+}
+
+/* Background image required */
+.hero-container {
+  width: 100%;
+  height: 60%;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /* Button */
-
 .button {
   display: inline-block;
   box-sizing: border-box;
-  margin: 0.5rem;
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
   border: none;
   background-color: rgba(216, 12, 0, 0.85);
-  color: black;
-  font-family: 'Play';
-  font-weight: bold;
+  color: #fbfbfb;
+  text-decoration: none;
+  line-height: 1;
+  font-weight: 400;
   cursor: pointer;
   transition: background-color 0.25s;
 }
 
 .button:hover {
-  color: black;
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(224, 0, 0);
+  color: white;
 }
 
 .button--centered {
@@ -158,8 +219,9 @@ Faded content zone
 }
 
 .button--cta {
-  font-size: 1.375rem;
-  padding: 1rem 1.5rem;
+  font-size: 20px;
+  padding: 10px 14px;
+  margin: 13px 10px;
 }
 
 .button--cta-centered {
@@ -170,20 +232,38 @@ Faded content zone
   text-align: center;
 }
 
+.button--large {
+  font-size: 38px;
+  padding: 20px 8px;
+}
+
 .button-price {
   font-size: 1.25em;
 }
 
-/* Logo */
-.logo {
-  height: 5rem;
-  width: 5rem;
-  margin: 0.5rem;
-  border-radius: 100%;
-  background: rgb(0, 0, 0);
-  padding: 0.5rem;
-  border: 2px solid rgba(255, 0, 0, 0.5);
-  margin-bottom: -3.375rem;
+/*
+Sweet-ass horizontal bullets
+*/
+.horizontalbullets {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.horizontalbullets li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.horizontalbullets li:not(:first-child):before {
+  display: inline-block;
+  content: '•';
+  padding: 0 12px;
+  font-weight: 100;
+  font-size: 0.5em;
+  line-height: 0;
+  vertical-align: 0.35em;
 }
 
 /* Masonry gallery */
@@ -235,13 +315,17 @@ A picture + details section
   padding: 1rem 0;
   /* max-width: 1280px; */
   margin: auto;
-  border-bottom: 1px solid rgba(200, 50, 50, 0.5);
 }
 
 .section:after {
-  /* Clear fix */
+  position: relative;
+  top: 28px;
+  display: block;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+
   content: '';
-  display: table;
   clear: both;
 }
 
@@ -275,7 +359,7 @@ A picture + details section
   margin: auto;
 }
 
-.section-aside .slick,
+.section-aside .slick--round,
 .section-photo img {
   margin: 1rem auto;
 }
@@ -448,35 +532,6 @@ th.empty {
   background-color: transparent !important;
 }
 
-/* Slick */
-.slick figure {
-  border-radius: 100%;
-  overflow: hidden;
-  position: relative;
-  transform: translate3d(0,0,0);
-}
-.slick figure a:focus {
-  outline: none;
-}
-.slick figure img {
-  height: 100%;
-  position: absolute;
-  left:  50%;
-  top: 50%;
-  transform: translate3d(-50%, -50%, 0);
-}
-.slick figcaption {
-  font-size: 1px;
-  visibility: hidden;
-}
-.slick-prev:focus:before, .slick-next:focus:before {
-  color: rgb(36, 96, 193);
-}
-.slick-prev:before, .slick-next:before {
-  color: rgb(152, 3, 3);
-  line-height: 1.75rem;
-}
-
 .center {
   text-align: center;
 }
@@ -580,20 +635,100 @@ th.empty {
   width: 17rem;
 }
 
+.section-column .slick {
+  margin: 0 auto;
+}
+
 /** Slick */
 .slick {
   margin: 2rem auto;
   width: 14.5rem;
 }
-
-.section-column .slick {
-  margin: 0 auto;
+.slick-active {
+  z-index: 1; /* Float on top */
+}
+.slick figure {
+  position: relative;
+  transform: translate3d(0,0,0);
+}
+.slick figure img {
+  position: absolute;
+  left:  50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  height: 100%;
+}
+.slick figure a:focus {
+  outline: none;
+}
+.slick-slide {
+  /* Fix weird overflow with text at bottom */
+  margin: 0;
+  padding: 0;
 }
 
-.slick figure {
+/* Big and nice */
+.slick--hero {
+  width: 100%;
+  height: 250px;
+  margin-top: 0;
+}
+.slick--hero .slick-track,
+.slick--hero .slick-list {
+  height: 100%;
+}
+.slick--round figure {
+  width: 100%;
+  height: 100%;
+}
+
+.slick--hero .slick-dots {
+  top: 0;
+  bottom: auto;
+}
+
+.slick--hero .slick-prev,
+.slick--hero .slick-next {
+  display: none;
+}
+.slick--hero figcaption {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  color: black;
+  font-size: 42px;
+  font-weight: 300;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 34px;
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+/* Round and small */
+.slick--round figure {
+  border-radius: 100%;
+  overflow: hidden;
+
   height: 4.5rem;
   margin: 0.25rem;
   width: 4.5rem;
+}
+.slick--round figcaption {
+  font-size: 1px;
+  visibility: hidden;
+}
+
+/* Buttons */
+.slick-prev:focus:before, .slick-next:focus:before {
+  color: rgb(36, 96, 193);
+}
+.slick-prev:before, .slick-next:before {
+  color: rgb(152, 3, 3);
+  line-height: 1.75rem;
 }
 
 /** Circlephoto */
@@ -609,8 +744,23 @@ th.empty {
   height: 11rem;
 }
 
-/* Portrait */
-@media screen and (max-aspect-ratio: 3.99/3) {
+@media screen and (max-aspect-ratio: 3/4) {
+  .slick--hero figure img {
+    height: 80%;
+  }
+  .hero-text {
+    font-size: 48px;
+  }
+  .hero-subtext,
+  .hero-bottomtext,
+  .slick--hero figcaption {
+    font-size: 20px;
+  }
+
+  .responsive-hide {
+    display: none;
+  }
+
   .section-aside {
     display: block;
     float: none;
@@ -619,14 +769,18 @@ th.empty {
     margin-right: auto;
     margin-bottom: 1rem;
   }
+
+  .frametabs {
+    display: none;
+  }
 }
 
 /* iPhone 6 */
 @media screen and (min-width: 375px) {
-  .slick {
+  .slick--round {
     width: 17.5rem;
   }
-  .slick figure {
+  .slick--round figure {
     height: 5.5rem;
     margin: 0.25rem;
     width: 5.5rem;
@@ -647,13 +801,14 @@ th.empty {
     width: 20rem;
     height: 20rem;
   }
-  .slick {
-    width: 17.5rem;
-  }
 }
 
 /* iPhone 6 / Nexus 5x */
 @media screen and (min-width: 410px) {
+  .slick--hero {
+    height: 350px;
+  }
+
   body {
     font-size: 18px;
   }
@@ -666,6 +821,10 @@ th.empty {
 
 /* Nexus 6P */
 @media screen and (min-width: 520px) {
+  .slick--hero {
+    height: 400px;
+  }
+
   .section-column {
     margin: 3.125rem 0.5rem;
     width: 30.5rem;
@@ -685,6 +844,10 @@ th.empty {
 }
 
 @media screen and (min-width: 640px) {
+  .slick--hero {
+    height: 500px;
+  }
+
   .section-column {
     margin: 3.125rem 2rem;
     width: 35rem;
@@ -721,7 +884,7 @@ th.empty {
     height: 14rem;
     margin: 0 auto 1rem auto;
   }
-  .section--small .section-aside .slick {
+  .section--small .section-aside .slick--round {
     width: 17.5rem;
   }
 
@@ -735,6 +898,10 @@ th.empty {
 }
 
 @media screen and (min-width: 768px) {
+  .slick--hero {
+    height: 600px;
+  }
+
   .section-column {
     margin: 3rem 2rem;
     width: 18rem;
@@ -754,6 +921,10 @@ th.empty {
 }
 
 @media screen and (min-width: 1024px) {
+  .slick--hero {
+    height: 440px;
+  }
+
   .section-column {
     margin: 3rem 1rem;
     width: 19rem;
@@ -773,6 +944,10 @@ th.empty {
 }
 
 @media screen and (min-width: 1280px) {
+  .slick--hero {
+    height: 680px;
+  }
+
   .section-column {
     margin: 3rem 2rem;
     width: 20rem;
@@ -789,10 +964,10 @@ th.empty {
     width: 20.25rem;
     height: 20.25rem;
   }
-  .slick {
+  .slick--round {
     width: 19rem;
   }
-  .slick figure {
+  .slick--round figure {
     width: 6rem;
     height: 6rem;
   }
@@ -800,18 +975,22 @@ th.empty {
     width: 14rem;
     height: 14rem;
   }
-  .section--small .section-aside .slick {
+  .section--small .section-aside .slick--round {
     width: 19rem;
   }
 }
 
 @media screen and (min-width: 1600px) {
+  .slick--hero {
+    height: 740px;
+  }
+
   .section-column {
     margin: 3.125rem 1.125rem;
     width: 30.5rem;
   }
 
-  .slick {
+  .slick--round {
     width: 25.5rem;
   }
 
@@ -856,16 +1035,16 @@ th.empty {
     height: 23.5rem;
   }
 
-  .slick {
+  .slick--round {
     width: 26rem;
   }
 
-  .slick figure {
+  .slick--round figure {
     margin: 0.5rem;
     width: 8rem;
     height: 8rem;
   }
-  .section--small .section-aside .slick {
+  .section--small .section-aside .slick--round {
     width: 17.5rem;
   }
 }

@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html class="hero-background">
+<html>
 <head>
   <title>Falcon Multirotors</title>
   <meta charset="utf-8">
+
   <!-- Ensure correct presentation on iOS -->
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
 
   <!-- Core -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Play:400,700" >
-  <link rel="stylesheet" href="external/photoswipe/photoswipe.css"> 
-  <link rel="stylesheet" href="external/photoswipe/default-skin/default-skin.css"> 
+  <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Quicksand:300|family=Play:400,700">
+  <link rel="stylesheet" href="external/photoswipe/photoswipe.css">
+  <link rel="stylesheet" href="external/photoswipe/default-skin/default-skin.css">
   <link rel="stylesheet" href="external/slick/slick.css">
   <link rel="stylesheet" href="external/slick/slick-theme.css">
-  <link rel="stylesheet" href="index.css"> 
+  <link rel="stylesheet" href="index.css">
 
   <!-- Analytics -->
   <script>
@@ -47,9 +48,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
   <!-- Photoswipe -->
-  <script src="external/photoswipe/photoswipe.min.js"></script> 
-  <script src="external/photoswipe/photoswipe-ui-default.min.js"></script> 
-  
+  <script src="external/photoswipe/photoswipe.min.js"></script>
+  <script src="external/photoswipe/photoswipe-ui-default.min.js"></script>
+
   <!-- Masonry -->
   <script src="external/masonry/masonry.pkgd.min.js"></script>
 
@@ -60,984 +61,205 @@
   <script src="index.js"></script>
 </head>
 <body>
-  <header class="header center">
-    <img src="images/logo-small.png" alt="Falcon Logo" class="logo">
-  </header>
+  <div class="header">
+    <section class="header-section header-section--left">
+      <nav class="tablist frametabs">
+        <a class="tablist-tab is-selected" href="index.html">Garuda 200</a>
+        <a class="tablist-tab" href="falcon.html">Falcon X</a>
+      </nav>
+    </section>
+    <img class="header-logo" src="images/logo-trace-small.png" alt="Falcon Multirotors">
+    <section class="header-section header-section--right">
+      <a class="button button--cta" href="#">Buy <span class="responsive-hide">Garuda</span> $79</a>
+    </section>
+  </div>
+  <div class="hero">
+    <h1 class="hero-text">Garuda <strong>200</strong></h1>
+    <h2 class="hero-subtext">Fast, beautiful, maintainable.</h2>
 
-  <section class="hero">
-    <h1 class="hero-caption">Minimalist X-quad done right.</h1>
+    <div slick photoswipe itemscope class="slick--hero" itemtype="http://schema.org/ImageGallery" jqueryuioptions='{"slidesToShow": 1, "slidesToScroll": 1, "variableWidth": false, "dots": true, "prevArrow": "", "nextArrow": ""}' trackclick="Falcon 185,Photos viewed">
+      <!-- Bare photos -->
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="images/garuda/hero.jpg" itemprop="contentUrl" data-size="3888x1984">
+          <img src="images/garuda/hero.jpg" itemprop="thumbnail" alt="Image description">
+        </a>
+        <figcaption itemprop="caption description">
+          <ul class="horizontalbullets">
+            <li>200mm</li>
+            <li>5"</li>
+            <li>22XX</li>
+            <li>80g</li>
+          </ul>
+        </figcaption>
+      </figure>
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="images/garuda/hero.jpg" itemprop="contentUrl" data-size="3888x1984">
+          <img src="images/garuda/hero.jpg" itemprop="thumbnail" alt="Image description">
+        </a>
+        <figcaption itemprop="caption description">Built-in HD camera mount</figcaption>
+      </figure>
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="images/garuda/hero.jpg" itemprop="contentUrl" data-size="3888x1984">
+          <img src="images/garuda/hero.jpg" itemprop="thumbnail" alt="Image description">
+        </a>
+        <figcaption itemprop="caption description">Available in your favorite color</figcaption>
+      </figure>
+    </div>
+
+  </div>
+
+  <hr id="elementBelowTheFold">
+
+  <section class="section section--text">
+    <aside class="section-aside section-photo section-photo--round">
+      <img src="images/prototype.png" alt="Falcon 185 3D model">
+    </aside>
+    <div class="section-content">
+      <h2>An uncompromising quest for beauty.</h2>
+      <p>We wanted to create the most beautiful racing drone you've ever seen without placing form over function.</p>
+      <p>Garuda has a skeletal structure inspired by nature, curves inspirired by Italian supercars, aerodynamics inspired by jet aircraft, and features inspired by Swiss army knives.</p>
   </section>
 
-  <div class="content">
+  <section class="section section--text">
+    <aside class="section-aside section-photo section-photo--round">
+      <img src="images/prototype.png" alt="Falcon 185 3D model">
+    </aside>
+    <div class="section-content">
+      <h2>FPV and HD-first.</h2>
+      <p>With a built-in 40° HD camera mountand adjustable 30°, 45°, and 60° FPV camera mount, you'll never have to deal with fragile camera mounts and their tiny screws or 3D-printed camera mounts and their zip ties.</p>
+      <p>Pop in a RunCam Swift or HS1177, strap up a GoPro, Session, Yi, or other HD camera, and Garuda is ready for FPV.</p>
+  </section>
 
-    <section class="section section--text section--center">
-      <div class="section-content">
-        <h2>It started with an X.</h2>
-        <p>We made sketches, created 3D models, and lost sleep over every cut in the carbon fiber.</p>
-        <p>Then we built prototypes and crashed them into concrete and metal poles, redesigning anything that broke.</p>
-        <p>The result is Falcon, a line of no-compromise, insanely durable, high performance race quads.</p>
+  <section class="section section--text">
+    <aside class="section-aside section-photo section-photo--round">
+      <img src="images/prototype.png" alt="Falcon 185 3D model">
+    </aside>
+    <div class="section-content">
+      <h2>Light-weight: balanced.</h2>
+      <p>When designing Garuda, we paid special attention to weight balance. Even with an HD camera, Garuda never tilts when placed on the ground. With a 1300mAh battery strapped to the bottom and a GoPro on top, Garuda is balanced along the horizontal axis for clean flips and rolls.</p>
+      <p>At tilt, Garuda maintains a straight line through to GoPro to the battery, giving you a balanced feel while flying at high speeds.</p>
+      <p>Not only is Garuda balanced, but it's lightweight. At 80g, it's among the lightest racing drones available.</p>
+  </section>
+
+  <section class="section section--text">
+    <aside class="section-aside section-photo section-photo--round">
+      <img src="images/falconcut.jpg" alt="An Armattan-cut Falcon 185s">
+    </aside>
+    <div class="section-content">
+      <h2>Next level carbon fiber.</h2>
+      <p>We've partnered with <a href="https://elementalrc.com/" target="_blank">ElementalRC</a> to produce Garuda from their signatute radial carbon fiber.</p>
+      <p>Each layer of radial carbon fiber is rotated, producing a final product that has no weak points due to the unidirectional nature of carbon fiber. This means Garuda is stiffer and stronger than anything that came before it.</p>
+    </div>
+  </section>
+
+  <section class="section section--text">
+    <aside class="section-aside section-photo section-photo--round">
+      <img src="images/screwdriver.jpg" alt="Screwdriver and hardware">
+    </aside>
+    <div class="section-content">
+      <h2>Designed with maintenance in mind.</h2>
+      <p>When something goes wrong in the field, Garuda is ready for repair.</p>
+      <p>Full access to the flight controller, RX, and VTX means you can perform repairs without even removing a screw.</p>
+    </div>
+  </section>
+
+  <section class="section section--text">
+    <aside class="section-aside section-photo section-photo--round">
+      <img src="images/screwdriver.jpg" alt="Screwdriver and hardware">
+    </aside>
+    <div class="section-content">
+      <h2>Mythically durable.</h2>
+      <p>Garuda is named after <a href="https://en.wikipedia.org/wiki/Garuda" target="_blank">an immortal, ass-kicking bird</a> that can shapeshift and swallow whole rivers.</p>
+      <p>And aptly so. Garuda is made from hilariously durable radial carbon fiber and indestructable 3D-printed TPU whose design been brutally crash tested and revised so many times over that we're running out of cloud storage. <sup>help.</sup></p>
+      <p>We invite you to fly your Garuda directly into things (on purpose or otherwise), and if you can break the canopy and show us uncut GoPro footage immediately after the crash, we'll send you a replacement canopy as our way of saying "you crazy, and we like that."</p>
+      <p>We know it's possible to destroy 4mm carbon fiber by flying straight into a sharp piece of metal at 50MPH, so we won't replace your bottom plate if you manage to break it, but you can always buy replacement bottom plates at all of our <a href="#dealers">preferred dealers</a>.</p>
+    </div>
+  </section>
+
+  <section class="section section--text">
+    <aside class="section-aside section-photo section-photo--round">
+      <img src="images/screwdriver.jpg" alt="Screwdriver and hardware">
+    </aside>
+    <div class="section-content">
+      <h2>Not afraid to customize and accessorize.</h2>
+      <p>With TPU booties, battery protectors, VTX and RX holders, and optimized canopy designs in any color, Garuda is yours to customize.</p>
+      <p>Match your props and your canopy, your arm-tip LEDs with your VTX antenna, or your battery with your canopy LEDs, Garuda gives you more options to customize your drone and ditch the "completely black except the props" look most drones have.</p>
+    </div>
+  </section>
+
+  <section class="section section--text">
+    <aside class="section-aside section-photo section-photo--round">
+      <img src="images/screwdriver.jpg" alt="Screwdriver and hardware">
+    </aside>
+    <div class="section-content">
+      <h2>Nails the little things.</h2>
+      <p>With zip tie slots and a mounting hole for your XT-60, nut holding nubs for canopy screws, extra-snug hardware-free FPV camera mounting, and included vibration-damping o-rings to mount your flight controller, Garuda misses no details.</p>
+      <p>We've agonized over every aspect of the frame .</p>
+    </div>
+  </section>
+
+  <section class="section section--text">
+    <aside class="section-aside section-photo section-photo--round">
+      <img src="images/screwdriver.jpg" alt="Screwdriver and hardware">
+    </aside>
+    <div class="section-content">
+      <h2>Compatible with whatever you parts choose.</h2>
+      <p>We've taken into account all flavors of common configurations, providing you hardware and mounting solutions whether you use a RunCam Swift, FX799t, and a DTFc all-in-one FC or an HS1177, an RROSD, Hawkeye, and a SPRacingF3.</p>
+      <p>Garuda has accessories to help you mount your preferred VTX and RX as well.</p>
+      <p>Check out these Garuda builds for inspiration:</p>
+    </div>
+    <script src="http://rotorbuilds.com/javascript/builds.js" type="text/javascript"></script>
+    <script>rb({part: 872, limit: 12, columns: 4});</script>
+  </section>
+
+  <!-- Photoswipe -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
       </div>
-    </section>
-
-    <section class="section section--columns">
-
-      <div class="section-column">
-        <a href="javascript: falcon185gallery.click()" class="circlephoto">
-          <img class="circlephoto-image" src="images/falcon185_transparent.png" alt="Falcon 185">
-          <h2 class="circlephoto-caption">Falcon 185</h2>
-        </a>
-        
-        <div slick photoswipe itemscope itemtype="http://schema.org/ImageGallery" trackclick="Falcon 185,Photos viewed">
-          <!-- Bare photos -->
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon185/185-low-profile-front-view.jpg" itemprop="contentUrl" data-size="1632x1050">
-              <img src="images/falcon185/185-low-profile-front-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 185 - low-profile build</figcaption>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon185/185-low-profile-quarter-view.jpg" itemprop="contentUrl" data-size="1574x1158">
-              <img src="images/falcon185/185-low-profile-quarter-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 185 - low-profile build</figcaption>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon185/185-low-profile-top-view.jpg" itemprop="contentUrl" data-size="2448x2448">
-              <img src="images/falcon185/185-low-profile-top-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 185 - low-profile build</figcaption>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon185/185-tall-tower-front-view.jpg" itemprop="contentUrl" data-size="1632x1052">
-              <img src="images/falcon185/185-tall-tower-front-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 185 - tall-tower build</figcaption>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon185/185-tall-tower-quarter-view.jpg" itemprop="contentUrl" data-size="1274x864">
-              <img src="images/falcon185/185-tall-tower-quarter-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 185 - tall-tower build</figcaption>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon185/185-tall-tower-top-view.jpg" itemprop="contentUrl" data-size="1224x1224">
-              <img src="images/falcon185/185-tall-tower-top-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 185 - tall-tower build</figcaption>
-          </figure>
-
-          <!-- Built photos -->
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon185/a01.jpg" itemprop="contentUrl" data-size="3172x1735">
-              <img src="images/falcon185/a01_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 185 - low-profile build</figcaption>
-          </figure>
-
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon185/a02.jpg" itemprop="contentUrl" data-size="3199x2034">
-              <img src="images/falcon185/a02_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 185 - low-profile build</figcaption>
-          </figure>
-
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon185/a03.jpg" itemprop="contentUrl" data-size="2807x1899">
-              <img src="images/falcon185/a03_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 185 - low-profile build</figcaption>
-          </figure>
-
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon185/a04.jpg" itemprop="contentUrl" data-size="2363x2416">
-              <img src="images/falcon185/a04_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 185 - low-profile build</figcaption>
-          </figure>
-
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon185/a05.jpg" itemprop="contentUrl" data-size="3139x2345">
-              <img src="images/falcon185/a05_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 185 - low-profile build</figcaption>
-          </figure>
-
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon185/a06.jpg" itemprop="contentUrl" data-size="2971x2102">
-              <img src="images/falcon185/a06_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 185 - low-profile build</figcaption>
-          </figure>
-
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon185/a07.jpg" itemprop="contentUrl" data-size="3232x2264">
-              <img src="images/falcon185/a07_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 185 - low-profile build</figcaption>
-          </figure>
-
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon185/a08.jpg" itemprop="contentUrl" data-size="2794x2448">
-              <img src="images/falcon185/a08_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 185 - low-profile build</figcaption>
-          </figure>
-
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon185/b04.jpg" itemprop="contentUrl" data-size="2445x2437">
-              <img id="falcon185gallery" src="images/falcon185/b04_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 185 - low-profile build</figcaption>
-          </figure>
-
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon185/b01.jpg" itemprop="contentUrl" data-size="3156x1918">
-              <img src="images/falcon185/b01_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 185 - low-profile build</figcaption>
-          </figure>
-
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon185/b02.jpg" itemprop="contentUrl" data-size="3151x1949">
-              <img src="images/falcon185/b02_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 185 - low-profile build</figcaption>
-          </figure>
-
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon185/b03.jpg" itemprop="contentUrl" data-size="3166x2034">
-              <img src="images/falcon185/b03_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 185 - low-profile build</figcaption>
-          </figure> 
-
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon185/b05.jpg" itemprop="contentUrl" data-size="3264x2448">
-              <img src="images/falcon185/b05_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 185 - low-profile build</figcaption>
-          </figure>
-
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon185/b06.jpg" itemprop="contentUrl" data-size="3192x2033">
-              <img src="images/falcon185/b06_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 185 - low-profile build</figcaption>
-          </figure>
-
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon185/b07.jpg" itemprop="contentUrl" data-size="3264x2247">
-              <img src="images/falcon185/b07_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 185 - low-profile build</figcaption>
-          </figure>
-        </div>
-
-        <h3>Vitals</h3>
-        <table>
-          <tbody>
-            <tr>
-              <td>Props</td>
-              <td>5"</td>
-            </tr>
-            <tr>
-              <td>Motors</td>
-              <td>22XX</td>
-            </tr>
-            <tr>
-              <td>Weight</td>
-              <td>80g bare, 400g all up w/4S 1000mAh</td>
-            </tr>
-            <tr>
-              <td>Speciality</td>
-              <td>Large &amp; fast courses, HD recording</td>
-            </tr>
-          </tbody>
-        </table>
-        <a href="https://www.multirotorsuperstore.com/falcon-185-frame.html" class="button button--cta button--centered" target="_blank" trackclick="Falcon 185,Buy clicked">Buy Falcon 185 frame<br><span class="button-price">$79</span></a>
-
-        <div jqueryui="accordion" class="falcon-components">
-          <h3 trackclick="Falcon 185,Kit contents clicked">Kit Contents</h3>
-          <div>
-            <table>
-              <thead>
-                <tr>
-                  <th></th>
-                  <th>Part</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr><td class="center">1</td><td>4mm Falcon 185 main plate</td></tr>
-                <tr><td class="center">1</td><td>2mm Falcon top plate</td></tr>
-                <tr><td class="center">1</td><td>1.5mm Falcon HD camera plate</td></tr>
-                <tr><td class="center">1</td><td>Flyno Cloverleaf PDB</td></tr>
-                <tr><td class="center">8</td><td>8mm screws</td></tr>
-                <tr><td class="center">4</td><td>18mm screws</td></tr>
-                <tr><td class="center">4</td><td>12mm  screws</td></tr>
-                <tr><td class="center">4</td><td>0.5mm spacers</td></tr>
-                <tr><td class="center">4</td><td>4mm spacers</td></tr>
-                <tr><td class="center">6</td><td>15mm standoffs</td></tr>
-                <tr><td class="center">2</td><td>20mm standoffs</td></tr>
-                <tr><td class="center">2</td><td>25m standoffs</td></tr>
-                <tr><td class="center">2</td><td>30mm standoffs</td></tr>
-                <tr><td class="center">4</td><td>37mm standoffs</td></tr>
-              </tbody>
-            </table>
-          </div>
-          <h3 trackclick="Falcon 185,Recommended components clicked">Recommended Components</h3>
-          <div>
-            <table>
-              <thead>
-                <tr>
-                  <th></th>
-                  <th>Name</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Frame</td>
-                  <td><a trackclick="$innerText,Product clicked,$hostname" href="https://www.multirotorsuperstore.com/falcon-185-frame.html" target="_blank">Falcon 185</a></td>
-                </tr>
-                <tr>
-                  <td>Props</td>
-                  <td><a trackclick="$innerText,Product clicked,$hostname" href="http://getpropsman.com/collections/five-inch-tri-blades/products/dal-indestructible-t5045-tri-blade-v2-red" target="_blank">DAL T5045</a></td>
-                </tr>
-                <tr>
-                  <td>Motors</td>
-                  <td><a trackclick="$innerText,Product clicked,$hostname" href="https://www.multirotorsuperstore.com/cobra-2204-2300kv-brushless-motor.html" target="_blank">Cobra 2204 2300kV</a></td>
-                </tr>
-                <tr>
-                  <td>ESCs</td>
-                  <td><a trackclick="$innerText,Product clicked,$hostname" href="https://www.multirotorsuperstore.com/fvt-littlebee-20a-esc.html" target="_blank">Littlebee 20A</a></td>
-                </tr>
-                <tr>
-                  <td>FC</td>
-                  <td><a trackclick="$innerText,Product clicked,$hostname" href="https://www.multirotorsuperstore.com/lumenier-lux-flight-controller.html">Lumenier LUX</a></td>
-                </tr>
-                <tr>
-                  <td>RX</td>
-                  <td><a trackclick="$innerText,Product clicked,$hostname" href="https://www.multirotorsuperstore.com/frsky-xsr-cppm-s-bus-receiver.html" target="_blank">FrSky XSR</a> or <a trackclick="$innerText,Product clicked,$hostname" href="https://www.multirotorsuperstore.com/frsky-x4r-sb-receiver.html" target="_blank">X4R</a></td>
-                </tr>
-                <tr>
-                  <td>VTX</td>
-                  <td><a trackclick="$innerText,Product clicked,$hostname" href="https://www.multirotorsuperstore.com/hawkeye-5-8-ghz-32-channel-200mw-video-transmitter.html" target="_blank">Hawkeye 200mW</a></td>
-                </tr>
-                <tr>
-                  <td>Antenna</td>
-                  <td><a trackclick="$innerText,Product clicked,$hostname" href="https://www.multirotorsuperstore.com/vas-5-8-ghz-rhcp-airblade-race-spec-antenna.html" target="_blank">VAS Airscrew Race Spec</a></td>
-                </tr>
-                <tr>
-                  <td>FPV Cam</td>
-                  <td><a trackclick="$innerText,Product clicked,$hostname" href="https://www.multirotorsuperstore.com/mini-sony-super-had-ccd-600tvl-ir-block.html" target="_blank">HS1177</a> or <a trackclick="$innerText,Product clicked,$hostname" href="https://www.multirotorsuperstore.com/hs1177m-sony-super-had-ccd-600-tvl-ir-block.html" target="_blank">HS1177M</a></td>
-                </tr>
-              </tbody>
-            </table>
-            <!-- <a href="https://multirotorsuperstore.com" class="button button--cta button--centered">Buy Falcon 185 ARTF <span class="button-price">$375</span></a> -->
-          </div>
-        </div>
-      </div>
-
-      <div class="section-column">
-        <a href="javascript: falcon160gallery.click()" class="circlephoto">
-          <img class="circlephoto-image" src="images/falcon160_transparent.png" alt="Falcon 160">
-          <h2 class="circlephoto-caption">Falcon 160</h2>
-        </a>
-
-        <div slick photoswipe itemscope itemtype="http://schema.org/ImageGallery" trackclick="Falcon 160,Photos viewed">
-          <!-- Bare photos -->
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon160/160-tall-tower-front-view.jpg" itemprop="contentUrl" data-size="1595x1051">
-              <img src="images/falcon160/160-tall-tower-front-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 160 - tall-tower build</figcaption>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon160/160-tall-tower-quarter-view.jpg" itemprop="contentUrl" data-size="1595x1095">
-              <img src="images/falcon160/160-tall-tower-quarter-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 160 - tall-tower build</figcaption>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon160/160-tall-tower-top-view.jpg" itemprop="contentUrl" data-size="1224x1224">
-              <img src="images/falcon160/160-tall-tower-top-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 160 - tall-tower build</figcaption>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon160/160-low-profile-front-view.jpg" itemprop="contentUrl" data-size="1526x953">
-              <img src="images/falcon160/160-low-profile-front-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 160 - low-profile build</figcaption>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon160/160-low-profile-quarter-view.jpg" itemprop="contentUrl" data-size="1532x1067">
-              <img src="images/falcon160/160-low-profile-quarter-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 160 - low-profile build</figcaption>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon160/160-low-profile-top-view.jpg" itemprop="contentUrl" data-size="1224x1224">
-              <img src="images/falcon160/160-low-profile-top-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 160 - low-profile build</figcaption>
-          </figure>
-
-          <!-- Built photos -->
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon160/bare/top.jpg" itemprop="contentUrl" data-size="2448x2448">
-              <img id="falcon160gallery" src="images/falcon160/bare/top_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 160 - tall-tower build</figcaption>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon160/bare/front.jpg" itemprop="contentUrl" data-size="3264x2448">
-              <img src="images/falcon160/bare/front_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 160 - tall-tower build</figcaption>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon160/bare/front_quarter.jpg" itemprop="contentUrl" data-size="3264x2448">
-              <img src="images/falcon160/bare/front_quarter_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 160 - tall-tower build</figcaption>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon160/bare/side.jpg" itemprop="contentUrl" data-size="3264x2448">
-              <img src="images/falcon160/bare/side_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 160 - tall-tower build</figcaption>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon160/bare/rear_quarter.jpg" itemprop="contentUrl" data-size="3264x2448">
-              <img src="images/falcon160/bare/rear_quarter_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 160 - tall-tower build</figcaption>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon160/bare/rear.jpg" itemprop="contentUrl" data-size="3264x2448">
-              <img src="images/falcon160/bare/rear_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 160 - tall-tower build</figcaption>
-          </figure>
-
-          <!-- Built photos -->
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon160/gopro/top.jpg" itemprop="contentUrl" data-size="2448x2448">
-              <img src="images/falcon160/gopro/top_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 160 - tall-tower build</figcaption>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon160/gopro/front.jpg" itemprop="contentUrl" data-size="3264x2448">
-              <img src="images/falcon160/gopro/front_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 160 - tall-tower build</figcaption>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon160/gopro/front_quarter.jpg" itemprop="contentUrl" data-size="3264x2448">
-              <img src="images/falcon160/gopro/front_quarter_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 160 - tall-tower build</figcaption>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon160/gopro/side.jpg" itemprop="contentUrl" data-size="3264x2448">
-              <img src="images/falcon160/gopro/side_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 160 - tall-tower build</figcaption>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon160/gopro/rear_quarter.jpg" itemprop="contentUrl" data-size="3264x2448">
-              <img src="images/falcon160/gopro/rear_quarter_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 160 - tall-tower build</figcaption>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon160/gopro/rear.jpg" itemprop="contentUrl" data-size="3264x2448">
-              <img src="images/falcon160/gopro/rear_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 160 - tall-tower build</figcaption>
-          </figure>
-        </div>
-
-        <h3>Vitals</h3>
-        <table>
-          <tbody>
-            <tr>
-              <td>Props</td>
-              <td>4"</td>
-            </tr>
-            <tr>
-              <td>Motors</td>
-              <td>13XX, 14XX, 18XX, 22XX</td>
-            </tr>
-            <tr>
-              <td>Weight</td>
-              <td>60g bare, 360g all up w/4S 1000mAh</td>
-            </tr>
-            <tr>
-              <td>Speciality</td>
-              <td>Medium &amp; tight courses, freestyle</td>
-            </tr>
-          </tbody>
-        </table>
-        <a href="https://www.multirotorsuperstore.com/falcon-160-frame.html" class="button button--cta button--centered" target="_blank" trackclick="Falcon 160,Buy clicked">Buy Falcon 160 frame<br><span class="button-price">$69</span></a>
-
-        <div jqueryui="accordion" class="falcon-components">
-          <h3 trackclick="Falcon 160,Kit contents clicked">Kit Contents</h3>
-          <div>
-            <table>
-              <thead>
-                <tr>
-                  <th></th>
-                  <th>Part</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr><td class="center">1</td><td>3mm Falcon 160 main plate</td></tr>
-                <tr><td class="center">1</td><td>2mm Falcon top plate</td></tr>
-                <tr><td class="center">1</td><td>1.5mm Falcon HD camera plate</td></tr>
-                <tr><td class="center">1</td><td>Flyno Cloverleaf PDB</td></tr>
-                <tr><td class="center">8</td><td>8mm screws</td></tr>
-                <tr><td class="center">4</td><td>18mm screws</td></tr>
-                <tr><td class="center">4</td><td>12mm  screws</td></tr>
-                <tr><td class="center">4</td><td>0.5mm spacers</td></tr>
-                <tr><td class="center">4</td><td>4mm spacers</td></tr>
-                <tr><td class="center">6</td><td>15mm standoffs</td></tr>
-                <tr><td class="center">2</td><td>20mm standoffs</td></tr>
-                <tr><td class="center">2</td><td>25m standoffs</td></tr>
-                <tr><td class="center">2</td><td>30mm standoffs</td></tr>
-                <tr><td class="center">4</td><td>37mm standoffs</td></tr>
-              </tbody>
-            </table>
-          </div>
-
-          <h3 trackclick="Falcon 160,Recommended components clicked">Recommended Components</h3>
-          <div>
-            <table>
-              <thead>
-                <tr>
-                  <th></th>
-                  <th>Name</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Frame</td>
-                  <td><a trackclick="$innerText,Product clicked,$hostname" href="https://www.multirotorsuperstore.com/falcon-160-frame.html">Falcon 160</a></td>
-                </tr>
-                <tr>
-                  <td>Props</td>
-                  <td><a trackclick="$innerText,Product clicked,$hostname" href="http://getpropsman.com/collections/four-inch-tri-blades/products/4x-dal-indestructible-t4045bn-bullnose-tri-blade-red" target="_blank">DAL T4045BN</a></td>
-                </tr>
-                <tr>
-                  <td>Motors</td>
-                  <td><a trackclick="$innerText,Product clicked,$hostname" href="https://www.multirotorsuperstore.com/cobra-1806-2800kv.html" target="_blank">Cobra 1806 2800kV</a></td>
-                </tr>
-                <tr>
-                  <td>ESCs</td>
-                  <td><a trackclick="$innerText,Product clicked,$hostname" href="https://www.multirotorsuperstore.com/fvt-littlebee-20a-esc.html" target="_blank">Littlebee 20A</a></td>
-                </tr>
-                <tr>
-                  <td>FC</td>
-                  <td><a trackclick="$innerText,Product clicked,$hostname" href="https://www.multirotorsuperstore.com/lumenier-lux-flight-controller.html">Lumenier LUX</a></td>
-                </tr>
-                <tr>
-                  <td>RX</td>
-                  <td><a trackclick="$innerText,Product clicked,$hostname" href="https://www.multirotorsuperstore.com/frsky-xsr-cppm-s-bus-receiver.html" target="_blank">FrSky XSR</a> or <a trackclick="$innerText,Product clicked,$hostname" href="https://www.multirotorsuperstore.com/frsky-x4r-sb-receiver.html" target="_blank">X4R</a></td>
-                </tr>
-                <tr>
-                  <td>VTX</td>
-                  <td>FX799T</td>
-                </tr>
-                <tr>
-                  <td>Antenna</td>
-                  <td><a trackclick="$innerText,Product clicked,$hostname" href="https://www.multirotorsuperstore.com/vas-5-8-ghz-rhcp-airblade-race-spec-antenna.html" target="_blank">VAS Airscrew Race Spec</a></td>
-                </tr>
-                <tr>
-                  <td>FPV Cam</td>
-                  <td><a trackclick="$innerText,Product clicked,$hostname" href="https://www.multirotorsuperstore.com/mini-sony-super-had-ccd-600tvl-ir-block.html" target="_blank">HS1177</a> or <a trackclick="$innerText,Product clicked,$hostname" href="https://www.multirotorsuperstore.com/hs1177m-sony-super-had-ccd-600-tvl-ir-block.html" target="_blank">HS1177M</a></td>
-                </tr>
-              </tbody>
-            </table>
-            <!-- <a href="https://multirotorsuperstore.com" class="button button--cta button--centered">Buy Falcon 160 ARTF <span class="button-price">$350</span></a> -->
-          </div>
-        </div>
-      </div>
-
-      <div class="section-column">
-        <a href="javascript: falcon130gallery.click()" class="circlephoto">
-          <img class="circlephoto-image" src="images/falcon130_transparent.png" alt="Falcon 130">
-          <h2 class="circlephoto-caption">Falcon 130</h2>
-        </a>
-
-        <div slick photoswipe itemscope itemtype="http://schema.org/ImageGallery" trackclick="Falcon 130,Photos viewed">
-          <!-- Bare photos -->
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon130/130-large-top-plate-front-view.jpg" itemprop="contentUrl" data-size="1632x1052">
-              <img src="images/falcon130/130-large-top-plate-front-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 130 - full-size top plate build</figcaption>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon130/130-large-top-plate-quarter-view.jpg" itemprop="contentUrl" data-size="1598x1074">
-              <img src="images/falcon130/130-large-top-plate-quarter-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 130 - full-size top plate build</figcaption>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon130/130-large-top-plate-top-view.jpg" itemprop="contentUrl" data-size="1224x1224">
-              <img src="images/falcon130/130-large-top-plate-top-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 130 - full-size top plate build</figcaption>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon130/130-small-top-plate-front-view.jpg" itemprop="contentUrl" data-size="1517x877">
-              <img src="images/falcon130/130-small-top-plate-front-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 130 - micro top plate build</figcaption>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon130/130-small-top-plate-quarter-view.jpg" itemprop="contentUrl" data-size="1511x923">
-              <img src="images/falcon130/130-small-top-plate-quarter-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 130 - micro top plate build</figcaption>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon130/130-small-top-plate-top-view.jpg" itemprop="contentUrl" data-size="1224x1224">
-              <img src="images/falcon130/130-small-top-plate-top-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 130 - micro top plate build</figcaption>
-          </figure>
-
-          <!-- Built photos -->
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon130/top.jpg" itemprop="contentUrl" data-size="2448x2448">
-              <img id="falcon130gallery" src="images/falcon130/top_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 130 - micro top plate build</figcaption>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon130/front.jpg" itemprop="contentUrl" data-size="3264x2448">
-              <img src="images/falcon130/front_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 130 - micro top plate build</figcaption>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon130/front_quarter.jpg" itemprop="contentUrl" data-size="3264x2448">
-              <img src="images/falcon130/front_quarter_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 130 - micro top plate build</figcaption>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon130/side.jpg" itemprop="contentUrl" data-size="3264x2448">
-              <img src="images/falcon130/side_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 130 - micro top plate build</figcaption>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon130/rear_quarter.jpg" itemprop="contentUrl" data-size="3264x2448">
-              <img src="images/falcon130/rear_quarter_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 130 - micro top plate build</figcaption>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon130/rear.jpg" itemprop="contentUrl" data-size="3264x2448">
-              <img src="images/falcon130/rear_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 130 - micro top plate build</figcaption>
-          </figure>
-
-        </div>
-
-        <h3>Vitals</h3>
-        <table>
-          <tbody>
-            <tr>
-              <td>Props</td>
-              <td>3" or 3.5"</td>
-            </tr>
-            <tr>
-              <td>Motors</td>
-              <td>11XX, 13XX, 14XX</td>
-            </tr>
-            <tr>
-              <td>Weight</td>
-              <td>24g bare, 250g all up w/4S 850mAh</td>
-            </tr>
-            <tr>
-              <td>Speciality</td>
-              <td>Small &amp tight courses, indoor, proximity</td>
-            </tr>
-          </tbody>
-        </table>
-        <a href="https://www.multirotorsuperstore.com/falcon-130-frame.html" class="button button--cta button--centered" target="_blank" trackclick="Falcon 130,Buy clicked">Buy Falcon 130 frame<br><span class="button-price">$29</span></a>
-
-        <div jqueryui="accordion" class="falcon-components">
-          <h3 trackclick="Falcon 130,Kit contents clicked">Kit Contents</h3>
-          <div>
-            <table>
-              <thead>
-                <tr>
-                  <th></th>
-                  <th>Part</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr><td class="center">1</td><td>2.5mm Falcon 130 main plate</td></tr>
-                <tr><td class="center">1</td><td>2mm Falcon top plate</td></tr>
-                <tr><td class="center">1</td><td>1.5mm Falcon HD camera plate</td></tr>
-                <tr><td class="center">4</td><td>6mm screws</td></tr>
-                <tr><td class="center">4</td><td>18mm screws</td></tr>
-                <tr><td class="center">4</td><td>0.5mm spacers</td></tr>
-                <tr><td class="center">4</td><td>4mm spacers</td></tr>
-                <tr><td class="center">4</td><td>15mm standoffs</td></tr>
-              </tbody>
-            </table>
-          </div>
-
-          <h3 trackclick="Falcon 130,Recommended components clicked">Recommended Components</h3>
-          <div>
-            <table>
-              <thead>
-                <tr>
-                  <th></th>
-                  <th>Name</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Frame</td>
-                  <td><a trackclick="$innerText,Product clicked,$hostname" href="https://www.multirotorsuperstore.com/falcon-130-frame.html" target="_blank">Falcon 130</a></td>
-                </tr>
-                <tr>
-                  <td>Props</td>
-                  <td><a trackclick="$innerText,Product clicked,$hostname" href="https://www.multirotorsuperstore.com/hqprop-3030x3-glass-composite.html">HQProp 3030x3</a></td>
-                </tr>
-                <tr>
-                  <td>Motors</td>
-                  <td><a trackclick="$innerText,Product clicked,$hostname" href="https://www.multirotorsuperstore.com/dys-bx1306-4000kv-brushless-motor.html" target="_blank">DYS BX1306 4000kV</a></td>
-                </tr>
-                <tr>
-                  <td>ESCs</td>
-                  <td><a trackclick="$innerText,Product clicked,$hostname" href="https://www.multirotorsuperstore.com/fvt-littlebee-20a-esc.html" target="_blank">Littlebee 20A</a></td>
-                </tr>
-                <tr>
-                  <td>FC</td>
-                  <td><a trackclick="$innerText,Product clicked,$hostname" href="https://www.multirotorsuperstore.com/lumenier-lux-flight-controller.html">Lumenier LUX</a></td>
-                </tr>
-                <tr>
-                  <td>RX</td>
-                  <td><a trackclick="$innerText,Product clicked,$hostname" href="https://www.multirotorsuperstore.com/frsky-xsr-cppm-s-bus-receiver.html" target="_blank">FrSky XSR</a></td>
-                </tr>
-                <tr>
-                  <td>VTX</td>
-                  <td><a trackclick="$innerText,Product clicked,$hostname" href="https://www.multirotorsuperstore.com/hawkeye-5-8-ghz-32-channel-200mw-video-transmitter.html" target="_blank">Hawkeye 200mW</a></td>
-                </tr>
-                <tr>
-                  <td>Antenna</td>
-                  <td><a trackclick="$innerText,Product clicked,$hostname" href="https://www.multirotorsuperstore.com/5-8-ghz-cloverleaf-skew-planar-wheel-antenna.html" target="_blank">5.8GHz Cloverleaf</a></td>
-                </tr>
-                <tr>
-                  <td>FPV Cam</td>
-                  <td><a trackclick="$innerText,Product clicked,$hostname" href="https://www.multirotorsuperstore.com/micro-600tvl-110-degree-camera.html" target="_blank">Micro 600TVL</a></td>
-                </tr>
-              </tbody>
-            </table>
-            <!-- <a href="https://multirotorsuperstore.com" class="button button--cta button--centered">Buy Falcon 130 ARTF <span class="button-price">$200</span></a> -->
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--text section--alternate" id="elementBelowTheFold">
-      <aside class="section-aside section-photo section-photo--round">
-        <img src="images/prototype.png" alt="Falcon 185 3D model">
-      </aside>
-      <div class="section-content">
-        <h2>No compromise design.</h2>
-        <p>The idea started simple. We wanted to design an X-quad that’s lighter, shorter, easier to build, and more durable than anything on the market.</p>
-        <p>But we wanted a built-in HD camera mount that worked with Runcam, GoPro Session, and even full-sized GoPros. We wanted a x-quad specific PDB that works with Littlebees OR KISS, support for different cameras and VTXs, multiple options for antenna mounting, places to put zip ties and velcro straps, and an easily servicable build.</p>
-        <h2>How did we do it? Simple, include hardware for <span class="highlight">3&nbsp;different build styles.</span></h2>
-      </div>
-    </section>
-
-    <section class="section section--text section--small">
-      <aside class="section-aside">
-        <a href="javascript: lowProfileGallery.click();" class="section-photo section-photo--round">
-          <img src="images/falcon185/185-low-profile-quarter-view.jpg" alt="Falcon 185 low-profile build">
-        </a>
-
-        <div slick photoswipe itemscope itemtype="http://schema.org/ImageGallery" trackclick="Low-profile build,Photos viewed">
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon160/160-low-profile-quarter-view.jpg" itemprop="contentUrl" data-size="1532x1067">
-              <img id="lowProfileGallery" src="images/falcon160/160-low-profile-quarter-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 160 - low-profile build</figcaption>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon160/160-low-profile-front-view.jpg" itemprop="contentUrl" data-size="1526x953">
-              <img src="images/falcon160/160-low-profile-front-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 160 - low-profile build</figcaption>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon160/160-low-profile-top-view.jpg" itemprop="contentUrl" data-size="1224x1224">
-              <img src="images/falcon160/160-low-profile-top-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 160 - low-profile build</figcaption>
-          </figure>
-        </div>
-      </aside>
-
-      <div class="section-content">
-        <h2>Low-profile 17mm camera build</h2>
-        <h3>Falcon 185, 160</h3>
-        <p>Designed around the <a trackclick="HS1177M,Product clicked,$hostname" href="https://www.multirotorsuperstore.com/hs1177m-sony-super-had-ccd-600-tvl-ir-block.html" target="_blank">HS1177M 17mm camera</a>, this build has a fixed camera angle that matches the HD camera angle.</p>
-        <p>This build stays short so you don't clothesline yourself on airgates while still letting you mount up your HD camera of choice if necessary.</p>
-        <p>Instead of the angled CF plate that comes with Falcon, you can use foam and a velcro strap, <a href="http://creativedex.com/collections/rc-stuff/products/30-degree-gopro-mount" target="_blank" trackclick="3D printed GoPro mount,Product clicked,$hostname">3D printed GoPro mounts</a>, or even a <a href="http://www.thingiverse.com/thing:1242579" target="_blank" trackclick="3D printed top plate + GoPro mount,Product clicked,$hostname">3D printed top plate + GoPro mount.</a></p>
-        <p>The angle of the HD/FPV camera can be set from 0° to 48° using the included spacers.</p>
-
-        <div jqueryui="accordion" class="falcon-components">
-          <h3 trackclick="Low-profile build,Diagram clicked">Assembly diagram</h3>
-          <div>
-            <h4>Main stack</h4>
-            <ul class="stack">
-              <li><img src="images/bits/screw.png"><span class="stack-label">18mm screws</span></li>
-              <li><img src="images/parts/main-plate_thumb.png"><span class="stack-label">Main plate</span></li>
-              <li><img src="images/bits/insulative-spacer.png"><span class="stack-label">0.5mm spacers</span></li>
-              <li><img src="images/bits/electronics.png"><span class="stack-label">PDB</span></li>
-              <li><img width="2" src="images/bits/standoff.png"><span class="stack-label">4mm spacers</span></li>
-              <li><img src="images/bits/electronics.png"><span class="stack-label">Flight controller</span></li>
-              <li><img width="3" src="images/bits/standoff.png"><span class="stack-label">15mm standoffs</span></li>
-              <li><img src="images/parts/top-plate_thumb.png"><span class="stack-label">Top plate</span></li>
-              <li><img src="images/bits/screw-left.png"><span class="stack-label">8mm screws</span></li>
-            </ul>
-            <h4>Camera pod</h4>
-            <ul class="stack">
-              <li><img src="images/bits/screw.png"><span class="stack-label">8mm screws</span></li>
-              <li><img src="images/parts/top-plate_thumb.png"><span class="stack-label">Top plate</span></li>
-              <li><img width="6" src="images/bits/standoff.png"><span class="stack-label">15mm and 30mm standoffs</span></li>
-              <li><img src="images/parts/hd-camera-plate_thumb.png"><span class="stack-label">HD camera plate</span></li>
-              <li><img src="images/bits/screw-left.png"><span class="stack-label">12mm screws</span></li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="section section--text section--small section--alternate">
-      <aside class="section-aside">
-        <a href="javascript: tallTowerGallery.click();" class="section-photo section-photo--round">
-          <img src="images/falcon160/160-tall-tower-quarter-view.jpg" alt="Falcon 185 low-profile build">
-        </a>
-
-        <div slick photoswipe itemscope itemtype="http://schema.org/ImageGallery" trackclick="Tall-tower build,Photos viewed">
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon160/160-tall-tower-front-view.jpg" itemprop="contentUrl" data-size="1595x1051">
-              <img id="tallTowerGallery" src="images/falcon160/160-tall-tower-front-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 160 - tall-tower build</figcaption>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon160/160-tall-tower-quarter-view.jpg" itemprop="contentUrl" data-size="1595x1095">
-              <img src="images/falcon160/160-tall-tower-quarter-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 160 - tall-tower build</figcaption>
-          </figure>
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/falcon160/160-tall-tower-top-view.jpg" itemprop="contentUrl" data-size="1224x1224">
-              <img src="images/falcon160/160-tall-tower-top-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
-            </a>
-            <figcaption itemprop="caption description">Falcon 160 - tall-tower build</figcaption>
-          </figure>
-        </div>
-      </aside>
-      <div class="section-content">
-        <h2>Tall-tower 25mm camera build</h2>
-        <h3>Falcon 185, 160</h3>
-        <p>Designed around the <a trackclick="HS1177,Product clicked,$hostname" href="https://www.multirotorsuperstore.com/mini-sony-super-had-ccd-600tvl-ir-block.html" target="_blank">HS1177 25mm camera</a>, this build has a variable camera angle and an optional fixed angle HD camera mount.</p>
-        <p>This build makes it easy to adjust for FPV camera angle for different courses and can optionally mount a HD camera as well.</p>
-        <p>The camera angle can be set from 0° to 48° using the included spacers.</p>
-
-        <div jqueryui="accordion" class="falcon-components">
-          <h3 trackclick="Tall-tower build,Diagram clicked">Assembly diagram</h3>
-          <div>
-            <h4>Main stack</h4>
-            <ul class="stack">
-              <li><img src="images/bits/screw.png"><span class="stack-label">18mm screws</span></li>
-              <li><img src="images/parts/main-plate_thumb.png"><span class="stack-label">Main plate</span></li>
-              <li><img src="images/bits/insulative-spacer.png"><span class="stack-label">0.5mm spacers</span></li>
-              <li><img src="images/bits/electronics.png"><span class="stack-label">PDB</span></li>
-              <li><img width="2" src="images/bits/standoff.png"><span class="stack-label">4mm spacers</span></li>
-              <li><img src="images/bits/electronics.png"><span class="stack-label">Flight controller</span></li>
-              <li><img width="3" src="images/bits/standoff.png"><span class="stack-label">37mm standoffs</span></li>
-              <li><img src="images/parts/top-plate_thumb.png"><span class="stack-label">Top plate</span></li>
-              <li><img src="images/bits/screw-left.png"><span class="stack-label">8mm screws</span></li>
-            </ul>
-
-            <h4>Optional HD camera mount</h4>
-            <ul class="stack">
-              <li><img src="images/bits/screw.png"><span class="stack-label">8mm screws</span></li>
-              <li><img src="images/parts/top-plate_thumb.png"><span class="stack-label">Top plate</span></li>
-              <li><img width="6" src="images/bits/standoff.png"><span class="stack-label">15mm and 30mm standoffs</span></li>
-              <li><img src="images/parts/hd-camera-plate_thumb.png"><span class="stack-label">HD camera plate</span></li>
-              <li><img src="images/bits/screw-left.png"><span class="stack-label">12mm screws</span></li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="section section--text section--small">
-      <aside class="section-aside">
-        <a href="javascript: microBuildGallery.click();" class="section-photo section-photo--round">
-          <img src="images/falcon130/130-large-top-plate-quarter-view.jpg" alt="Falcon 130 micro build with large top plate">
-        </a>
-
-        <div slick photoswipe itemscope itemtype="http://schema.org/ImageGallery" trackclick="Micro build,Photos viewed">
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a href="images/falcon130/130-large-top-plate-front-view.jpg" itemprop="contentUrl" data-size="1632x1052">
-                <img id="microBuildGallery" src="images/falcon130/130-large-top-plate-front-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
-              </a>
-              <figcaption itemprop="caption description">Falcon 130 - full-size top plate build</figcaption>
-            </figure>
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a href="images/falcon130/130-large-top-plate-quarter-view.jpg" itemprop="contentUrl" data-size="1598x1074">
-                <img src="images/falcon130/130-large-top-plate-quarter-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
-              </a>
-              <figcaption itemprop="caption description">Falcon 130 - full-size top plate build</figcaption>
-            </figure>
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a href="images/falcon130/130-large-top-plate-top-view.jpg" itemprop="contentUrl" data-size="1224x1224">
-                <img src="images/falcon130/130-large-top-plate-top-view_thumb.jpg" itemprop="thumbnail" alt="Image description">
-              </a>
-              <figcaption itemprop="caption description">Falcon 130 - full-size top plate build</figcaption>
-            </figure>
-        </div>
-      </aside>
-
-      <div class="section-content">
-        <h2>Micro CMOS camera build</h2>
-        <h3>Falcon 185, 160, 130</h3>
-        <p>Designed around the <a trackclick="Micro 600TVL,Product clicked,$hostname" href="https://www.multirotorsuperstore.com/micro-600tvl-110-degree-camera.html" target="_blank">Micro 600TVL CMOS camera</a>, this build has a fixed camera angle and an no option for mounting a HD camera.
-        <p>This build can be done with top plate and a full-sized VTX, or with the HD camera plate and a small VTX module (such as the <a href="http://us.banggood.com/Wholesale-Warehouse-FPV-5_8G-200mW-32CH-Wireless-Audio-Video-AV-Transmitter-Module-FX758-2-wp-Usa-980317.html?p=3F201911077692015010" target="_blank">FX758-2</a>).</p>
-
-        <div jqueryui="accordion" class="falcon-components">
-          <h3 trackclick="Micro build,Diagram clicked">Assembly diagram</h3>
-          <div>
-            <h4>With full top plate</h4>
-            <ul class="stack">
-              <li><img src="images/bits/screw.png"><span class="stack-label">18mm screws</span></li>
-              <li><img src="images/parts/main-plate_thumb.png"><span class="stack-label">Main plate</span></li>
-              <li><img width="2" src="images/bits/standoff.png"><span class="stack-label">4mm spacers</span></li>
-              <li><img src="images/bits/electronics.png"><span class="stack-label">Flight controller</span></li>
-              <li><img width="3" src="images/bits/standoff.png"><span class="stack-label">15mm standoffs</span></li>
-              <li><img src="images/parts/top-plate_thumb.png"><span class="stack-label">Top plate</span></li>
-              <li><img src="images/bits/screw-left.png"><span class="stack-label">6mm screws</span></li>
-            </ul>
-            <h4>With minimal top plate</h4>
-            <ul class="stack">
-              <li><img src="images/bits/screw.png"><span class="stack-label">18mm screws</span></li>
-              <li><img src="images/parts/main-plate_thumb.png"><span class="stack-label">Main plate</span></li>
-              <li><img width="2" src="images/bits/standoff.png"><span class="stack-label">4mm spacers</span></li>
-              <li><img src="images/bits/electronics.png"><span class="stack-label">Flight controller</span></li>
-              <li><img width="3" src="images/bits/standoff.png"><span class="stack-label">15mm standoffs</span></li>
-              <li><img src="images/parts/hd-camera-plate_thumb.png"><span class="stack-label">HD camera plate</span></li>
-              <li><img src="images/bits/screw-left.png"><span class="stack-label">6mm screws</span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--text section--alternate">
-      <aside class="section-aside section-photo section-photo--round">
-        <img src="images/screwdriver.jpg" alt="Screwdriver and hardware">
-      </aside>
-      <div class="section-content">
-        <h2>Designed with maintenance in mind.</h2>
-        <p>When something goes wrong in the field, Falcon doesn't require a teardown to fix it. Removing 4 screws gives access to your flight controller, VTX, and camera.</p>
-        <p>We chose the hardware for Falcon very carefully. Where other frames use a locknut as a spacer, Falcon uses a 4mm threadless aluminum spacer that makes it easy to quickly take the build apart and access the bottom of the PDB.</p>
-        <p>Changing out a broken battery strap is as simple as backing off the 18mm screws from the main stack (without removing them), then sliding the strap through Falcon's battery strap slots.</p>
-      </div>
-    </section>
-
-    <section class="section section--text">
-      <aside class="section-aside section-photo section-photo--round">
-        <img src="images/falconcut.jpg" alt="An Armattan-cut Falcon 185s">
-      </aside>
-      <div class="section-content">
-        <h2>Cut from the best carbon fiber in the industry.</h2>
-        <p>We didn't skimp here. Falcon is cut by Armattan's team of skilled CNC operators from the same high quality Armattan carbon fiber you've come to expect. Every cut is clean and smooth. Tolerances are spot on.</p>
-        <p>And, of course, the durability is legendary.</p>
-      </div>
-    </section>
-
-    <section class="section section--text section--alternate">
-      <aside class="section-aside section-photo section-photo--round">
-        <img src="images/flynocloverleaf.jpg" alt="Flyno Cloverleaf PDB">
-      </aside>
-      <div class="section-content">
-        <h2>A PDB with a purpose.</h2>
-        <p>Falcon needed a PDB that was designed specifically for X quads. We needed a no compromise, light weight, high amperage PDB with 5V pads in the right location for popular FCs and ESC pads that don't require you to criss-cross wires or flip your ESC upside down.</p>
-
-        <p>Nothing like that existed, so we worked with Flynoceros to design the reversible <a trackclick="$innerText,Product clicked,$hostname" href="https://theflynoshop.com/product/cloverleaf-pdb-pro-v4/">Flyno Cloverleaf Pro PDB</a> -- one side is perfect for KISS and Rotorgeeks ESCs, and the other perfect for everything else. With 4oz copper, support for dual Pololu voltage regulators, zip tie slots for your XT60 pigtail, and pads in all the right places, there's nothing else like it, and it ships with Falcon 160 and 185.</p>
-
-        <p>The Flyno PDB is 1mm thick and weighs only 5g, making it the thinnest PDB on the market.</p>
-      </div>
-    </section>
-
-    <section class="section section--text">
-        <a href="https://www.multirotorsuperstore.com/frames/frames-by-mfg/falcon-multirotors.html" class="button button--cta button--cta-centered" target="_blank" trackclick="Falcon frames,Buy clicked">Buy Falcon, starting at $29</a>
-    </section>
-
-    <footer class="footer">
-      &copy; <script>document.write((new Date()).getFullYear())</script> Falcon Multirotors | <a href="mailto:lazdnet@gmail.com?subject=Falcon">Contact us</a>
-    </footer>
-
-    <!-- Photoswipe -->
-    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="pswp__bg"></div>
-      <div class="pswp__scroll-wrap">
-          <div class="pswp__container">
-              <div class="pswp__item"></div>
-              <div class="pswp__item"></div>
-              <div class="pswp__item"></div>
-          </div>
-          <div class="pswp__ui pswp__ui--hidden">
-              <div class="pswp__top-bar">
-                  <div class="pswp__counter"></div>
-                  <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                  <button class="pswp__button pswp__button--share" title="Share"></button>
-                  <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                  <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-                  <div class="pswp__preloader">
-                      <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                          <div class="pswp__preloader__donut"></div>
-                        </div>
-                      </div>
-                  </div>
+      <div class="pswp__ui pswp__ui--hidden">
+        <div class="pswp__top-bar">
+          <div class="pswp__counter"></div>
+          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+          <button class="pswp__button pswp__button--share" title="Share"></button>
+          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+              <div class="pswp__preloader__donut"></div>
               </div>
-
-              <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                  <div class="pswp__share-tooltip"></div> 
-              </div>
-
-              <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-              </button>
-
-              <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-              </button>
-
-              <div class="pswp__caption">
-                  <div class="pswp__caption__center"></div>
-              </div>
+            </div>
           </div>
+        </div>
+
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div>
+
+        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+        </button>
+
+        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+        </button>
+
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
       </div>
     </div>
   </div>
+
+  <section class="section section--text">
+      <a href="https://www.multirotorsuperstore.com/frames/frames-by-mfg/falcon-multirotors.html" class="button button--cta button--cta-centered button--large" target="_blank" trackclick="Falcon frames,Buy clicked">Buy Garuda for $79</a>
+  </section>
+
+  <footer class="footer">
+    &copy; <script>document.write((new Date()).getFullYear())</script> Falcon Multirotors | <a href="mailto:lazdnet@gmail.com?subject=Falcon">Contact us</a>
+  </footer>
 </body>
 </html>
