@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Garuda 200 | Falcon Multirotors</title>
+  <meta charset="utf-8">
+
+  <!-- Ensure correct presentation on iOS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+
+  <!-- Core -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Quicksand:300|family=Play:400,700">
+  <link rel="stylesheet" href="external/photoswipe/photoswipe.css">
+  <link rel="stylesheet" href="external/photoswipe/default-skin/default-skin.css">
+  <link rel="stylesheet" href="external/slick/slick.css">
+  <link rel="stylesheet" href="external/slick/slick-theme.css">
+  <link rel="stylesheet" href="index.css">
+
+  <!-- Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-74430530-1', 'auto');
+    ga('send', 'pageview');
+
+    (function() {
+      window.addEventListener('load', function() {
+        var pastTheFold = false;
+        var elementBelowTheFold = document.getElementById('elementBelowTheFold');
+        function checkPastFold() {
+          if (pastTheFold) return;
+
+          if (document.body.scrollTop + window.innerHeight/2 > elementBelowTheFold.offsetTop) {
+            ga('send', 'event', 'Interaction', 'Scrolled past fold');
+            pastTheFold = true;
+          }
+        }
+
+        window.addEventListener('scroll', checkPastFold);
+      })
+    }());
+  </script>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+  <!-- Photoswipe -->
+  <script src="external/photoswipe/photoswipe.min.js"></script>
+  <script src="external/photoswipe/photoswipe-ui-default.min.js"></script>
+
+  <!-- Masonry -->
+  <script src="external/masonry/masonry.pkgd.min.js"></script>
+
+  <!-- Slick -->
+  <script type="text/javascript" src="external/slick/slick.min.js"></script>
+
+  <!-- App -->
+  <script src="index.js"></script>
+</head>
+<body>
+  <div class="header">
+    <section class="header-section header-section--left">
+      <nav class="tablist frametabs">
+        <a class="tablist-tab is-selected" href="index.html">Garuda 200</a>
+        <a class="tablist-tab" href="falcon.html">Falcon X</a>
+      </nav>
+    </section>
+    <img class="header-logo" src="images/logo-trace-small.png" alt="Falcon Multirotors">
+
+    <section class="header-section header-section--right">
+      <a href="#buy" class="button button--cta" trackclick="Garuda 200,Buy clicked">Buy $69</a>
+    </section>
+  </div>
+  <div class="hero">
+    <h1 class="hero-text">Garuda <strong>200</strong></h1>
+    <h2 class="hero-subtext">Fast, beautiful, maintainable.</h2>
+
+    <div slick photoswipe itemscope class="slick--hero" itemtype="http://schema.org/ImageGallery" jqueryuioptions='{"slidesToShow": 1, "slidesToScroll": 1, "variableWidth": false, "dots": true, "prevArrow": "", "nextArrow": "", "autoplay": true, "autoplaySpeed": 5000, "speed": 300}' trackclick="Garuda 200,Photos viewed">
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="images/garuda/hero7.jpg" itemprop="contentUrl" data-size="3888x1938">
+          <img src="images/garuda/hero7.jpg" itemprop="thumbnail" alt="Image description">
+        </a>
+        <figcaption itemprop="caption description">Race ready with the Race Canopy option</figcaption>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="images/garuda/hero.jpg" itemprop="contentUrl" data-size="3840x2284">
+          <img src="images/garuda/hero.jpg" itemprop="thumbnail" alt="Image description">
+        </a>
+        <figcaption itemprop="caption description">The HD Cnopy option offers a built-in 40° HD camera mount</figcaption>
+      </figure>
+<!-- 
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="images/garuda/hero2.jpg" itemprop="contentUrl" data-size="3614x2045">
+          <img src="images/garuda/hero2.jpg" itemprop="thumbnail" alt="Image description">
+        </a>
+        <figcaption itemprop="caption description">Built-in 40° HD camera mount</figcaption>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="images/garuda/hero3.jpg" itemprop="contentUrl" data-size="3585x2235">
+          <img src="images/garuda/hero3.jpg" itemprop="thumbnail" alt="Image description">
+        </a>
+        <figcaption itemprop="caption description">
+          <ul class="horizontalbullets">
+            <li>200mm</li>
+            <li>5"</li>
+            <li>22XX</li>
+          </ul>
+        </figcaption>
+      </figure> -->
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="images/garuda/hero4.jpg" itemprop="contentUrl" data-size="3838x2327">
+          <img src="images/garuda/hero4.jpg" itemprop="thumbnail" alt="Image description">
+        </a>
+        <figcaption itemprop="caption description">Designed with maintence in mind</figcaption>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="images/garuda/hero8.jpg" itemprop="contentUrl" data-size="3548x2356">
+          <img src="images/garuda/hero8.jpg" itemprop="thumbnail" alt="Image description">
+        </a>
+        <figcaption itemprop="caption description">30°, 45°, and 60° adjustable camera tilt</figcaption>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="images/garuda/hero6.jpg" itemprop="contentUrl" data-size="3838x2327">
+          <img src="images/garuda/hero6.jpg" itemprop="thumbnail" alt="Image description">
+        </a>
+        <figcaption itemprop="caption description">Out with straight lines, in with curves</figcaption>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="images/garuda/hero5.jpg" itemprop="contentUrl" data-size="3607x2147">
+          <img src="images/garuda/hero5.jpg" itemprop="thumbnail" alt="Image description">
+        </a>
+        <figcaption itemprop="caption description">Give the pilots behind you a nice view</figcaption>
+      </figure>
+
+    </div>
+
+  </div>
+
+  <hr id="elementBelowTheFold">
+
+  <section class="section section--text">
+    <aside class="section-aside section-photo section-photo--round">
+      <img src="images/garuda/colors.jpg" alt="Garuda Colors">
+    </aside>
+    <div id="buy" class="section-content">
+      <h2>Available right now in your favorite color.</h2>
+      <p>Garuda is in stock and shipping now. Orders are shipped the same day if placed before 1 PM and arrive in 2-3 days anywhere in the US.</p>
+      <p>Garuda will also be available at <a href="https://www.fpvheadquarters.com/multirotors/frames/falcon-multirotors.html" target="_blank">FPV Headquarters</a> and <a href="hhttps://www.droneeclipse.com/search?q=falcon" target="_blank">Drone Eclipse</a> in the coming weeks.</p>
+    
+      <form id="buyForm" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="9L6EVPSNLERKA">
+
+        <div class="buttonoptions">
+
+          <label class="label label--block">
+            Thickness
+            <input type="hidden" name="on0" value="Thickness">
+            <select id="thickness" class="button button--cta button--white js-orderoption" name="os0">
+              <option value="3mm">3mm ($63)</option>
+              <option value="4mm">4mm ($69)</option>
+            </select>
+          </label>
+
+          <label class="label label--block">
+            Canopy
+            <input type="hidden" name="on3" value="Canopy">
+            <select id="canopy" class="button button--cta button--white js-orderoption" name="os3">
+              <option value="Race Canopy">Race Canopy</option>
+              <option value="HD Canopy">HD Canopy</option>
+            </select>
+          </label>
+
+          <label class="label label--block">
+            Color
+            <input type="hidden" name="on1" value="Color">
+            <select id="color" class="button button--cta button--white js-orderoption" name="os1">
+              <option value="Red">Red</option>
+              <option value="Orange">Orange</option>
+              <option value="Green">Green</option>
+              <option value="Blue">Blue</option>
+              <option value="Purple">Purple</option>
+              <option value="Black">Black</option>
+              <option value="Clear">Clear</option>
+            </select>
+          </label>
+
+          <label class="label label--block">
+            Lens Diameter
+            <input type="hidden" name="on2" value="Lens Diameter">
+            <select id="fpvlens" class="button button--cta button--white js-orderoption" name="os2">
+              <option value="17mm">17mm (2.1mm lens)</option>
+              <option value="14mm">14mm (2.8mm lens)</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="stats">
+          <div class="stat"><span class="stat-label">Price:</span><span class="stat-value" id="price_display" itemprop="price">$69</span></div>
+          <div class="stat"><span class="stat-label">Weight:</span><span class="stat-value" id="weight_display"></span></div>
+          <div class="stat"><span class="stat-label">Color:</span><span class="stat-value swatch" id="color_display"></span></div>
+          <div class="stat"><span class="stat-label">GoPro mount:</span><span class="stat-value" id="hdcamera_display"></span></div>
+        </div>
+
+        <button trackclick="Garuda 200,Pre-order form submitted" class="button button--cta button--submit" type="submit" name="submit" alt="Pay with PayPal">Order Garuda</button>
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+
+        <script>
+          function updateOrderOptions() {
+            var $thickness = $('#thickness');
+            var $fpvlens = $('#fpvlens');
+            var thickness = $thickness.val();
+            var canopy = $('#canopy').val();
+
+            var price = 0;
+            var weight = 0;
+            if (thickness === '3mm') {
+              weight = 53;
+              price = 63;
+            }
+            else {
+              weight = 70;
+              price = 69;
+            }
+
+            // Hardware (worst case)
+            weight += 10;
+
+            var hdCamera = 'No';
+            if (canopy === 'Race Canopy') {
+              weight += 19;
+            }
+            else {
+              weight += 29;
+              hdCamera = 'Yes';
+            }
+
+            var color = $('#color').val();
+            if (color === 'Clear') {
+              color = 'white';
+            }
+
+            $('#color_display').css('background-color', color);
+            $('#price_display').text('$'+price);
+            $('#weight_display').text(weight+'g');
+            $('#hdcamera_display').text(hdCamera);
+
+            $('#priceField').text('$'+price);
+          };
+
+          updateOrderOptions();
+
+          $(document).on('change', '.js-orderoption', updateOrderOptions);
+        </script>
+      </form>
+    </div>
+  </section>
+
+  <section class="section section--text">
+    <aside class="section-aside section-photo section-photo--round">
+      <img src="images/garuda/fpv-and-hd.jpg" alt="FPV and HD camera mounts">
+    </aside>
+    <div class="section-content">
+      <h2>Strap up your GoPro, snap in your camera.</h2>
+      <p>A built-in 40° HD camera mount, makes it so you'll never have to deal with heavy HD camera mounts to carry your GoPro, Session, Yi, or other HD camera.</p>
+      <p>With a built-in adjustable 30°, 45°, and 60° FPV camera mount for the popular HS1177 camera, you can finally throw away those fragile metal camera brackets and their tiny screws.</p>
+  </section>
+
+  <section class="section section--text">
+    <aside class="section-aside section-photo section-photo--round">
+      <img src="images/garuda/coplights.gif" alt="Cop lights">
+    </aside>
+    <div class="section-content">
+      <h2>Not afraid to customize and accessorize.</h2>
+      <p>Garuda is available with your choice of 3mm or 4mm carbon fiber, so you can choose to optimize for weight or durability.</p>
+      <p>With TPU booties, battery protectors, VTX and RX holders, and optimized canopy designs in any color, Garuda is yours to customize. Accessories will be available on a print-to-order basis from <a href="http://www.phx-3d.com">Phoenix 3D Solutions</a> in the coming weeks.</p>
+      <p>Match your props and your canopy, your arm-tip LEDs with your VTX antenna, or your battery with your canopy LEDs, Garuda gives you more options to customize your drone and ditch the "no color except the standoffs and props" look most drones have.</p>
+    </div>
+  </section>
+
+  <section class="section section--text">
+    <aside class="section-aside section-photo section-photo--round">
+      <img src="images/garuda/cutting-carbon.jpg" alt="Carbon">
+    </aside>
+    <div class="section-content">
+      <h2>Legendary durability.</h2>
+      <p>Garuda is named after <a href="https://en.wikipedia.org/wiki/Garuda" target="_blank">an immortal, ass-kicking bird</a>, and aptly so.</p>
+
+      <p>We cut Garuda out of 3K carbon fiber with a 0°/45°/90° layup. This means Garuda is stiff from front to back, side to side, and motor to motor and has no weak points along any axis. With its 4mm thick carbon fiber and a canopy made out of indestructible TPU, Garuda lives up to the legend of the name.</p>
+    </div>
+  </section>
+
+<!--   <section class="section section--text">
+    <aside class="section-aside section-photo section-photo--round">
+      <img src="images/garuda/frame-design.jpg" alt="Garuda 200 3D model">
+    </aside>
+    <div class="section-content">
+      <h2>An uncompromising quest for beauty.</h2>
+      <p>We wanted to create the most beautiful racing drone you've ever seen without placing form over function.</p>
+      <p>Garuda has a skeletal structure inspired by nature, curves inspired by Italian supercars, aerodynamics inspired by jet aircraft, and features inspired by Swiss army knives.</p>
+  </section> -->
+
+  <section class="section section--text">
+    <aside class="section-aside section-photo section-photo--round">
+      <img src="images/garuda/balanced.jpg" alt="Garuda 3D model: Side shot">
+    </aside>
+    <div class="section-content">
+      <h2>Light-weight: balanced.</h2>
+      <p>When designing Garuda, we paid special attention to weight balance. Even with an HD camera, Garuda never tilts when placed on the ground. With a 1300mAh battery strapped to the bottom and a GoPro on top, Garuda is balanced along the horizontal axis for clean flips and rolls.</p>
+      <p>At tilt, Garuda maintains a straight line through to GoPro to the battery, giving you a balanced feel while flying at high speeds.</p>
+      <p>As a true-X, Garuda gives the best possible stick feel with the motors and forces right where the flight controller expects them to be.</p>
+      <p>Not only is Garuda balanced, but it's lighter than other drones with canopies. Including the integrated GoPro mount, Garuda's frame + canopy + hardware weighs in at <strong>92g</strong> for the 3mm version and <strong>110g</strong> for the 4mm version.</p>
+  </section>
+
+  <section class="section section--text">
+    <aside class="section-aside section-photo section-photo--round">
+      <img src="images/screwdriver.jpg" alt="Screwdriver and hardware">
+    </aside>
+    <div class="section-content">
+      <h2>Designed with maintenance in mind.</h2>
+      <p>When something goes wrong in the field, Garuda is ready for repair.</p>
+      <p>Full access to the flight controller, RX, and VTX means you can perform repairs without even removing a screw.</p>
+    </div>
+  </section>
+
+  <section class="section section--text">
+    <aside class="section-aside section-photo section-photo--round">
+      <img src="images/garuda/attention-to-detail.jpg" alt="Gaurda camera mount">
+    </aside>
+    <div class="section-content">
+      <h2>Nails the little things.</h2>
+      <p>With zip tie slots and a mounting hole for your XT-60, nut holding nubs for canopy screws, extra-snug hardware-free FPV camera mounting, and included vibration-damping o-rings to mount your flight controller, Garuda misses no details.</p>
+      <p>We've agonized over every aspect of the frame, especially the little things, with dozens of revisions and changes so minor they're best measured in micrometers.</p>
+    </div>
+  </section>
+
+  <section class="section section--text">
+    <aside class="section-aside section-photo section-photo--round">
+      <img src="images/garuda/runcam.jpg" alt="RunCam Swift">
+    </aside>
+    <div class="section-content">
+      <h2>Compatible with the most common hardware.</h2>
+      <p>Garuda is compatible with the parts you'll see on most builds. However, Garuda requires the following:</p>
+      <ul>
+        <li><strong>Flight Controller</strong>: Standard, 30.5mm sized flight controller</li>
+        <li><strong>Motors</strong>: 22XX motors or any motor with standard 16x19 M3 mounting holes</li>
+        <li><strong>Camera</strong>: Foxeer HS1177, RunCam Swift, RunCam Owl Plus, or other camera whose case is 25x25mm with screw nubs</li>
+        <li><strong>VTX</strong>: Any VTX with a SMA pigtail.</li>
+      </ul>
+      <p>Garuda's included hardware lets you soft-mount mount your PDB and flight controller with plenty of clearance for components. The included o-rings help prevent yaw-twitching for those sensitive gyros and motors with N52 magnets.</p> 
+      <p>Check out these Garuda builds for inspiration:</p>
+      <div style="display: inline-block" trackclick="Garuda 200,Builds clicked">
+        <script src="http://rotorbuilds.com/javascript/builds.js" type="text/javascript"></script>
+        <script>rb({limit: 10, columns: 5});</script>
+      </div>
+    </div>
+  </section>
+
+   <section class="section section--text">
+    <a href="#buy" trackclick="Garuda 200,Buy clicked" class="button button--cta button--cta-centered button--large" type="submit" name="submit" alt="Pay with PayPal">Order <span class="responsive-hide">Garuda</span></a>
+    <span class="button-caption">Orders ship same-day if placed before 1 PM</span>
+  </section>
+
+  <!-- Photoswipe -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+      <div class="pswp__ui pswp__ui--hidden">
+        <div class="pswp__top-bar">
+          <div class="pswp__counter"></div>
+          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+          <button class="pswp__button pswp__button--share" title="Share"></button>
+          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+              <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div>
+
+        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+        </button>
+
+        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+        </button>
+
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    &copy; <script>document.write((new Date()).getFullYear())</script> Falcon Multirotors | <a href="mailto:lazdnet@gmail.com?subject=Falcon">Contact us</a>
+  </footer>
+</body>
+</html>

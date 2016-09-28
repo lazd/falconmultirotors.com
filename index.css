@@ -12,7 +12,7 @@ body {
 }
 
 a {
-  color: rgb(170, 170, 170);
+  color: rgb(80, 130, 200);
 
   transition: color;
   text-decoration: none;
@@ -67,6 +67,7 @@ Header/Footer
 .header {
   position: relative;
   height: 64px;
+  color: rgb(214, 214, 214);
 }
 
 .header-logo {
@@ -153,6 +154,10 @@ Header/Footer
   font-family: 'Quicksand', sans-serif;
 }
 
+strong {
+  font-weight: 700;
+}
+
 .hero-subtext {
   margin: 0;
   font-size: 42px;
@@ -172,7 +177,8 @@ Header/Footer
   color: #fbfbfb;
   text-decoration: none;
   line-height: 1;
-  font-weight: 400;
+  font-weight: 300;
+  font-family: 'Lato', sans-serif;
   cursor: pointer;
   transition: background-color 0.25s;
 }
@@ -203,13 +209,94 @@ Header/Footer
   text-align: center;
 }
 
+.button--submit {
+  display: block;
+}
+
+.button--white {
+  border: 1px solid rgb(200, 200, 200);
+  color: black;
+  background: #efefef;
+}
+
+.button--white:hover {
+  background-color: rgb(240, 240, 240);
+  color: black;
+}
+
 .button--large {
-  font-size: 38px;
-  padding: 20px 8px;
+  font-size: 36px;
+  padding: 20px 18px;
 }
 
 .button-price {
   font-size: 1.25em;
+}
+
+/** Labels */
+.label {
+  text-align: right;
+  font-weight: 300;
+  font-size: 20px;
+}
+.label--block {
+  width: 320px;
+  display: block;
+  margin: 10px;
+}
+.label--white {
+  color: white;
+}
+
+.label select {
+  width: 180px;
+  font-size: 18px;
+}
+
+/**
+Stats
+*/
+.stats {
+  margin: 0 0 10px 0;
+  display: inline-block;
+}
+.stat {
+  display: block;
+  margin: 4px 0;
+
+  font-size: 20px;
+}
+.stat-label {
+  display: inline-block;
+  width: 200px;
+  text-align: right;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.swatch {
+  display: inline-block;
+  border: 1px solid gray;
+  width: 38px;
+  height: 18px;
+}
+
+/** button options */
+.buttonoptions {
+  display: inline-block;
+  margin: 0 0 15px 0;
+}
+.buttonoptions--centered {
+  text-align: center;
+}
+.buttonoptions--centered label {
+  margin: 0 10px;
+}
+
+.button-caption {
+  display: block;
+  text-align: center;
+  opacity: 0.6;
 }
 
 /**
@@ -432,6 +519,10 @@ Photoswipe
   text-align: center;
 }
 
+.pswp__item {
+  background: white;
+}
+
 /* Buttons */
 .slick-prev:focus:before, .slick-next:focus:before {
   color: rgb(36, 96, 193);
@@ -439,6 +530,13 @@ Photoswipe
 .slick-prev:before, .slick-next:before {
   color: rgb(152, 3, 3);
   line-height: 1.75rem;
+}
+
+.responsive-show {
+  display: none;
+}
+.responsve-show-1280 {
+  display: none;
 }
 
 @media screen and (max-width: 1900px) {
@@ -474,6 +572,14 @@ Photoswipe
 }
 
 @media screen and (max-width: 1280px) {
+  .responsive-hide-1280 {
+    display: none;
+  }
+
+  .responsve-show-1280 {
+    display: block;
+  }
+
   .slick--hero {
     height: 490px;
   }
@@ -582,6 +688,10 @@ Photoswipe
 
   .responsive-hide {
     display: none;
+  }
+
+  .responsive-show {
+    display: '';
   }
 
   .section--text {
