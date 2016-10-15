@@ -112,6 +112,50 @@ Header/Footer
   padding: 1.25rem;
 }
 
+/* table */
+.table-container {
+  margin: auto;
+  padding: 0 0 20px 0;
+  width: 500px;
+}
+
+.table-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.table {
+  width: 100%;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.table--right {
+  width: auto;
+  float: right;
+  margin: 0;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 8px;
+}
+
+.table--alernate tr:nth-child(even){
+  background-color: #f2f2f2
+}
+
+.table th {
+  background-color: gray;
+  color: white;
+}
+
+.table-price {
+  width: 100px;
+}
+
 /* Tab list */
 .tablist {
   height: 64px;
@@ -146,6 +190,10 @@ Header/Footer
   box-sizing: border-box;
 }
 
+.hero p {
+  text-align: center;
+}
+
 .hero-text {
   margin: 0 0 0.125em 0;
   font-size: 128px;
@@ -164,6 +212,25 @@ strong {
   font-weight: 300;
   text-align: center;
   font-family: 'Lato', sans-serif;
+}
+
+.productShowcase {
+  display: inline-block;
+  max-width: 480px;
+}
+.productShowcase-image {
+  width: 100%;
+  margin: 0 auto 10px auto;
+}
+.productShowcase-button {
+  margin: 0 auto 0 auto;
+}
+.productShowcase-heading {
+  font-size: 35px;
+}
+.productShowcase-description {
+  font-size: 20px;
+  font-weight: 300;
 }
 
 /* Button */
@@ -203,7 +270,7 @@ strong {
 
 .button--cta-centered {
   display: block;
-  max-width: 24rem;
+  max-width: 28rem;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -670,6 +737,7 @@ Photoswipe
   }
 }
 
+/* Phones */
 @media screen and (max-aspect-ratio: 3/4) {
   .hero-text {
     font-size: 78px;
@@ -712,6 +780,14 @@ Photoswipe
 
   .frametabs {
     display: none;
+  }
+
+  .productShowcase {
+    width: 100%;
+  }
+
+  .label--block {
+    width: 100%;
   }
 }
 

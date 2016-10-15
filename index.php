@@ -1,3 +1,3 @@
 <?php
-header('Location: garuda.html');
+header('Location: rasvelg.html');
 ?>
