@@ -6,6 +6,7 @@
   $amount_without_shipping = null;
   $amount = null;
   $shipping_amount = null;
+  $tax = null;
 
   $pp_hostname = 'www.paypal.com'; // Change to www.sandbox.paypal.com to test against sandbox
   $auth_token = "wNHBPwbBihVpBZSokURLPzYv2Q4-ufVRw5Y7W_m9fkB0tTHM3QawT8WNuYW";
@@ -58,6 +59,7 @@
         $lastname = $keyarray['last_name'];
         $amount = $keyarray['payment_gross'];
         $shipping_amount = $keyarray['mc_shipping'];
+        $tax = $keyarray['tax'];
         $amount_without_shipping = $amount - $shipping_amount;
 
         // Gather array of items
@@ -180,6 +182,12 @@
             <td>Shipping</td>
             <td class="table-price">$<?= $shipping_amount ?></td>
           </tr>
+          <?php if ($tax != 0) { ?>
+          <tr>
+            <td>Tax</td>
+            <td class="table-price">$<?= $tax ?></td>
+          </tr>
+          <?php } ?>
           <tr>
             <td>Total</td>
             <td class="table-price">$<?= $amount ?></td>
