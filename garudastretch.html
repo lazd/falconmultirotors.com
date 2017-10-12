@@ -7,6 +7,15 @@
   <!-- Ensure correct presentation on iOS -->
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
 
+  <meta property="og:title" content="Garuda Stretch">
+  <meta property="og:description" content="">
+  <meta property="og:price" content="69.00">
+  <meta property="og:url" content="http://falconmultirotors.com/garudastretch.html">
+  <meta property="og:site_name" content="Falcon Multirotors">
+  <meta property="og:image" content="http://falconmultirotors.com/images/garudastretch/garuda-stretch-side.jpg">
+  <meta property="og:availability" content="instock">
+  <meta property="pinterest:richpins" content="enabled">
+
   <!-- Core -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Quicksand:300|family=Play:400,700">
   <link rel="stylesheet" href="external/photoswipe/photoswipe.css">
@@ -58,12 +67,13 @@
   <script type="text/javascript" src="external/slick/slick.min.js"></script>
 
   <!-- App -->
-  <script src="index.js"></script>
+  <script src="falcon.js"></script>
 </head>
 <body>
   <div class="header">
     <section class="header-section header-section--left">
       <nav class="tablist frametabs">
+        <a class="tablist-tab" href="rasvelgstretch.html">Räsvelg Stretch</a>
         <a class="tablist-tab" href="rasvelg.html">Räsvelg</a>
         <a class="tablist-tab is-selected" href="garudastretch.html">Garuda Stretch</a>
         <a class="tablist-tab" href="garuda.html">Garuda 200</a>
@@ -126,12 +136,14 @@
 
   <section class="section section--text">
     <aside class="section-aside section-photo section-photo--round">
-      <img src="images/calendar-icon-nov7.png" alt="November 7th">
+      <img src="images/pry.png" alt="PitchRollYaw Logo">
     </aside>
     <div id="buy" class="section-content">
-      <h2>Available for pre-order.</h2>
-      <p>Garuda Stretch pre-orders are open. All orders will ship November 7th.</p>
+      <h2>Shipping now.</h2>
+      <p>Garuda Stretch is in stock and shipping now from PitchRollYaw!</p>
     
+      <a class="button button--cta" href="https://www.pitchrollyaw.net/frames/garuda-stretch-fpv-frame" target="_blank" trackclick="Garuda Stretch,Product clicked,$hostname">Order Garuda Stretch from PRY</a>
+      <!--
       <form id="buyForm" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
         <input type="hidden" name="cmd" value="_s-xclick">
         <input type="hidden" name="hosted_button_id" value="8T7U45N8AKCYS">
@@ -156,6 +168,7 @@
               <option value="Green">Green</option>
               <option value="Blue">Blue</option>
               <option value="Purple">Purple</option>
+              <option value="Pink">Pink</option>
               <option value="Black">Black</option>
               <option value="Clear">Clear</option>
             </select>
@@ -221,6 +234,7 @@
           $(document).on('change', '.js-orderoption', updateOrderOptions);
         </script>
       </form>
+      -->
     </div>
   </section>
 
@@ -336,7 +350,7 @@
 
    <section class="section section--text">
     <a href="#buy" trackclick="Garuda Stretch,Buy clicked" class="button button--cta button--cta-centered button--large" type="submit" name="submit" alt="Pay with PayPal">Pre-order <span class="responsive-hide">Garuda Stretch</span></a>
-    <span class="button-caption">Garuda Stretch pre-orders will ship November 7th.</span>
+    <span class="button-caption">Garuda Stretch pre-orders will ship the week of June 5th.</span>
   </section>
 
   <!-- Photoswipe -->

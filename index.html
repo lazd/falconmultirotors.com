@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Falcon Multirotors</title>
+  <meta charset="utf-8">
+
+  <!-- Ensure correct presentation on iOS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+
+  <!-- Core -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Quicksand:300|family=Play:400,700">
+  <link rel="stylesheet" href="index.css">
+
+  <!-- Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-74430530-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+  <!-- Masonry -->
+  <script src="external/masonry/masonry.pkgd.min.js"></script>
+
+  <!-- App -->
+  <script src="falcon.js"></script>
+</head>
+<body>
+  <div class="header">
+    <section class="header-section header-section--left">
+
+    </section>
+    <img class="header-logo" src="images/logo-trace-small.png" alt="Falcon Multirotors">
+  </div>
+
+  <div class="hero hero--standalone">
+    <div class="grid">
+
+      <a href="featherlight.html" class="grid-item">
+        <h1 class="grid-heading">Featherlight</h1>
+        <img class="grid-image" src="images/garagecrab/garagecrab-20mm-quarter.jpg">
+        <h2 class="grid-subheading">4mm. 4". 54g.</h2>
+      </a>
+
+      <a href="garagecrab.html" class="grid-item">
+        <h1 class="grid-heading">Garagecrab</h1>
+        <img class="grid-image" src="images/garagecrab/garagecrab-20mm-quarter.jpg">
+        <h2 class="grid-subheading">4mm. 4". 54g.</h2>
+      </a>
+
+      <a href="rasvelgstretch.html" class="grid-item">
+        <h1 class="grid-heading">Räsvelg Stretch</h1>
+        <img class="grid-image" src="images/rasvelgstretch/rasvelgstretch-front.jpg">
+        <h2 class="grid-subheading">5mm. 5". 80g.</h2>
+      </a>
+
+      <a href="rasvelgstretch.html" class="grid-item">
+        <h1 class="grid-heading">Babyshark</h1>
+        <img class="grid-image" src="images/babyshark/babyshark-front-thumb.jpg">
+        <h2 class="grid-subheading">2mm. 2". 12g.</h2>
+      </a>
+    </div>
+
+    <script>
+      $('.grid').masonry({
+        columnWidth: 200
+      });
+    </script>
+
+  </div>
+
+
+  <footer class="footer footer--sticky">
+    &copy; <script>document.write((new Date()).getFullYear())</script> Falcon Multirotors | <a href="mailto:lazdnet@gmail.com?subject=Falcon">Contact us</a>
+  </footer>
+</body>
+</html>
