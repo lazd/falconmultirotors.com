@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dealer Order Form | Falcon Multirotors</title>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Ensure correct presentation on iOS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+
+  <!-- Core -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Quicksand:300|family=Play:400,700">
+  <link rel="stylesheet" href="external/photoswipe/photoswipe.css">
+  <link rel="stylesheet" href="external/photoswipe/default-skin/default-skin.css">
+  <link rel="stylesheet" href="external/slick/slick.css">
+  <link rel="stylesheet" href="external/slick/slick-theme.css">
+  <link rel="stylesheet" href="index.css">
+
+  <!-- Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-74430530-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+  <!-- Photoswipe -->
+  <script src="external/photoswipe/photoswipe.min.js"></script>
+  <script src="external/photoswipe/photoswipe-ui-default.min.js"></script>
+
+  <!-- App -->
+  <script src="falcon.js"></script>
+
+  <script>
+    $(function() {
+      $(document.body).on('change', 'input[type="number"]', function() {
+        var min = parseInt(this.getAttribute("min"), 10);
+        if (min !== NaN) {
+          var value = parseInt(this.value, 10);
+          if (value < min) {
+            this.value = min;
+          }
+        }
+      });
+    });
+  </script>
+
+</head>
+<body>
+  <div class="rail">
+    <nav class="nav">
+      <a class="nav-item" href="bannilite.html"><img src="images/bannilite/bannilite-circlethumb.jpg" alt="Featherlight">Bannilite</a>
+      <a class="nav-item" href="featherlight5.html"><img src="images/featherlight/featherlight-circlethumb.jpg" alt="Featherlight">Featherlight 5</a>
+      <a class="nav-item" href="featherlight4.html"><img src="images/featherlight/featherlight-4-circlethumb.jpg" alt="Featherlight">Featherlight 4</a>
+      <a class="nav-item" href="featherlight3.html"><img src="images/featherlight/featherlight-3-circlethumb.jpg" alt="Featherlight">Featherlight 3</a>
+      <a class="nav-item is-selected" href="splitshark.html"><img src="images/splitshark/splitshark-circlethumb.jpg" alt="Splitshark">Splitshark</a>
+      <a class="nav-item" href="bullshark.html"><img src="images/bullshark/bullshark-circlethumb.jpg" alt="Bullshark">Bullshark</a>
+      <a class="nav-item" href="babyshark.html"><img src="images/babyshark/babyshark-circlethumb.jpg" alt="Babyshark">Babyshark</a>
+      <a class="nav-item" href="tinyshark.html"><img src="images/tinyshark/tinyshark-circlethumb.jpg" alt="Tinyshark">Tinyshark</a>
+      <a class="nav-item" href="garagecrab.html"><img src="images/garagecrab/garagecrab-20mm-topmount-front-thumb.jpg" alt="Garagecrab">Garagecrab</a>
+      <a class="nav-item" href="rasvelgstretch.html"><img src="images/rasvelgstretch/rasvelgstretch-front.jpg" alt="Räsvelg Stretch">Räsvelg Stretch</a>
+      <a class="nav-item" href="rasvelg.html"><img src="images/rasvelg/rasvelg3-square-thumb.jpg" alt="Räsvelg">Räsvelg Pod</a>
+      <a class="nav-item" href="garudastretch.html"><img src="images/garudastretch/garuda-stretch-square-thumb.jpg" alt="Garuda Stretch">Garuda Stretch</a>
+      <a class="nav-item" href="garuda.html"><img src="images/garuda/garuda-square-thumb.jpg" alt="Garuda">Garuda</a>
+      <a class="nav-item" href="falcon.html"><img src="images/falcon185/falcon-square-thumb.jpg">Falcon X</a>
+    </nav>
+  </div>
+  <div class="header">
+    <section class="header-section header-section--left nav-trigger">
+      <button class="button button--quiet">☰</button>
+    </section>
+    <img class="header-logo" src="images/logo-trace-small.png" alt="Falcon Multirotors">
+  </div>
+
+  <section class="section section--text">
+    <div class="section-content">
+      <h2>Want to carry Falcon frames in your store?</h2>
+      <p>Purchasing from us works like a normal online shopping cart. Simply add the frames you want to order to your cart and checkout.</p>
+      <p>We'll follow up shortly with an estimated delivery date (usually within 3 weeks).</p>
+      <p>Feel free to open pre-orders immediately after ordering, but make sure to list a date at least 4 weeks away, and be sure to respect the MAP pricing as listed below.</p>
+      <p>If you have any questions, feel free to <a href="mailto:lazdnet@gmail.com?subject=Falcon">contact us</a>.</p>
+    </div>
+  </section>
+
+  <section class="section section--text" id="raggio">
+    <aside class="section-aside section-photo section-photo--stacked">
+      <img src="images/raggio/raggio-front.jpg" alt="Raggio">
+    </aside>
+    <div class="section-content">
+
+      <h2>Raggio Lungo</h2>
+      <p>A 6" - 7" long range quad top mount quad with perfect CoG and jello-free GoPro Hero 6 and Session mounts, designed by SFPV. 4.5mm arms and plenty of space to build, 150g with Hero6 mount (6" props supported) and 140g with Session mount (7" props supported).</p>
+      <p><a href="raggio.html" target="_blank">More info</a></p>
+
+      <table class="table table--left table--border">
+        <thead>
+          <tr>
+            <th>Cost</th>
+            <th>Retail (MAP)</th>
+            <th>Gross Profit</th>
+            <th>Profit Margin</th>
+            <th>Markup</th>
+            <th>MoQ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>$72.00</td>
+            <td>$99.99</td>
+            <td>$27.00</td>
+            <td>27.27%</td>
+            <td>37.50%</td>
+            <td>5</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="TUXLFC79CJSXU">
+
+        <label class="fieldLabel">
+          Quantity
+          <input type="number" min="5" name="quantity" value="5" class="formField--small"> x $72.00
+        </label>
+
+        <button trackclick="Raggio,Dealer order form submitted" class="button button--cta" type="submit" name="submit" alt="Pay with PayPal">Add to Cart</button>
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+
+    </div>
+  </section>
+
+  <section class="section section--text" id="raggiorace">
+    <aside class="section-aside section-photo section-photo--stacked">
+      <img src="images/raggiorace/raggiorace-quarter-built.jpg" alt="Raggio Veloce">
+    </aside>
+    <div class="section-content">
+
+      <h2>Raggio Veloce</h2>
+      <p>A 5" top mount race and freestyle quad. ~85g, 4mm arms, and the ability to mount a GoPro Hero 6 or Session using the same mounts as Raggio Lungo with a perpendicularly mounted battery, designed by SFPV.</p>
+      <p><a href="raggiorace.html" target="_blank">More info</a></p>
+
+      <table class="table table--left table--border">
+        <thead>
+          <tr>
+            <th>Cost</th>
+            <th>Retail (MAP)</th>
+            <th>Gross Profit</th>
+            <th>Profit Margin</th>
+            <th>Markup</th>
+            <th>MoQ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>$40.00</td>
+            <td>$59.00</td>
+            <td>$19.00</td>
+            <td>32.20%</td>
+            <td>47.50%</td>
+            <td>10</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="EEC9FPHR2HTY4">
+
+        <label class="fieldLabel">
+          Quantity
+          <input type="number" min="10" name="quantity" value="10" class="formField--small"> x $40.00
+        </label>
+
+        <button trackclick="Raggio Veloce,Dealer order form submitted" class="button button--cta" type="submit" name="submit" alt="Pay with PayPal">Add to Cart</button>
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="Q6YPNHD4GX5M6">
+
+        <label class="fieldLabel">
+          Spare arms
+          <input type="number" min="2" name="quantity" value="2" class="formField--small"> x $4.75 (retail $7.00)
+        </label>
+
+        <button trackclick="Raggio Veloce,Dealer order form submitted" class="button button--cta" type="submit" name="submit" alt="Pay with PayPal">Add to Cart</button>
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+
+    </div>
+  </section>
+
+  <section class="section section--text" id="bannilite">
+    <aside class="section-aside section-photo section-photo--stacked">
+      <img src="images/bannilite/bannilite-front.jpg" alt="Bannilite">
+    </aside>
+    <div class="section-content">
+
+      <h2>Bannilite</h2>
+      <p>The ultimate 5" racer, designed by BanniUK. 69g with tons of camera protection and 5mm arms.</p>
+      <p>Kits ship with 1 extra arm, 2 extra cam struts (vertical), and 1 extra cam brace (horizontal), as well as a few pieces of spare hardware.</p>
+      <p>Please ensure you stock spare parts in addition to those available in the kit so racers keep coming back for spare parts and keep their Bannilite in the air.</p>
+      <p><a href="bannilite.html" target="_blank">More info</a></p>
+
+      <table class="table table--left table--border">
+        <thead>
+          <tr>
+            <th>Cost</th>
+            <th>Retail (MAP)</th>
+            <th>Gross Profit</th>
+            <th>Profit Margin</th>
+            <th>Markup</th>
+            <th>MoQ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>$45.00</td>
+            <td>$64.99 (£54.99 UK)</td>
+            <td>$19.99</td>
+            <td>30.76%</td>
+            <td>44.42%</td>
+            <td>10</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="R59LRBRRYY8DN">
+
+        <label class="fieldLabel">
+          Full Kits
+          <input type="number" min="10" name="quantity" value="10" class="formField--small"> x $45.00
+        </label>
+
+        <button trackclick="Bannilite,Dealer order form submitted" class="button button--cta" type="submit" name="submit" alt="Pay with PayPal">Add to Cart</button>
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="VE6ZWHKWF4RB6">
+
+        <label class="fieldLabel">
+          Full Kits (bulk, MoQ 50)
+          <input type="number" min="50" name="quantity" value="50" class="formField--small"> x $42.00
+        </label>
+
+        <button trackclick="Bannilite,Dealer order form submitted" class="button button--cta" type="submit" name="submit" alt="Pay with PayPal">Add to Cart</button>
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="Q68VD9FN2A7SE">
+
+        <label class="fieldLabel">
+          Spare arms
+          <input type="number" min="2" name="quantity" value="2" class="formField--small"> x $4.50 (retail $7.00)
+        </label>
+
+        <button trackclick="Bannilite,Dealer order form submitted" class="button button--cta" type="submit" name="submit" alt="Pay with PayPal">Add to Cart</button>
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="28JCCPEZXXKSG">
+
+        <label class="fieldLabel">
+          Spare cam braces (horizontal)
+          <input type="number" min="4" name="quantity" value="4" class="formField--small"> x $1 (retail $1.50)
+        </label>
+
+        <button trackclick="Bannilite,Dealer order form submitted" class="button button--cta" type="submit" name="submit" alt="Pay with PayPal">Add to Cart</button>
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="S6JQJSBLD65NJ">
+
+        <label class="fieldLabel">
+          Spare cam struts (vertical)
+          <input type="number" min="4" name="quantity" value="4" class="formField--small"> x $1.25 (retail $2.00)
+        </label>
+
+        <button trackclick="Bannilite,Dealer order form submitted" class="button button--cta" type="submit" name="submit" alt="Pay with PayPal">Add to Cart</button>
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="T42LJWE5R7T68">
+
+        <label class="fieldLabel">
+          Spare bottom plates
+          <input type="number" min="2" name="quantity" value="2" class="formField--small"> x $3.50 (retail $5.00)
+        </label>
+
+        <button trackclick="Bannilite,Dealer order form submitted" class="button button--cta" type="submit" name="submit" alt="Pay with PayPal">Add to Cart</button>
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="TEQM9VL9SKYYQ">
+
+        <label class="fieldLabel">
+          Spare mid plates
+          <input type="number" min="2" name="quantity" value="2" class="formField--small"> x $3.50 (retail $5.00)
+        </label>
+
+        <button trackclick="Bannilite,Dealer order form submitted" class="button button--cta" type="submit" name="submit" alt="Pay with PayPal">Add to Cart</button>
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="8XQM46W3LPUPL">
+
+        <label class="fieldLabel">
+          Spare top plates
+          <input type="number" min="2" name="quantity" value="2" class="formField--small"> x $3.50 (retail $5.00)
+        </label>
+
+        <button trackclick="Bannilite,Dealer order form submitted" class="button button--cta" type="submit" name="submit" alt="Pay with PayPal">Add to Cart</button>
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+
+    </div>
+  </section>
+
+  <section class="section section--text" id="featherlight">
+    <aside class="section-aside section-photo section-photo--stacked">
+      <img src="images/featherlight/featherlight-front.jpg" alt="Tinyshark">
+    </aside>
+    <div class="section-content">
+
+      <h2>Featherlight 5</h2>
+      <p>One of the lightest race frames on the market. 57g with 5mm arms, designed around 20mm FCs and the RunCam Micro Swift.</p>
+      <p><a href="featherlight.html" target="_blank">More info</a></p>
+
+      <table class="table table--left table--border">
+        <thead>
+          <tr>
+            <th>Cost</th>
+            <th>Retail (MAP)</th>
+            <th>Gross Profit</th>
+            <th>Profit Margin</th>
+            <th>Markup</th>
+            <th>MoQ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>$35.00</td>
+            <td>$50.00</td>
+            <td>$15.00</td>
+            <td>30.00%</td>
+            <td>42.86%</td>
+            <td>5</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="C3XCX6CE9R47J"">
+
+        <label class="fieldLabel">
+          Quantity
+          <input type="number" min="5" name="quantity" value="5" class="formField--small"> x $35
+        </label>
+
+        <button trackclick="Featherlight 5,Dealer order form submitted" class="button button--cta" type="submit" name="submit" alt="Pay with PayPal">Add to Cart</button>
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="DG3KKPQQBL4XY">
+
+        <label class="fieldLabel">
+          Spare arms
+          <input type="number" min="2" name="quantity" value="2" class="formField--small"> x $4.50 (retail $7.00)
+        </label>
+
+        <button trackclick="Featherlight 5,Dealer order form submitted" class="button button--cta" type="submit" name="submit" alt="Pay with PayPal">Add to Cart</button>
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="YFGE7BPPK2AKQ">
+
+        <label class="fieldLabel">
+          Spare top/bottom plates (works on 3/4/5")
+          <input type="number" min="2" name="quantity" value="2" class="formField--small"> x $3.50 (retail $5.00)
+        </label>
+
+        <button trackclick="Featherlight 5,Dealer order form submitted" class="button button--cta" type="submit" name="submit" alt="Pay with PayPal">Add to Cart</button>
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+    </div>
+  </section>
+
+  <section class="section section--text" id="featherlight">
+    <aside class="section-aside section-photo section-photo--stacked">
+      <img src="images/featherlight/featherlight-4-front.jpg" alt="Featherlight 4">
+    </aside>
+    <div class="section-content">
+
+      <h2>Featherlight 4</h2>
+      <p>A serious 4" racer. 46g with 4mm arms, designed around 20mm FCs and the RunCam Micro Swift.</p>
+      <p><a href="featherlight.html" target="_blank">More info</a></p>
+
+      <table class="table table--left table--border">
+        <thead>
+          <tr>
+            <th>Cost</th>
+            <th>Retail (MAP)</th>
+            <th>Gross Profit</th>
+            <th>Profit Margin</th>
+            <th>Markup</th>
+            <th>MoQ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>$31.50</td>
+            <td>$45.00</td>
+            <td>$13.50</td>
+            <td>30.00%</td>
+            <td>42.86%</td>
+            <td>5</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="L2WAZGDJB4WJE"">
+
+        <label class="fieldLabel">
+          Quantity
+          <input type="number" min="5" name="quantity" value="5" class="formField--small"> x $31.50
+        </label>
+
+        <button trackclick="Featherlight 4,Dealer order form submitted" class="button button--cta" type="submit" name="submit" alt="Pay with PayPal">Add to Cart</button>
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="HTBPEKT5HTJ2E">
+
+        <label class="fieldLabel">
+          Spare arms
+          <input type="number" min="2" name="quantity" value="2" class="formField--small"> x $4.00 (retail $6.00)
+        </label>
+
+        <button trackclick="Featherlight 4,Dealer order form submitted" class="button button--cta" type="submit" name="submit" alt="Pay with PayPal">Add to Cart</button>
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="YFGE7BPPK2AKQ">
+
+        <label class="fieldLabel">
+          Spare top/bottom plates (works on 3/4/5)
+          <input type="number" min="2" name="quantity" value="2" class="formField--small"> x $3.50 (retail $5.00)
+        </label>
+
+        <button trackclick="Featherlight 4,Dealer order form submitted" class="button button--cta" type="submit" name="submit" alt="Pay with PayPal">Add to Cart</button>
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+
+    </div>
+  </section>
+
+  <section class="section section--text" id="featherlight">
+    <aside class="section-aside section-photo section-photo--stacked">
+      <img src="images/featherlight/featherlight-3-front.jpg" alt="Featherlight 3">
+    </aside>
+    <div class="section-content">
+
+      <h2>Featherlight 3</h2>
+      <p>A new take on a 3" racer. 34g with 3mm arms, designed for 11XX motors, 20mm FCs, and the RunCam Micro Swift.</p>
+      <p><a href="featherlight.html" target="_blank">More info</a></p>
+
+      <table class="table table--left table--border">
+        <thead>
+          <tr>
+            <th>Cost</th>
+            <th>Retail (MAP)</th>
+            <th>Gross Profit</th>
+            <th>Profit Margin</th>
+            <th>Markup</th>
+            <th>MoQ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>$24.50</td>
+            <td>$40.00</td>
+            <td>$13.50</td>
+            <td>38.75%</td>
+            <td>63.27%</td>
+            <td>5</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="CV3C42S3N22NU"">
+
+        <label class="fieldLabel">
+          Quantity
+          <input type="number" min="5" name="quantity" value="5" class="formField--small"> x $24.50
+        </label>
+
+        <button trackclick="Featherlight 3,Dealer order form submitted" class="button button--cta" type="submit" name="submit" alt="Pay with PayPal">Add to Cart</button>
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+
+    </div>
+  </section>
+
+  <section class="section section--text" id="tinyshark">
+    <aside class="section-aside section-photo section-photo--stacked">
+      <img src="images/tinyshark/tinyshark-front.jpg" alt="Tinyshark">
+    </aside>
+    <div class="section-content">
+
+      <h2>Tinyshark</h2>
+      <p>A 6g, 1S racer that works with 16x16mm components. Comes with a sweet canopy that makes it look mean while still being lean.</p>
+      <p><a href="tinyshark.html" target="_blank">More info</a></p>
+
+      <table class="table table--left table--border">
+        <thead>
+          <tr>
+            <th>Cost</th>
+            <th>Retail (MAP)</th>
+            <th>Gross Profit</th>
+            <th>Profit Margin</th>
+            <th>Markup</th>
+            <th>MoQ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>$16.75</td>
+            <td>$24.99</td>
+            <td>$8.24</td>
+            <td>32.97%</td>
+            <td>49.19%</td>
+            <td>5</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="RTRPKZ8DT42YW">
+
+        <label class="fieldLabel">
+          Quantity
+          <input type="number" min="5" name="quantity" value="5" class="formField--small"> x $16.75
+        </label>
+
+        <button trackclick="Tinyshark,Dealer order form submitted" class="button button--cta" type="submit" name="submit" alt="Pay with PayPal">Add to Cart</button>
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+
+    </div>
+  </section>
+
+  <section class="section section--text" id="babyshark">
+    <aside class="section-aside section-photo section-photo--stacked">
+      <img src="images/babyshark/babyshark-front.jpg" alt="Babyshark">
+    </aside>
+    <div class="section-content">
+
+      <h2>Babyshark</h2>
+      <p>A 14g, 2S cruiser designed around 16x16mm components.</p>
+      <p><a href="babyshark.html" target="_blank">More info</a></p>
+
+      <table class="table table--left table--border">
+        <thead>
+          <tr>
+            <th>Cost</th>
+            <th>Retail (MAP)</th>
+            <th>Gross Profit</th>
+            <th>Profit Margin</th>
+            <th>Markup</th>
+            <th>MoQ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>$15.90</td>
+            <td>$24.99</td>
+            <td>$9.09</td>
+            <td>36.37%</td>
+            <td>57.17%</td>
+            <td>5</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="6UQMYJC75SHYS">
+
+        <label class="fieldLabel">
+          Quantity
+          <input type="number" min="5" name="quantity" value="5" class="formField--small"> x $15.90
+        </label>
+
+        <button trackclick="Tinyshark,Dealer order form submitted" class="button button--cta" type="submit" name="submit" alt="Pay with PayPal">Add to Cart</button>
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+
+    </div>
+  </section>
+
+  <section class="section section--text" id="bullshark">
+    <aside class="section-aside section-photo section-photo--stacked">
+      <img src="images/bullshark/bullshark-sla.jpg" alt="Bullshark">
+    </aside>
+    <div class="section-content">
+
+      <h2>Bullshark</h2>
+      <p>A beefy 15g 2" 2-3S racer designed around the RunCam Micro Swift and 20x20mm components. Now comes with a sexy SLA canopy!</p>
+      <p><a href="bullshark.html" target="_blank">More info</a></p>
+
+      <table class="table table--left table--border">
+        <thead>
+          <tr>
+            <th>Cost</th>
+            <th>Retail (MAP)</th>
+            <th>Gross Profit</th>
+            <th>Profit Margin</th>
+            <th>Markup</th>
+            <th>MoQ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>$25.00</td>
+            <td>$34.99</td>
+            <td>$9.99</td>
+            <td>28.55%</td>
+            <td>39.96%</td>
+            <td>5</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="U4NUWSS7A98JW">
+
+        <label class="fieldLabel">
+          Quantity
+          <input type="number" min="5" name="quantity" value="5" class="formField--small"> x $25.00
+        </label>
+
+        <button trackclick="Tinyshark,Dealer order form submitted" class="button button--cta" type="submit" name="submit" alt="Pay with PayPal">Add to Cart</button>
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+
+    </div>
+  </section>
+
+  <section class="section section--text" id="splitshark">
+    <aside class="section-aside section-photo section-photo--stacked">
+      <img src="images/splitshark/splitshark-front.jpg" alt="Splitshark">
+    </aside>
+    <div class="section-content">
+
+      <h2>Splitshark</h2>
+      <p>A 3" 3-4S cruiser designed around the RunCam Split and full-size 30.5x30.5mm components.</p>
+      <p><a href="splitshark.html" target="_blank">More info</a></p>
+
+      <table class="table table--left table--border">
+        <thead>
+          <tr>
+            <th>Cost</th>
+            <th>Retail (MAP)</th>
+            <th>Gross Profit</th>
+            <th>Profit Margin</th>
+            <th>Markup</th>
+            <th>MoQ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>$23.00</td>
+            <td>$35.00</td>
+            <td>$12.00</td>
+            <td>34.29%</td>
+            <td>52.17%</td>
+            <td>5</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="SWB27TAR45UJA">
+
+        <label class="fieldLabel">
+          Quantity
+          <input type="number" min="5" name="quantity" value="5" class="formField--small"> x $23.00
+        </label>
+
+        <button trackclick="Tinyshark,Dealer order form submitted" class="button button--cta" type="submit" name="submit" alt="Pay with PayPal">Add to Cart</button>
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+
+    </div>
+  </section>
+
+  <section class="section section--text">
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+      ">
+      <button class="button button--cta button--cta-centered button--large" type="submit" name="submit" alt="Pay with PayPal">Checkout</button>
+      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+  </section>
+
+  <footer class="footer">
+    &copy; <script>document.write((new Date()).getFullYear())</script> Falcon Multirotors | <a href="mailto:lazdnet@gmail.com?subject=Falcon">Contact us</a>
+  </footer>
+</body>
+</html>
+

@@ -138,6 +138,16 @@ Header/Footer
   border-collapse: collapse;
 }
 
+.table {
+  width: 100%;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.table--border {
+  border-collapse: separate;
+}
+
 .table--right {
   width: auto;
   float: right;
@@ -749,13 +759,30 @@ Masonry
   text-decoration: none;
 }
 .grid-image {
-  width: 200px;
+  max-width: 200px;
 }
 .grid-heading {
   font-size: 24px;
 }
 .grid-subheading {
   font-size: 14px;
+}
+
+/**
+Forms
+*/
+.fieldLabel {
+  display: inline-block;
+  font-weight: bold;
+  margin: 10px 15px 0 10px;
+}
+
+.formField--small {
+  padding: 5px;
+  margin: 0 6px;
+  font-size: 16px;
+  width: 40px;
+  text-align: center;
 }
 
 @media screen and (max-width: 1900px) {
