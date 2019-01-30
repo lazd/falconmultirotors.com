@@ -1,3 +1,3 @@
 <?php
-header('Location: raggio.html');
+header('Location: aero7.html');
 ?>
