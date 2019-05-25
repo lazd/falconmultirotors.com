@@ -224,11 +224,17 @@ Header/Footer
 }
 
 .hero-text {
+  max-width: 100%;
   margin: 0 0 0.125em 0;
   font-size: 96px;
   font-weight: 200;
   text-align: center;
   font-family: 'Quicksand', sans-serif;
+}
+
+.hero-text img {
+  max-width: 90%;
+  width: 400px;
 }
 
 strong {
@@ -752,13 +758,25 @@ Photoswipe
 /**
 Masonry
 */
+.grid {
+  margin: 50px auto 70px auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1000px;
+  align-items: center;
+  justify-content: center;
+}
 .grid-item {
   display: block;
   text-align: center;
   color: black;
+  margin: 10px 20px;
   text-decoration: none;
+  width: 250px;
 }
 .grid-image {
+  max-height: 125px;
   max-width: 200px;
 }
 .grid-heading {

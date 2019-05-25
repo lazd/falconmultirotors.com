@@ -148,7 +148,7 @@
         <a class="tablist-tab" href="falcon.html">Falcon X</a>
       </nav>
     </section>
-    <img class="header-logo" src="images/logo-trace-small.png" alt="Falcon Multirotors">
+    <a href="/"><img class="header-logo" src="images/logo-trace-small.png" alt="Falcon Multirotors"></a>
   </div>
 
   <div class="hero">
