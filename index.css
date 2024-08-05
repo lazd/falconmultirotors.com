@@ -1033,3 +1033,11 @@ Forms
     width: 5.5rem;
   }
 }
+
+/* disable prices */
+#buy,
+a[href="#buy"],
+.button-caption,
+h2.grid-heading {
+  display: none;
+}
